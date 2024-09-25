@@ -47,7 +47,7 @@
 #define ADXL343_IRQ_PORT MXC_GPIO2
 #define ADXL343_IRQ_PIN MXC_GPIO_PIN_11
 
-void GPIO2_IRQHandler()
+void GPIO2_IRQHandler(void)
 {
     MXC_GPIO_Handler(2);
 }
@@ -147,6 +147,10 @@ int main(void)
     if (MXC_I2C_Init(I2C_INST, 1, 0) != E_NO_ERROR) {
         blink_halt("Trouble initializing I2C instance.");
     }
+
+    mxc_gpio_cfg_t i2c0_3v3_cfg = { MXC_GPIO2, (MXC_GPIO_PIN_7 | MXC_GPIO_PIN_8), MXC_GPIO_FUNC_ALT1,
+                                       MXC_GPIO_PAD_NONE, MXC_GPIO_VSSEL_VDDIOH, MXC_GPIO_DRVSTR_0 };
+    MXC_GPIO_Config(&i2c0_3v3_cfg);
 
     MXC_I2C_SetFrequency(I2C_INST, I2C_FREQ);
 

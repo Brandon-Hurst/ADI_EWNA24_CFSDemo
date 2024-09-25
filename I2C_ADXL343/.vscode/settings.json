@@ -1,0 +1,4 @@
+{
+    "cfs.configureWorkspace": "Yes",
+    "makefile.configureOnOpen": true
+}
