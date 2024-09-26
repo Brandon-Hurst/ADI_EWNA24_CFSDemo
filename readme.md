@@ -11,3 +11,5 @@ This must be done at the time of writing because MSDK exists in CFS as a static 
 
 ![Run Build Task...](img/Terminal_RunBuildTask.png)
 ![clean-periph](img/clean-periph.png)
+
+At this point, you can build and run using the `Build` and `Flash & Run` tasks, or simply use the buttons for these in the CodeFusion Studio extension. 
