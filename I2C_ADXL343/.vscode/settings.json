@@ -11,5 +11,7 @@
   "cfs.openocd.target": "target/max32690.cfg",
   "cfs.openocd.interface": "interface/cmsis-dap.cfg",
   "cfs.openocd.riscvTarget": "target/max32690_riscv.cfg",
-  "cfs.openocd.riscvInterface": "interface/ftdi/olimex-arm-usb-ocd-h.cfg"
+  "cfs.openocd.riscvInterface": "interface/ftdi/olimex-arm-usb-ocd-h.cfg",
+  "cfs.debugPath": "${workspaceFolder}/build",
+  "cfs.cmsis.svdFile": "C:/analog/cfs/1.0.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Include/max32690.svd"
 }

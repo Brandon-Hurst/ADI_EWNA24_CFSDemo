@@ -31,7 +31,9 @@
 #include "adxl343.h"
 
 // I2C address with pin ALT_ADDRESS/SDO pulled low
-#define ADXL343_ADDR 0x53
+// default was 0x53 for the example
+/** NOTE: Changed to 0x1D by BH & MT */
+#define ADXL343_ADDR 0x1D
 
 #define DEVID 0xE5
 
