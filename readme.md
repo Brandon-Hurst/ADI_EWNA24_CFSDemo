@@ -12,4 +12,4 @@ This must be done at the time of writing because MSDK exists in CFS as a static 
 ![Run Build Task...](img/Terminal_RunBuildTask.png)
 ![clean-periph](img/clean-periph.png)
 
-At this point, you can build and run using the `Build` and `Flash & Run` tasks, or simply use the buttons for these in the CodeFusion Studio extension. 
+At this point, you can build and run using the `Build` and `Flash & Run` tasks, or simply use the buttons for these in the CodeFusion Studio extension. Check the example's README for more details. Instructions for Embedded World NA will be provided in a separate document imminent at the time of writing.

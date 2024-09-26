@@ -6,6 +6,32 @@
   "Package": "tqfn",
   "Pins": [
     {
+      "Pin": "1",
+      "Peripheral": "I2C0",
+      "Signal": "SDA",
+      "Config": {
+        "PWR": "VDDIOH",
+        "PS": "DIS"
+      },
+      "ControlResetValues": {
+        "PWR": "VDDIO",
+        "PS": "DIS"
+      }
+    },
+    {
+      "Pin": "2",
+      "Peripheral": "I2C0",
+      "Signal": "SCL",
+      "Config": {
+        "PWR": "VDDIOH",
+        "PS": "DIS"
+      },
+      "ControlResetValues": {
+        "PWR": "VDDIO",
+        "PS": "DIS"
+      }
+    },
+    {
       "Pin": "14",
       "Peripheral": "GPIO0",
       "Signal": "P0.14",
@@ -13,6 +39,46 @@
         "MODE": "OUT",
         "PWR": "VDDIO",
         "DS": "0"
+      },
+      "ControlResetValues": {
+        "MODE": "IN",
+        "PWR": "VDDIO",
+        "PS": "DIS",
+        "DS": "0"
+      }
+    },
+    {
+      "Pin": "15",
+      "Peripheral": "UART2",
+      "Signal": "RX",
+      "Config": {
+        "PWR": "VDDIO",
+        "PS": "WEAK_PU"
+      },
+      "ControlResetValues": {
+        "PWR": "VDDIO",
+        "PS": "WEAK_PU"
+      }
+    },
+    {
+      "Pin": "16",
+      "Peripheral": "UART2",
+      "Signal": "TX",
+      "Config": {
+        "PWR": "VDDIO"
+      },
+      "ControlResetValues": {
+        "PWR": "VDDIO"
+      }
+    },
+    {
+      "Pin": "66",
+      "Peripheral": "GPIO2",
+      "Signal": "P2.11",
+      "Config": {
+        "MODE": "IN",
+        "PWR": "VDDIOH",
+        "PS": "DIS"
       },
       "ControlResetValues": {
         "MODE": "IN",
@@ -52,9 +118,65 @@
       "Control": "MUX",
       "Value": "IPO",
       "Enabled": true
+    },
+    {
+      "Type": "Peripheral",
+      "Name": "I2C0/1/2",
+      "Control": "I2C0_ENABLE",
+      "Value": "TRUE",
+      "Enabled": true
+    },
+    {
+      "Type": "Peripheral",
+      "Name": "DMA",
+      "Control": "ENABLE",
+      "Value": "TRUE",
+      "Enabled": true
+    },
+    {
+      "Type": "Peripheral",
+      "Name": "TMR0/1/2/3",
+      "Control": "TMR0_ENABLE",
+      "Value": "TRUE",
+      "Enabled": true
+    },
+    {
+      "Type": "Peripheral",
+      "Name": "TMR0/1/2/3",
+      "Control": "TMR1_ENABLE",
+      "Value": "TRUE",
+      "Enabled": true
+    },
+    {
+      "Type": "Peripheral",
+      "Name": "TMR0/1/2/3",
+      "Control": "TMR2_ENABLE",
+      "Value": "TRUE",
+      "Enabled": true
+    },
+    {
+      "Type": "Peripheral",
+      "Name": "TMR0/1/2/3",
+      "Control": "TMR3_ENABLE",
+      "Value": "TRUE",
+      "Enabled": true
+    },
+    {
+      "Type": "Peripheral",
+      "Name": "UART0/1/2",
+      "Control": "UART2_ENABLE",
+      "Value": "TRUE",
+      "Enabled": true
+    },
+    {
+      "Type": "Peripheral",
+      "Name": "ICC",
+      "Control": "ENABLE",
+      "Value": "TRUE",
+      "Enabled": true
     }
   ],
-  "Timestamp": "2024-09-24T17:21:53.617Z",
+  "Timestamp": "2024-09-26T22:42:20.872Z",
   "BoardName": "EvKit_V1",
   "FirmwarePlatform": "msdk"
 }
