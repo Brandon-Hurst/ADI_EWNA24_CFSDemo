@@ -10,7 +10,7 @@ Universal instructions on building, flashing, and debugging this project can be 
 
 ### Project-Specific Build Notes
 
-* This project comes pre-configured for the MAX78000EVKIT.  See [Board Support Packages](https://analogdevicesinc.github.io/msdk/USERGUIDE/#board-support-packages) in the UG for instructions on changing the target board.
+* This project comes pre-configured for the MAX32690EVKIT.  See [Board Support Packages](https://analogdevicesinc.github.io/msdk/USERGUIDE/#board-support-packages) in the UG for instructions on changing the target board.
 
 ## Setup
 
@@ -29,7 +29,7 @@ Universal instructions on building, flashing, and debugging this project can be 
 
 ## Expected Output
 
-The console UART of the MAX32690 EV Kit will output these messages:
+The console UART of the MAX32690 EV Kit will output these messages, along with real-time accelerometer data:
 
 ```
 MAX32690 I2C ADXL343 demo.
