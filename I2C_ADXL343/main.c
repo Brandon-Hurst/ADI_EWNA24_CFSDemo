@@ -37,6 +37,9 @@
 #include "board.h"
 #include "led.h"
 
+#define MAX32690FTHR
+// #define MAX32690EVKIT
+
 #undef WAIT_FOR_KEYPRESS
 
 // The I2C peripheral the ADXL343 is connected to and the bus speed.
@@ -44,8 +47,15 @@
 #define I2C_FREQ 100000
 
 // The GPIO pin used for ADXL343 interrupt.
-#define ADXL343_IRQ_PORT MXC_GPIO2
-#define ADXL343_IRQ_PIN MXC_GPIO_PIN_11
+#ifdef MAX32690FTHR
+#define ADXL343_IRQ_PORT    MXC_GPIO1
+#define ADXL343_IRQ_PIN     MXC_GPIO_PIN_7
+#endif
+
+#ifdef MAX32690EVKIT
+#define ADXL343_IRQ_PORT    MXC_GPIO2
+#define ADXL343_IRQ_PIN     MXC_GPIO_PIN_11
+#endif
 
 void GPIO2_IRQHandler(void)
 {

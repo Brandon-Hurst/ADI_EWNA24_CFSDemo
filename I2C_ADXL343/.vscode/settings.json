@@ -5,7 +5,7 @@
   "makefile.configureOnOpen": true,
   "cfs.configureWorkspace": "Yes",
   "cfs.project.target": "MAX32690",
-  "cfs.project.board": "EvKit_V1",
+  "cfs.project.board": "FTHR",
   "cfs.programFile": "${workspaceFolder}/build/${workspaceFolderBasename}.elf",
   "cfs.project.firmwarePlatform": "MSDK",
   "cfs.openocd.target": "target/max32690.cfg",

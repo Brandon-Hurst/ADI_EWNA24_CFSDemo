@@ -4,7 +4,7 @@
  * This file was automatically generated using Analog Devices Pinconfig
  * https://github.com/adi-ctx/cfs-cfsutil
  *
- * Generated at: 2024-09-26T22:43:05.053Z
+ * Generated at: 2024-10-01T20:08:30.121Z
  * Generated with: C:\analog\cfs\1.0.0\Utils\cfsutil\bin\node.exe C:\analog\cfs\1.0.0\Utils\cfsutil\bin\run generate --engine msdk --input c:\workspace\cfs\EWNA_REPO\I2C_ADXL343\max32690-tqfn.cfsconfig --preview --format json
  *
  * SPDX-License-Identifier: Apache-2.0
@@ -71,41 +71,27 @@ int PinInit(void) {
     return result;
   }
 
-  /* P1.9 (15): assigned to UART2_RX */
-  const mxc_gpio_cfg_t cfg_p1_9 = {
+  /* P1.7 (17): assigned to GPIO1_P1.7 */
+  const mxc_gpio_cfg_t cfg_p1_7 = {
     MXC_GPIO1,
-    MXC_GPIO_PIN_9,
-    MXC_GPIO_FUNC_ALT1,
-    MXC_GPIO_PAD_WEAK_PULL_UP,
-    MXC_GPIO_VSSEL_VDDIO,
-    MXC_GPIO_DRVSTR_0
-  };
-  result = MXC_GPIO_Config(&cfg_p1_9);
-  if (result != E_NO_ERROR) {
-    return result;
-  }
-
-  /* P1.10 (16): assigned to UART2_TX */
-  const mxc_gpio_cfg_t cfg_p1_10 = {
-    MXC_GPIO1,
-    MXC_GPIO_PIN_10,
-    MXC_GPIO_FUNC_ALT1,
-    MXC_GPIO_PAD_NONE,
-    MXC_GPIO_VSSEL_VDDIO,
-    MXC_GPIO_DRVSTR_0
-  };
-  result = MXC_GPIO_Config(&cfg_p1_10);
-  if (result != E_NO_ERROR) {
-    return result;
-  }
-
-  /* P2.11 (66): assigned to GPIO2_P2.11 */
-  const mxc_gpio_cfg_t cfg_p2_11 = {
-    MXC_GPIO2,
-    MXC_GPIO_PIN_11,
+    MXC_GPIO_PIN_7,
     MXC_GPIO_FUNC_IN,
     MXC_GPIO_PAD_NONE,
     MXC_GPIO_VSSEL_VDDIOH,
+    MXC_GPIO_DRVSTR_0
+  };
+  result = MXC_GPIO_Config(&cfg_p1_7);
+  if (result != E_NO_ERROR) {
+    return result;
+  }
+
+  /* P2.11 (66): assigned to UART0_RX */
+  const mxc_gpio_cfg_t cfg_p2_11 = {
+    MXC_GPIO2,
+    MXC_GPIO_PIN_11,
+    MXC_GPIO_FUNC_ALT1,
+    MXC_GPIO_PAD_WEAK_PULL_UP,
+    MXC_GPIO_VSSEL_VDDIO,
     MXC_GPIO_DRVSTR_0
   };
   result = MXC_GPIO_Config(&cfg_p2_11);
@@ -113,11 +99,11 @@ int PinInit(void) {
     return result;
   }
 
-  /* P2.12 (67): assigned to GPIO2_P2.12 */
+  /* P2.12 (67): assigned to UART0_TX */
   const mxc_gpio_cfg_t cfg_p2_12 = {
     MXC_GPIO2,
     MXC_GPIO_PIN_12,
-    MXC_GPIO_FUNC_OUT,
+    MXC_GPIO_FUNC_ALT1,
     MXC_GPIO_PAD_NONE,
     MXC_GPIO_VSSEL_VDDIO,
     MXC_GPIO_DRVSTR_0
@@ -147,6 +133,12 @@ int ClockInit(void) {
   /* I2C0/1/2: Enable the I2C0 Clock. */
   MXC_SYS_ClockEnable(MXC_SYS_PERIPH_CLOCK_I2C0);
 
+  /* I2C0/1/2: Enable the I2C1 Clock. */
+  MXC_SYS_ClockEnable(MXC_SYS_PERIPH_CLOCK_I2C1);
+
+  /* I2C0/1/2: Enable the I2C2 Clock. */
+  MXC_SYS_ClockEnable(MXC_SYS_PERIPH_CLOCK_I2C2);
+
   /* ICC: Enable the Component Clock. */
   MXC_SYS_ClockEnable(MXC_SYS_PERIPH_CLOCK_SYSCACHE);
   MXC_ICC_Enable(MXC_ICC0);
@@ -164,8 +156,8 @@ int ClockInit(void) {
   /* TMR0/1/2/3: Enable the TMR3 Clock. */
   MXC_SYS_ClockEnable(MXC_SYS_PERIPH_CLOCK_TMR3);
 
-  /* UART0/1/2: Enable the UART2 Clock. */
-  MXC_SYS_ClockEnable(MXC_SYS_PERIPH_CLOCK_UART2);
+  /* UART0/1/2: Enable the UART0 Clock. */
+  MXC_SYS_ClockEnable(MXC_SYS_PERIPH_CLOCK_UART0);
 
   return E_NO_ERROR;
 }
