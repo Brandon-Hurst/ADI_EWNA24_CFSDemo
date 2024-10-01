@@ -21,7 +21,7 @@ Universal instructions on building, flashing, and debugging this project can be 
 - Connect I2C SCL to the adjact pin to SDA
 - Connect INT to to next pin up (INT is on P7 of the Pmod board)
 
-![alt text](img/fthr-adxl-connect.png)
+![FTHR-ADXL-Connection](img/fthr-adxl-connect.png)
 
 **EVKIT**:
 -   Connect INT2 of the ADXL343 to GPIO P2.11 of the MAX32690 EV Kit (header J4.7).
@@ -35,6 +35,8 @@ Universal instructions on building, flashing, and debugging this project can be 
 -   Connect a USB cable between the PC and the MAX32690 EV Kit CN2 (USB/PWR - UART) connector.
 -   Open a terminal application on the PC and connect to the MAX32690 console UART at 115200, 8-N-1.
 -   If using the MAX32690FTHR, ensure the I2C_PU jumper is set to use 3.3V.
+
+![I2C PU Jumper](img/fthr-i2c-pu-jumper.png.png)
 
 ## Expected Output
 
