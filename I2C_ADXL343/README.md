@@ -21,6 +21,8 @@ Universal instructions on building, flashing, and debugging this project can be 
 - Connect I2C SCL to the adjact pin to SDA
 - Connect INT to to next pin up (INT is on P7 of the Pmod board)
 
+![alt text](img/fthr-adxl-connect.png)
+
 **EVKIT**:
 -   Connect INT2 of the ADXL343 to GPIO P2.11 of the MAX32690 EV Kit (header J4.7).
 -   Connect SCL of the ADXL343 to GPIO P2.8/I2C0_SCL of the MAX32690 EV Kit (header J4.8).
