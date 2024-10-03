@@ -81,6 +81,8 @@ void blink_halt(char *msg)
 
     for (;;) {
         MXC_Delay(MXC_DELAY_MSEC(250));
+
+        // Toggle red led
         LED_Toggle(LED1);
     }
 }
@@ -192,6 +194,7 @@ int main(void)
             printf("\rx:% -2.2f  y:% -2.2f  z:% -2.2f", axis_data[0] * ADXL343_SF_2G,
                    axis_data[1] * ADXL343_SF_2G, axis_data[2] * ADXL343_SF_2G);
             MXC_Delay(200000);
+            LED_Toggle(0);
         }
 
 //        MXC_LP_EnterSleepMode();
