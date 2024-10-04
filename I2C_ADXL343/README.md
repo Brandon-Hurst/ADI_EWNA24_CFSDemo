@@ -99,3 +99,13 @@ The ELF File Explorer allows a developer to peek into the memory contents of the
 #### Overview of the Tool
 
 #### Changing the LED
+
+##### Pin Functions
+
+##### Function Config
+
+##### Clock Config
+
+##### Generate Code
+
+##### Build, Flash, Run!
