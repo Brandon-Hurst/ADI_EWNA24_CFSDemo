@@ -1,6 +1,6 @@
 ## Description
 
-This application demonstrates I2C communication between the MAX32690 EV Kit and an ADXL343 Digital MEMS Accelerometer.
+This application demonstrates I2C communication between the MAX32690FTHR and an ADXL343 Digital MEMS Accelerometer.
 
 The application...
 - Configures the I2C peripheral instance
@@ -20,7 +20,7 @@ Open a terminal application on the PC and connect to the MAX32690 console UART a
 
 #### Expected Output
 
-The console UART of the MAX32690 EV Kit will output these messages, along with real-time accelerometer data:
+The console UART of the MAX32690FTHR will output these messages, along with real-time accelerometer data:
 ```
 MAX32690 I2C ADXL343 demo.
 Press Enter/Return to continue ...
