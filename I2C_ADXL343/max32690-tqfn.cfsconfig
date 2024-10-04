@@ -97,13 +97,6 @@
       "Enabled": false
     },
     {
-      "Type": "Mux",
-      "Name": "SYS_OSC Mux",
-      "Control": "MUX",
-      "Value": "IPO",
-      "Enabled": true
-    },
-    {
       "Type": "Peripheral",
       "Name": "I2C0/1/2",
       "Control": "I2C0_ENABLE",
@@ -172,9 +165,16 @@
       "Control": "I2C2_ENABLE",
       "Value": "TRUE",
       "Enabled": true
+    },
+    {
+      "Type": "Mux",
+      "Name": "SYS_OSC Mux",
+      "Control": "MUX",
+      "Value": "IPO",
+      "Enabled": true
     }
   ],
-  "Timestamp": "2024-10-01T20:07:14.752Z",
+  "Timestamp": "2024-10-04T17:15:30.206Z",
   "BoardName": "EvKit_V1",
   "FirmwarePlatform": "msdk"
 }

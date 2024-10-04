@@ -4,8 +4,8 @@
  * This file was automatically generated using Analog Devices Pinconfig
  * https://github.com/adi-ctx/cfs-cfsutil
  *
- * Generated at: 2024-10-01T20:08:30.121Z
- * Generated with: C:\analog\cfs\1.0.0\Utils\cfsutil\bin\node.exe C:\analog\cfs\1.0.0\Utils\cfsutil\bin\run generate --engine msdk --input c:\workspace\cfs\EWNA_REPO\I2C_ADXL343\max32690-tqfn.cfsconfig --preview --format json
+ * Generated at: 2024-10-04T18:09:52.591Z
+ * Generated with: C:\analog\cfs\1.0.0\Utils\cfsutil\bin\node.exe C:\analog\cfs\1.0.0\Utils\cfsutil\bin\run generate --engine msdk --input c:\workspace\cfs_projects\EWNA_REPO\I2C_ADXL343\max32690-tqfn.cfsconfig --preview --format json
  *
  * SPDX-License-Identifier: Apache-2.0
  * Copyright (c) 2024 Analog Devices, Inc.

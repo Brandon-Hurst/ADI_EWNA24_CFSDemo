@@ -36,7 +36,7 @@ Universal instructions on building, flashing, and debugging this project can be 
 -   Open a terminal application on the PC and connect to the MAX32690 console UART at 115200, 8-N-1.
 -   If using the MAX32690FTHR, ensure the I2C_PU jumper is set to use 3.3V.
 
-![I2C PU Jumper](img/fthr-i2c-pu-jumper.png.png)
+![I2C PU Jumper](img/fthr-i2c-pu-jumper.png)
 
 ## Expected Output
 
