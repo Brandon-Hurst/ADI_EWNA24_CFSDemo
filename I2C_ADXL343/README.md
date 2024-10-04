@@ -15,6 +15,11 @@ The ADXL343 is configured to enable Data Ready interrupts on pin INT2.  The INT2
 
 Open a terminal application on the PC and connect to the MAX32690 console UART at 115200, 8-N-1 settings. You can use TeraTerm or the VS Code Serial Monitor for this!
 
+> [!IMPORTANT]
+> - Run **Visual Studio Code** from desktop icon
+> - From the menu bar, click **Terminal->New Terminal**
+> - From the terminal window at the bottom right, select **SERIAL MONITOR**, match the settings in the image below, and click **Start Monitoring**
+
 ![TeraTerm Setup](img/TeraTerm-Setup.png)
 ![VS Code Setup](img/VSCode-Setup.png)
 
@@ -76,9 +81,10 @@ x:-0.02  y: 0.02  z: 0.99
 
 The next section will walk through the ELF File Explorer tool in CodeFusion Studio.
 
-#### Opening the ELF
-
-Within the CFS plugin, select `Open ELF File` and open `build/I2C_ADXL343.elf`.
+> [!IMPORTANT]
+> #### Opening the ELF
+>
+> Within the CFS plugin, select `Open ELF File` and open `build/I2C_ADXL343.elf`.
 
 #### Overview of the Tool
 
