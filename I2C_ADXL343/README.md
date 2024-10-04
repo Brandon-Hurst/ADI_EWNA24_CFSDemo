@@ -61,10 +61,10 @@ x:-0.02  y: 0.02  z: 0.99
 │                           │                  │                           │       │                   │
 │                           │                  │                           │       │                   │
 │                           │                  │                           │       │                   │
-│                           │                  │                       SWD ├───────┤                   │
 │                           │                  │                           │       │                   │
 │                           │                  │                           │       │                   │
-│                           │                  │                      UART ├───────┤                   │
+│                           │                  │                           │       │                   │
+│                           │                  │                SWD + UART ├───────┤ SWD + UART        │
 │                           │                  │                           │       │                   │
 │                           │                  │                           │       │                   │
 │                       GND ├──────────────────┤ GND                       │       │                   │
@@ -74,9 +74,23 @@ x:-0.02  y: 0.02  z: 0.99
 
 ## Explore the ELF File
 
+The next section will walk through the ELF File Explorer tool in CodeFusion Studio.
+
 #### Opening the ELF
 
+Within the CFS plugin, select `Open ELF File` and open `build/I2C_ADXL343.elf`.
+
 #### Overview of the Tool
+
+The ELF File Explorer allows a developer to peek into the memory contents of the application in detail, without having to dig through build artifacts like the .map file. This can be incredibly useful for examining the overhead of functions, data, and even an RTOS! Moreover, you can see where given functions lie in memory, map locations to source code, and even correlate the application to the linker file.
+
+##### Statistics
+
+##### Metadata
+
+##### Symbol Explorer
+
+##### Memory Layout
 
 #### Navigating to Symbols in Code
 
