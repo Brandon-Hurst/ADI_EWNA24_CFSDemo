@@ -20,7 +20,6 @@ Open a terminal application on the PC and connect to the MAX32690 console UART a
 > - From the menu bar, click **Terminal->New Terminal**
 > - From the terminal window at the bottom right, select **SERIAL MONITOR**, match the settings in the image below, and click **Start Monitoring**
 
-![TeraTerm Setup](img/TeraTerm-Setup.png)
 ![VS Code Setup](img/VSCode-Setup.png)
 
 #### Expected Output
@@ -31,8 +30,6 @@ MAX32690 I2C ADXL343 demo.
 Press Enter/Return to continue ...
 x:-0.02  y: 0.02  z: 0.99
 ```
-
-![TeraTerm Output](img/TeraTerm-Out.png)
 
 #### Hardware Setup
 
@@ -52,9 +49,9 @@ x:-0.02  y: 0.02  z: 0.99
 │                           │                  │                           │
 │                       VDD │◄─────────────────┤ +3.3V               P0.14 ├─────►(Red LED)
 │                           │                  │                           │
-│                           │                  │                     P2.25 ├─────►(Blue LED)
-│                           │                  │                           │
 │                           │                  │                     P2.24 ├─────►(Green LED)
+│                           │                  │                           │
+│                           │                  │                     P2.25 ├─────►(Blue LED)
 │               ADXL343_SDA ├──────────────────┤ P2.7 (I2C0_SDA)           │
 │                           │                  │                           │                USB
 │               ADXL343_SCL ├──────────────────┤ P2.8 (I2C0_SCL)           │                 │
@@ -92,13 +89,51 @@ The ELF File Explorer allows a developer to peek into the memory contents of the
 
 ##### Statistics
 
+The Statistics screen shows basic summary information about the ELF file, including...
+- A summary of the ELF header (File Overview)
+- Sizes of main sections (data, text, bss) in a layout mirroring the linkerfile.
+- Global/Local Functions & Variables
+- Sizes of various symbols
+
+![Statistics](img/elf-statistics.png)
+
 ##### Metadata
+
+The Metadata screen displays more detailed data about the ELF file, including info about the target architecture, optimization level, stack usage, AEBI attributes, firmware platform (SDK/Zephyr) and more!
+
+![Metadata](img/elf-metadata.png)
 
 ##### Symbol Explorer
 
+This screen allows you to see the full symbol table with address, section, and binding info for all symbols. Even better, all symbols are __searchable__ with SQL-style queries or with a simple name/address search.
+
+##### Navigating to Symbols in Code
+If your .elf file contains debug info in DWARF-4 format, an extra `path` column will appear showing the file and line within source code where that symbol is defined. If the source code is on your machine, you can Right-Click that symbol and select `Go to symbol source code` to view the symbol exactly where it's defined.
+
+> Important
+> Try looking at the `adxl343_config` function in the Symbol Explorer, then navigate to its source code!
+>
+> You can also try finding the largest symbol in main.c or the adxl343.c driver file!
+>
+> ![Saved Queries](img/saved-queries.png)
+> ![Go to Source](img/go-to-source.png)
+
 ##### Memory Layout
 
-#### Navigating to Symbols in Code
+The memory layout screen shows a visual representation of the memory map of a project, including info about the starting address, alignment, size, and permissions (R/W/X) for each region. Best of all, this view is hierarchical, you can click into each region and see its memory sections. Then, you can click into the sections and see details about each memory section!
+
+This type of information can be very useful to examine as the output of a linkerfile or to fully visualize the memory map of an application in important regions.
+
+![Memory Layout](img/elf-mem-layout.png)
+
+For the MAX32690, FLASH begins at 0x1000_0000 and SRAM begins at 0x2000_0000.
+
+> Important
+>
+> Knowing the information above, try to find the location of the symbol `adxl_irq_cfg` in RAM. Hint: It's somewhere in the .data segment...
+> ![Clicking into RAM](img/elf-mem-layout-ram.png)
+> ![Looking at the RAM segments](img/elf-ram-segments.png)
+
 
 ## Mess With the Config Tool
 

@@ -40,12 +40,6 @@
 #define MAX32690FTHR
 // #define MAX32690EVKIT
 
-#undef WAIT_FOR_KEYPRESS
-
-// The I2C peripheral the ADXL343 is connected to and the bus speed.
-#define I2C_INST MXC_I2C0
-#define I2C_FREQ 100000
-
 // The GPIO pin used for ADXL343 interrupt.
 #ifdef MAX32690FTHR
 #define ADXL343_IRQ_PORT    MXC_GPIO1
@@ -56,6 +50,13 @@
 #define ADXL343_IRQ_PORT    MXC_GPIO2
 #define ADXL343_IRQ_PIN     MXC_GPIO_PIN_11
 #endif
+
+#undef WAIT_FOR_KEYPRESS
+
+// The I2C peripheral the ADXL343 is connected to and the bus speed.
+#define I2C_INST MXC_I2C0
+#define I2C_FREQ 100000
+
 
 void GPIO2_IRQHandler(void)
 {
@@ -80,10 +81,14 @@ void blink_halt(char *msg)
     puts("Reset to restart application.");
 
     for (;;) {
+        // Toggle LED every 250ms
         MXC_Delay(MXC_DELAY_MSEC(250));
 
-        // Toggle red led
-        LED_Toggle(LED1);
+        /** NOTE: Change this when configuring with the Config Tool! */
+        LED_Toggle(LED_RED);        // P0.14 (default)
+        // LED_Toggle(LED_GREEN);   // P2.24
+        // LED_Toggle(LED_BLUE);    // P2.25
+        /*************************************************************/
     }
 }
 

@@ -26,6 +26,12 @@
 
 # Add your config here!
 # override BOARD=EvKit_V1
+DEBUG=1
+
+# These symbols add Debug info for the ELF Explorer
+# PROJ_CFLAGS += -fstack-usage
+# PROJ_CFLAGS += -fdump-ipa-cgraph
+PROJ_CFLAGS += -gdwarf-4
 
 # If you have secure version of MCU, set SBT=1 to generate signed binary
 # For more information on how sing process works, see
