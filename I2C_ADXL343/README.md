@@ -169,7 +169,7 @@ The Pin Mux Tool displays a map of pins showing the current multiplexing configu
 > - RED - P0.14 (GPIO0)
 > - GREEN - P2.24 (GPIO2)
 > - BLUE - P2.25 (GPIO2)
-> ![Enable the GPIO](img/pinmux-enable-gpio2.png)
+> ![Enable the GPIO](img/pinmux-enable-GPIO2.png)
 
 ##### Function Config
 
