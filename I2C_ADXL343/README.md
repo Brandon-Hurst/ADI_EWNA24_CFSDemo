@@ -13,6 +13,8 @@ The ADXL343 is configured to enable Data Ready interrupts on pin INT2.  The INT2
 
 ---
 
+<br/>
+
 # Serial Console Connection:
 
 Open VS Code Serial Monitor to connect to the MAX32690 console UART
@@ -37,6 +39,8 @@ x:-0.02  y: 0.02  z: 0.99
 ```
 
 ---
+
+<br/>
 
 # Hardware Setup
 
@@ -83,6 +87,8 @@ This lab was built with the following hardware components.
 ![HW Setup](img/HW-Setup.png)
 
 ---
+
+<br/>
 
 # Explore the ELF File
 
@@ -169,6 +175,8 @@ For the MAX32690, FLASH begins at 0x1000_0000 and SRAM begins at 0x2000_0000.
 ![Looking at the RAM segments](img/elf-ram-segments.png)
 
 ---
+
+<br/>
 
 # Test Driving the Config Tool
 
@@ -303,6 +311,8 @@ The `Generate code` button will generate a file called `MAX32690_soc_init.c` whi
 
 
 ---
+
+<br/>
 
 # Build, Flash, Run!
 
