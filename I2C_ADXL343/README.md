@@ -174,9 +174,10 @@ For the MAX32690, FLASH begins at 0x1000_0000 and SRAM begins at 0x2000_0000.
 
 To walk through the Config Tools, we'll go about the task of changing the LED that blinks on the MAX32690FTHR.
 
+Before going into the Config Tool, change the LED_Toggle line at the end of `main()`in `main.c` to a different LED than the one that is currently blinking. The default is red -- try green or blue! 
+
 > [!IMPORTANT]
 >
-> Before going into the Config Tool, change the LED_Toggle line at the end of `main()`in `main.c` to a different LED than the one that is currently blinking. The default is red -- try green or blue! 
 > 1. Within VS Code, click on the Explorer button on the left Side Bar
 > 1. Click on `main.c` to open the file in the editor
 > 1. At the end of the file you will see a section around line 199 with several lines commented out
@@ -188,6 +189,12 @@ To walk through the Config Tools, we'll go about the task of changing the LED th
 
 
 CodeFusion Studio (CFS) provides a combined configuration tool to allow easy configuration of pin and clock settings. The Configuration Tool uses CFSCONFIG files which are generated using the New Project wizard. Clicking on the appropriate .cfsconfig file in your project will open the Config Tool.
+
+> [!IMPORTANT]
+>
+> 1. Within VS Code, click on the Explorer button on the left Side Bar
+> 1. Click on `max32690-tqfn.cfsconfig` to open the Configuration Tool
+> 
 
 ![Open Config Tool](img/open-cfg-tool.png)
 
@@ -207,10 +214,12 @@ The Pin Mux Tool displays a map of pins showing the current multiplexing configu
 
 > [!IMPORTANT]
 >
-> 1. Enable the "GPIOx" function for whichever LED you've selected! The options are:
-> - RED - P0.14 (GPIO0)
-> - GREEN - P2.24 (GPIO2)
-> - BLUE - P2.25 (GPIO2)
+> 1. Within the Configuration Tool, click on the **Pin Mux** button in the Config Tool sidebar
+> 1. Click on the matching "GPIOx" function for the LED color you've selected! The options are:
+>       - RED - P0.14 (GPIO0)
+>       - GREEN - P2.24 (GPIO2)
+>       - BLUE - P2.25 (GPIO2)
+> 1. Remember to deselect the RED GPIO0 P0.14 if you have chosen a different color
 >
 ![Enable the GPIO](img/pinmux-enable-GPIO2.png)
 
