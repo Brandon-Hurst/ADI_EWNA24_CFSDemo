@@ -20,7 +20,10 @@ Open VS Code Serial Monitor to connect to the MAX32690 console UART
 
 > [!IMPORTANT]
 > 1. Run **Visual Studio Code** from desktop icon
-> 1. From the menu bar, click **Terminal->New Terminal**
+> 1. From the menu bar, click **File -> Open Folder**
+> 1. Browse to **This PC -> Local Disk (C:) -> ewna -> ADI_EWNA24_CFSDEMO**
+> 1. Highlight `I2C_ADXL343` and click **Select Folder**
+> 1. From the menu bar, click **Terminal -> New Terminal**
 > 1. From the terminal window at the bottom right, select **SERIAL MONITOR**
 > 1. Choose settings to match image below - Baud rate: **115200**, and the port containing **mbed Serial Port**
 > 1. Click **Start Monitoring**
