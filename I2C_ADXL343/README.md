@@ -88,22 +88,22 @@ This lab was built with the following hardware components.
 
 The next section will walk through the ELF File Explorer tool in CodeFusion Studio.
 
+### Opening the project
 > [!IMPORTANT]
-> #### Opening the project
 >
 > 1. From the VS Code menu bar, click **File -> Open Folder**
 > 1. Browse to **This PC -> Local Disk (C:) -> ewna -> ADI_EWNA24_CFSDEMO**
 > 1. Highlight `I2C_ADXL343` and click **Select Folder**
 
+### Completing your initial build
 > [!IMPORTANT]
-> #### Completing your initial build
 >
 > 1. Within VS Code, click on the CodeFusion Studio button on the left Side Bar
 > 1. In the **Actions** section, click **Build**
 > 1. When complete, the terminal window will say **Terminal will be reused by tasks, press any key to close it**
 
+### Opening the ELF
 > [!IMPORTANT]
-> #### Opening the ELF
 >
 > 1. Within VS Code, click on the CodeFusion Studio button on the left Side Bar
 > 1. Select **Open ELF File**
@@ -241,18 +241,31 @@ On Zephyr projects, two additional fields are provided under function config:
 - Device Tree identifier
 - phandle identifier
 
+### To configure the pin to work as an LED, change the pin configuration to the following:
+
 > [!IMPORTANT]
 >
-> 1. To configure the pin to work as an LED, change the pin configuration to the following:
->   - Output Mode
->   - Use VDDIO
->   - Drive Strength 0
+> 1. Within the Configuration Tool, click on the **Function Config** button in the Config Tool sidebar
+> 1. Select the GPIO corresponding to the color LED you chose above
+>       - RED - P0.14 (GPIO0)
+>       - GREEN - P2.24 (GPIO2)
+>       - BLUE - P2.25 (GPIO2)
+> 1. Set the following settings for the pin:
+>       - Output Mode
+>       - Use VDDIO
+>       - Drive Strength 0
 >
+
 ![New LED Configuration](img/new-led-function-config.png)
 
 ### Clock Config
 
 This screen allows you configure the clock frequencies that are used by each of the peripherals and cores on the processor. It includes error checking to ensure that the frequencies used are within the constraints of the processor specification. After configuring your clock tree, you can generate code that will set the hardware to the desired clock configuration.
+
+> [!IMPORTANT]
+> 1. Within the Configuration Tool, click on the **Clock Config** button in the Config Tool sidebar
+> 1. We won't be making any changes in **Clock Config** at the moment, but at the end of the exercise you are welcome to try out making changes if you like. 
+> 
 
 ![Clock Config](img/clk-config.png)
 
@@ -260,11 +273,15 @@ Double-clicking on a multiplexer or peripheral expands the options so that only 
 
 ![UART0](img/uart0-clock.png)
 
-We don't have to do anything in Clock Config to change the LED, but you can play around with this later if you want.
 
 ### Registers
 
 If we had any particular registers we wanted to configure at boot-time, we could do that with the Registers screen. The Registers view displays all registers and corresponding values, including any modified registers marked with an asterisk (*). The search bar provides filters for modified or unmodified registers and allows filtering based on partial register names.
+
+> [!IMPORTANT]
+> 1. Within the Configuration Tool, click on the **Registers** button in the Config Tool sidebar
+> 1. We won't be making any changes in **Registers** at the moment, but at the end of the exercise you are welcome to try out making changes if you like. 
+> 
 
 ![Registers](img/registers.png)
 
@@ -272,20 +289,30 @@ If we had any particular registers we wanted to configure at boot-time, we could
 
 Now that we've configured the pin, its functions, and our clocks, it's time to generate our code.
 
+> [!IMPORTANT]
+>
+> 1. Within the Configuration Tool, click on the **Generate Code** button in the Config Tool sidebar
+> 1. Click the **Generate Code** at the bottom of the Config Tool screen
+> 1. Click **Save** to save ththe config file before generation!
+> 1. You should see a notification pop-up that a code file was generated
+>
+
 ![Generate Code](img/generate-code.png)
 
 The `Generate code` button will generate a file called `MAX32690_soc_init.c` which contains the configuration from all of the views we went through in the Config Tool. This will include our new LED configuration!
 
-> [!IMPORTANT]
->
-> 1. Save this file once it is generated!
 
-### Build, Flash, Run!
+---
+
+# Build, Flash, Run!
 
 Once the configuration file is generated, we need to rebuild the project.
 
 > [!IMPORTANT]
 >
-> 1. In the CFS Plugin Menu, under `ACTIONS` select `Build`. This will rebuild our application with the new configuration file.
+> 1. Within VS Code, click on the CodeFusion Studio button on the left Side Bar
+> 1. In the **Actions** section, click **Build**
+> 1. When complete, the terminal window will say **Terminal will be reused by tasks, press any key to close it**
 >
+
 ![Rebuild the application](img/cfs-rebuild.png)
