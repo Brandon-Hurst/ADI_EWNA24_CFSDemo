@@ -84,11 +84,7 @@ void blink_halt(char *msg)
         // Toggle LED every 250ms
         MXC_Delay(MXC_DELAY_MSEC(250));
 
-        /** NOTE: Change this when configuring with the Config Tool! */
-        LED_Toggle(LED_RED);        // P0.14 (default)
-        // LED_Toggle(LED_GREEN);   // P2.24
-        // LED_Toggle(LED_BLUE);    // P2.25
-        /*************************************************************/
+        LED_Toggle(LED_RED);
     }
 }
 
@@ -196,12 +192,16 @@ int main(void)
                 blink_halt("Trouble reading ADXL343.");
             }
 
-            printf("\rx:% -2.2f  y:% -2.2f  z:% -2.2f", axis_data[0] * ADXL343_SF_2G,
-                   axis_data[1] * ADXL343_SF_2G, axis_data[2] * ADXL343_SF_2G);
+            printf("\rx:% -2.2f  y:% -2.2f  z:% -2.2f", (double)(axis_data[0] * ADXL343_SF_2G),
+                   (double)(axis_data[1] * ADXL343_SF_2G), (double)(axis_data[2] * ADXL343_SF_2G));
             MXC_Delay(200000);
-            LED_Toggle(0);
-        }
 
-//        MXC_LP_EnterSleepMode();
+            /** NOTE: Change this when configuring with the Config Tool! */
+            LED_Toggle(LED_RED);        // P0.14 (default)
+            // LED_Toggle(LED_GREEN);   // P2.24
+            // LED_Toggle(LED_BLUE);    // P2.25
+            /*************************************************************/
+        }
+        // MXC_LP_EnterSleepMode();
     }
 }

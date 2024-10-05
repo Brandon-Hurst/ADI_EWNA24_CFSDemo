@@ -137,16 +137,101 @@ For the MAX32690, FLASH begins at 0x1000_0000 and SRAM begins at 0x2000_0000.
 
 ## Mess With the Config Tool
 
-#### Overview of the Tool
+To walk through the Config Tools, we'll go about the task of changing the LED that blinks on the MAX32690FTHR.
 
-#### Changing the LED
+> Important
+>
+> Before going into the Config Tool, change the LED_Toggle line at the end of `main()`in `main.c` to a different LED than the one that is currently blinking. The default is red -- try green or blue! Make sure to save main.c before proceeding.
+> ![LED Choices](img/led-choices.png)
+>
 
-##### Pin Functions
+CodeFusion Studio (CFS) provides a combined configuration tool to allow easy configuration of pin and clock settings. The Configuration Tool uses CFSCONFIG files which are generated using the New Project wizard. Clicking on the appropriate .cfsconfig file in your project will open the Config Tool.
+
+![Open Config Tool](img/open-cfg-tool.png)
+
+The Config Tool consists of the following tabs.
+- Pin Mux
+- Function Config
+- Clock Config
+- Registers
+
+##### Pin Mux
+
+To change the LED, we have to initialize a different GPIO pin as the LED output. We can use the Pin Mux Tool for this.
+
+The Pin Mux Tool displays a map of pins showing the current multiplexing configuration. This will update as peripherals are configured and will show which pins are available, in use, or conflicting. Hovering over a pin will provide a summary of what function the pin is and can be assigned to.
+
+![P2.24](img/pinmux-p2_24.png)
+
+> Important
+>
+> Enable the "GPIOx" function for whichever LED you've selected! The options are:
+> - RED - P0.14 (GPIO0)
+> - GREEN - P2.24 (GPIO2)
+> - BLUE - P2.25 (GPIO2)
+> ![Enable the GPIO](img/pinmux-enable-gpio2.png)
 
 ##### Function Config
 
+Displays a list of enabled signals and provides options to adjust the configuration of each. Each option has a default value and can be adjusted with the drop-down menu of allowed options, or a free form text box.
+
+Select the signal name to view the options available.
+
+![Function Config](img/function-cfg.png)
+
+Examples of options:
+
+- Input or output mode
+- Power supply
+- Pull-up/pull-down
+
+On Zephyr projects, two additional fields are provided under function config:
+- Device Tree identifier
+- phandle identifier
+
+> Important
+>
+> To configure the pin to work as an LED, change the pin configuration to the following:
+> - Output Mode
+> - Use VDDIO
+> - Drive Strength 0
+> ![New LED Configuration](img/new-led-function-config.png)
+
 ##### Clock Config
+
+This screen allows you configure the clock frequencies that are used by each of the peripherals and cores on the processor. It includes error checking to ensure that the frequencies used are within the constraints of the processor specification. After configuring your clock tree, you can generate code that will set the hardware to the desired clock configuration.
+
+![Clock Config](img/clk-config.png)
+
+Double-clicking on a multiplexer or peripheral expands the options so that only peripherals in use need to be powered.
+
+![UART0](img/uart0-clock.png)
+
+We don't have to do anything in Clock Config to change the LED, but you can play around with this later if you want.
+
+##### Registers
+
+If we had any particular registers we wanted to configure at boot-time, we could do that with the Registers screen. The Registers view displays all registers and corresponding values, including any modified registers marked with an asterisk (*). The search bar provides filters for modified or unmodified registers and allows filtering based on partial register names.
+
+![Registers](img/registers.png)
 
 ##### Generate Code
 
+Now that we've configured the pin, its functions, and our clocks, it's time to generate our code.
+
+![Generate Code](img/generate-code.png)
+
+The `Generate code` button will generate a file called `MAX32690_soc_init.c` which contains the configuration from all of the views we went through in the Config Tool. This will include our new LED configuration!
+
+> Important
+>
+> Save this file once it is generated!
+
 ##### Build, Flash, Run!
+
+Once the configuration file is generated, we need to rebuild the project.
+
+> Important
+>
+> In the CFS Plugin Menu, under `ACTIONS` select `Build`. This will rebuild our application with the new configuration file.
+> ![CodeFusion Studio](img/cfs-clean-build.png)
