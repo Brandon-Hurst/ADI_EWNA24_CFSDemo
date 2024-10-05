@@ -19,11 +19,11 @@ Open VS Code Serial Monitor to connect to the MAX32690 console UART
  at 115200, 8-N-1 settings. You can use TeraTerm or the VS Code Serial Monitor for this!
 
 > [!IMPORTANT]
-> - Run **Visual Studio Code** from desktop icon
-> - From the menu bar, click **Terminal->New Terminal**
-> - From the terminal window at the bottom right, select **SERIAL MONITOR**
-> - Choose settings to match image below - Baud rate: **115200**, and the port containing **mbed Serial Port**
-> - Click **Start Monitoring**
+> 1. Run **Visual Studio Code** from desktop icon
+> 1. From the menu bar, click **Terminal->New Terminal**
+> 1. From the terminal window at the bottom right, select **SERIAL MONITOR**
+> 1. Choose settings to match image below - Baud rate: **115200**, and the port containing **mbed Serial Port**
+> 1. Click **Start Monitoring**
 
 ![VS Code Setup](img/VSCode-Setup.png)
 
@@ -91,7 +91,7 @@ The next section will walk through the ELF File Explorer tool in CodeFusion Stud
 > [!IMPORTANT]
 > #### Opening the ELF
 >
-> Within the CFS plugin, select `Open ELF File` and open `build/I2C_ADXL343.elf`.
+> 1. Within the CFS plugin, select `Open ELF File` and open `build/I2C_ADXL343.elf`.
 
 ## Overview of the Tool
 
@@ -124,9 +124,9 @@ This screen allows you to see the full symbol table with address, section, and b
 If your .elf file contains debug info in DWARF-4 format, an extra `path` column will appear showing the file and line within source code where that symbol is defined. If the source code is on your machine, you can Right-Click that symbol and select `Go to symbol source code` to view the symbol exactly where it's defined.
 
 > [!IMPORTANT]
-> Try looking at the `adxl343_config` function in the Symbol Explorer, then navigate to its source code!
+> 1. Try looking at the `adxl343_config` function in the Symbol Explorer, then navigate to its source code!
 >
-> You can also try finding the largest symbol in main.c or the adxl343.c driver file!
+> 1. You can also try finding the largest symbol in main.c or the adxl343.c driver file!
 >
 ![Saved Queries](img/saved-queries.png)
 ![Go to Source](img/go-to-source.png)
@@ -143,7 +143,7 @@ For the MAX32690, FLASH begins at 0x1000_0000 and SRAM begins at 0x2000_0000.
 
 > [!IMPORTANT]
 >
-> Knowing the information above, try to find the location of the symbol `adxl_irq_cfg` in RAM. Hint: It's somewhere in the .data segment...
+> 1. Knowing the information above, try to find the location of the symbol `adxl_irq_cfg` in RAM. Hint: It's somewhere in the .data segment...
 >
 ![Clicking into RAM](img/elf-mem-layout-ram.png)
 ![Looking at the RAM segments](img/elf-ram-segments.png)
@@ -156,7 +156,8 @@ To walk through the Config Tools, we'll go about the task of changing the LED th
 
 > [!IMPORTANT]
 >
-> Before going into the Config Tool, change the LED_Toggle line at the end of `main()`in `main.c` to a different LED than the one that is currently blinking. The default is red -- try green or blue! Make sure to save main.c before proceeding.
+> 1. Before going into the Config Tool, change the LED_Toggle line at the end of `main()`in `main.c` to a different LED than the one that is currently blinking. The default is red -- try green or blue! Make sure to save main.c before proceeding.
+> 
 ![LED Choices](img/led-choices.png)
 
 
@@ -180,10 +181,11 @@ The Pin Mux Tool displays a map of pins showing the current multiplexing configu
 
 > [!IMPORTANT]
 >
-> Enable the "GPIOx" function for whichever LED you've selected! The options are:
+> 1. Enable the "GPIOx" function for whichever LED you've selected! The options are:
 > - RED - P0.14 (GPIO0)
 > - GREEN - P2.24 (GPIO2)
 > - BLUE - P2.25 (GPIO2)
+>
 ![Enable the GPIO](img/pinmux-enable-GPIO2.png)
 
 ### Function Config
@@ -206,10 +208,10 @@ On Zephyr projects, two additional fields are provided under function config:
 
 > [!IMPORTANT]
 >
-> To configure the pin to work as an LED, change the pin configuration to the following:
-> - Output Mode
-> - Use VDDIO
-> - Drive Strength 0
+> 1. To configure the pin to work as an LED, change the pin configuration to the following:
+>   - Output Mode
+>   - Use VDDIO
+>   - Drive Strength 0
 >
 ![New LED Configuration](img/new-led-function-config.png)
 
@@ -241,7 +243,7 @@ The `Generate code` button will generate a file called `MAX32690_soc_init.c` whi
 
 > [!IMPORTANT]
 >
-> Save this file once it is generated!
+> 1. Save this file once it is generated!
 
 ### Build, Flash, Run!
 
@@ -249,5 +251,6 @@ Once the configuration file is generated, we need to rebuild the project.
 
 > [!IMPORTANT]
 >
-> In the CFS Plugin Menu, under `ACTIONS` select `Build`. This will rebuild our application with the new configuration file.
+> 1. In the CFS Plugin Menu, under `ACTIONS` select `Build`. This will rebuild our application with the new configuration file.
+>
 ![Rebuild the application](img/cfs-rebuild.png)
