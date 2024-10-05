@@ -20,9 +20,6 @@ Open VS Code Serial Monitor to connect to the MAX32690 console UART
 
 > [!IMPORTANT]
 > 1. Run **Visual Studio Code** from desktop icon
-> 1. From the menu bar, click **File -> Open Folder**
-> 1. Browse to **This PC -> Local Disk (C:) -> ewna -> ADI_EWNA24_CFSDEMO**
-> 1. Highlight `I2C_ADXL343` and click **Select Folder**
 > 1. From the menu bar, click **Terminal -> New Terminal**
 > 1. From the terminal window at the bottom right, select **SERIAL MONITOR**
 > 1. Choose settings to match image below - Baud rate: **115200**, and the port containing **mbed Serial Port**
@@ -92,9 +89,17 @@ This lab was built with the following hardware components.
 The next section will walk through the ELF File Explorer tool in CodeFusion Studio.
 
 > [!IMPORTANT]
+> #### Opening the project
+>
+> 1. From the VS Code menu bar, click **File -> Open Folder**
+> 1. Browse to **This PC -> Local Disk (C:) -> ewna -> ADI_EWNA24_CFSDEMO**
+> 1. Highlight **I2C_ADXL343** and click **Select Folder**
+
+> [!IMPORTANT]
 > #### Opening the ELF
 >
-> 1. Within the CFS plugin, select `Open ELF File` and open `build/I2C_ADXL343.elf`.
+> 1. Within VS Code, click on the CodeFusion Studio button on the left Side Bar
+> 1. Select `Open ELF File` and open `build/I2C_ADXL343.elf`.
 
 ## Overview of the Tool
 
