@@ -143,7 +143,7 @@ If your .elf file contains debug info in DWARF-4 format, an extra `path` column 
 > 1. Try looking at the `adxl343_config` function in the Symbol Explorer, then navigate to its source code!
 > <details> 
 >  <summary>Question: What line of code is the start of adxl343_config? </summary>
->   Answer: main.c:108 
+>   Answer: main.c line 108 
 > </details>
 >
 > 1. You can also try finding the largest symbol in main.c or the adxl343.c driver file!
