@@ -96,6 +96,13 @@ The next section will walk through the ELF File Explorer tool in CodeFusion Stud
 > 1. Highlight `I2C_ADXL343` and click **Select Folder**
 
 > [!IMPORTANT]
+> #### Completing your initial build
+>
+> 1. Within VS Code, click on the CodeFusion Studio button on the left Side Bar
+> 1. In the **Actions** section, click **Build**
+> 1. When complete, the terminal window will say **Terminal will be reused by tasks, press any key to close it**
+
+> [!IMPORTANT]
 > #### Opening the ELF
 >
 > 1. Within VS Code, click on the CodeFusion Studio button on the left Side Bar
@@ -134,6 +141,10 @@ If your .elf file contains debug info in DWARF-4 format, an extra `path` column 
 
 > [!IMPORTANT]
 > 1. Try looking at the `adxl343_config` function in the Symbol Explorer, then navigate to its source code!
+> <details> 
+>  <summary>Question: What line of code is the start of adxl343_config? </summary>
+>   Answer: main.c:108 
+> </details>
 >
 > 1. You can also try finding the largest symbol in main.c or the adxl343.c driver file!
 >
