@@ -176,7 +176,13 @@ To walk through the Config Tools, we'll go about the task of changing the LED th
 
 > [!IMPORTANT]
 >
-> 1. Before going into the Config Tool, change the LED_Toggle line at the end of `main()`in `main.c` to a different LED than the one that is currently blinking. The default is red -- try green or blue! Make sure to save main.c before proceeding.
+> Before going into the Config Tool, change the LED_Toggle line at the end of `main()`in `main.c` to a different LED than the one that is currently blinking. The default is red -- try green or blue! 
+> 1. Within VS Code, click on the Explorer button on the left Side Bar
+> 1. Click on `main.c` to open the file in the editor
+> 1. At the end of the file you will see a section around line 199 with several lines commented out
+> 1. Add `//` in front of the line `LED_Toggle(LED_RED);`
+> 1. Remove `//` from the line of the color you wish to activate
+> 1. Save the file via **File menu -> Save**
 > 
 ![LED Choices](img/led-choices.png)
 
