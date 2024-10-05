@@ -110,7 +110,7 @@ This screen allows you to see the full symbol table with address, section, and b
 ##### Navigating to Symbols in Code
 If your .elf file contains debug info in DWARF-4 format, an extra `path` column will appear showing the file and line within source code where that symbol is defined. If the source code is on your machine, you can Right-Click that symbol and select `Go to symbol source code` to view the symbol exactly where it's defined.
 
-> Important
+> [!IMPORTANT]
 > Try looking at the `adxl343_config` function in the Symbol Explorer, then navigate to its source code!
 >
 > You can also try finding the largest symbol in main.c or the adxl343.c driver file!
@@ -128,7 +128,7 @@ This type of information can be very useful to examine as the output of a linker
 
 For the MAX32690, FLASH begins at 0x1000_0000 and SRAM begins at 0x2000_0000.
 
-> Important
+> [!IMPORTANT]
 >
 > Knowing the information above, try to find the location of the symbol `adxl_irq_cfg` in RAM. Hint: It's somewhere in the .data segment...
 > ![Clicking into RAM](img/elf-mem-layout-ram.png)
@@ -139,7 +139,7 @@ For the MAX32690, FLASH begins at 0x1000_0000 and SRAM begins at 0x2000_0000.
 
 To walk through the Config Tools, we'll go about the task of changing the LED that blinks on the MAX32690FTHR.
 
-> Important
+> [!IMPORTANT]
 >
 > Before going into the Config Tool, change the LED_Toggle line at the end of `main()`in `main.c` to a different LED than the one that is currently blinking. The default is red -- try green or blue! Make sure to save main.c before proceeding.
 > ![LED Choices](img/led-choices.png)
@@ -163,7 +163,7 @@ The Pin Mux Tool displays a map of pins showing the current multiplexing configu
 
 ![P2.24](img/pinmux-p2_24.png)
 
-> Important
+> [!IMPORTANT]
 >
 > Enable the "GPIOx" function for whichever LED you've selected! The options are:
 > - RED - P0.14 (GPIO0)
@@ -189,7 +189,7 @@ On Zephyr projects, two additional fields are provided under function config:
 - Device Tree identifier
 - phandle identifier
 
-> Important
+> [!IMPORTANT]
 >
 > To configure the pin to work as an LED, change the pin configuration to the following:
 > - Output Mode
@@ -223,7 +223,7 @@ Now that we've configured the pin, its functions, and our clocks, it's time to g
 
 The `Generate code` button will generate a file called `MAX32690_soc_init.c` which contains the configuration from all of the views we went through in the Config Tool. This will include our new LED configuration!
 
-> Important
+> [!IMPORTANT]
 >
 > Save this file once it is generated!
 
@@ -231,7 +231,7 @@ The `Generate code` button will generate a file called `MAX32690_soc_init.c` whi
 
 Once the configuration file is generated, we need to rebuild the project.
 
-> Important
+> [!IMPORTANT]
 >
 > In the CFS Plugin Menu, under `ACTIONS` select `Build`. This will rebuild our application with the new configuration file.
 > ![Rebuild the application](img/cfs-rebuild.png)
