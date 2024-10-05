@@ -93,13 +93,14 @@ The next section will walk through the ELF File Explorer tool in CodeFusion Stud
 >
 > 1. From the VS Code menu bar, click **File -> Open Folder**
 > 1. Browse to **This PC -> Local Disk (C:) -> ewna -> ADI_EWNA24_CFSDEMO**
-> 1. Highlight **I2C_ADXL343** and click **Select Folder**
+> 1. Highlight `I2C_ADXL343` and click **Select Folder**
 
 > [!IMPORTANT]
 > #### Opening the ELF
 >
 > 1. Within VS Code, click on the CodeFusion Studio button on the left Side Bar
-> 1. Select `Open ELF File` and open `build/I2C_ADXL343.elf`.
+> 1. Select **Open ELF File**
+> 1. Select `build/I2C_ADXL343.elf` and click **Load**
 
 ## Overview of the Tool
 
