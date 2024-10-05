@@ -234,4 +234,4 @@ Once the configuration file is generated, we need to rebuild the project.
 > Important
 >
 > In the CFS Plugin Menu, under `ACTIONS` select `Build`. This will rebuild our application with the new configuration file.
-> ![CodeFusion Studio](img/cfs-clean-build.png)
+> ![Rebuild the application](img/cfs-rebuild.png)
