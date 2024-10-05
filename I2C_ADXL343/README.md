@@ -144,6 +144,7 @@ For the MAX32690, FLASH begins at 0x1000_0000 and SRAM begins at 0x2000_0000.
 > [!IMPORTANT]
 >
 > Knowing the information above, try to find the location of the symbol `adxl_irq_cfg` in RAM. Hint: It's somewhere in the .data segment...
+>
 ![Clicking into RAM](img/elf-mem-layout-ram.png)
 ![Looking at the RAM segments](img/elf-ram-segments.png)
 
@@ -209,6 +210,7 @@ On Zephyr projects, two additional fields are provided under function config:
 > - Output Mode
 > - Use VDDIO
 > - Drive Strength 0
+>
 ![New LED Configuration](img/new-led-function-config.png)
 
 ### Clock Config
