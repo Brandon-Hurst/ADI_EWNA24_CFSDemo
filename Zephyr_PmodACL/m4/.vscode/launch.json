@@ -1,0 +1,64 @@
+{
+  "configurations": [
+    {
+      "name": "CFS: Cortex Debug with GDB and OpenOCD (ARM Embedded)",
+      "executable": "${command:cfs.selectProgramFile}",
+      "cwd": "${command:cfs.setDebugPath}",
+      "request": "launch",
+      "type": "cortex-debug",
+      "runToEntryPoint": "main",
+      "servertype": "openocd",
+      "serverpath": "${config:cfs.openocd.path}/bin/openocd",
+      "armToolchainPath": "${config:cfs.toolchain.armAArch32GCC.path}/bin",
+      "svdFile": "${command:cfs.cmsis.selectSvdFile}",
+      "searchDir": [
+        "${command:cfs.cmsis.selectCmsisPack}/openocd/scripts"
+      ],
+      "configFiles": [
+        "${command:cfs.openocd.selectInterface}",
+        "${command:cfs.openocd.selectTarget}"
+      ],
+      "gdbTarget": "localhost:3333",
+      "preLaunchCommands": [
+        "set logging overwrite on",
+        "set logging file debug-arm.log",
+        "set logging on",
+        "set remotetimeout 60",
+        "tbreak abort",
+        "tbreak _exit"
+      ]
+    },
+    {
+      "name": "CFS: Cortex Debug with JLink and JlinkGDBServer (ARM Embedded)",
+      "executable": "${command:cfs.selectProgramFile}",
+      "cwd": "${command:cfs.setDebugPath}",
+      "request": "launch",
+      "type": "cortex-debug",
+      "runToEntryPoint": "main",
+      "servertype": "jlink",
+      "linux": {
+        "serverpath": "${command:cfs.jlink.setJlinkPath}/JlinkGDBServerCLExe"
+      },
+      "windows": {
+        "serverpath": "${command:cfs.jlink.setJlinkPath}/JlinkGDBServerCL.exe"
+      },
+      "osx": {
+        "serverpath": "${command:cfs.jlink.setJlinkPath}/JlinkGDBServerCLExe"
+      },
+      "device": "${command:cfs.jlink.setDevice}",
+      "interface": "swd",
+      "armToolchainPath": "${config:cfs.toolchain.armAArch32GCC.path}/bin",
+      "svdFile": "${command:cfs.cmsis.selectSvdFile}",
+      "gdbTarget": "localhost:2331",
+      "preLaunchCommands": [
+        "set logging overwrite on",
+        "set logging file debug-arm.log",
+        "set logging on",
+        "set remotetimeout 60",
+        "tbreak abort",
+        "tbreak _exit"
+      ],
+      "preLaunchTask": "CFS: build"
+    }
+  ]
+}

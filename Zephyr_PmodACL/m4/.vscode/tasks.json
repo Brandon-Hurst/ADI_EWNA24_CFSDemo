@@ -1,0 +1,15 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"command": "${config:cfs.zephyr.workspace.path}/zephyr-env.cmd && west build -b ${config:cfs.project.board} --shield pmod_acl",
+			"id": "build",
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"label": "CFS: build"
+		}
+	]
+}

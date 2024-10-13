@@ -1,0 +1,137 @@
+{
+  "Copyright": "Copyright (c) 2024 Analog Devices, Inc.  All rights reserved. This software is proprietary to Analog Devices, Inc. and its licensors.",
+  "DataModelVersion": "1.0.155",
+  "DataModelSchemaVersion": "1.0.0",
+  "Soc": "max32690",
+  "Package": "wlp",
+  "Pins": [
+    {
+      "Pin": "C4",
+      "Peripheral": "SPI4",
+      "Signal": "MOSI",
+      "Config": {
+        "PWR": "VDDIOH"
+      },
+      "ControlResetValues": {
+        "PWR": "VDDIO"
+      }
+    },
+    {
+      "Pin": "C5",
+      "Peripheral": "SPI4",
+      "Signal": "SCK",
+      "Config": {
+        "PWR": "VDDIOH"
+      },
+      "ControlResetValues": {
+        "PWR": "VDDIO"
+      }
+    },
+    {
+      "Pin": "D5",
+      "Peripheral": "SPI4",
+      "Signal": "MISO",
+      "Config": {
+        "PWR": "VDDIOH"
+      },
+      "ControlResetValues": {
+        "PWR": "VDDIO"
+      }
+    },
+    {
+      "Pin": "E5",
+      "Peripheral": "SPI4",
+      "Signal": "SS0",
+      "Config": {
+        "PWR": "VDDIOH"
+      },
+      "ControlResetValues": {
+        "PWR": "VDDIO"
+      }
+    },
+    {
+      "Pin": "F6",
+      "Peripheral": "I2C0",
+      "Signal": "SCL",
+      "Config": {
+        "PWR": "VDDIOH",
+        "PS": "DIS"
+      },
+      "ControlResetValues": {
+        "PWR": "VDDIO",
+        "PS": "DIS"
+      }
+    },
+    {
+      "Pin": "G6",
+      "Peripheral": "I2C0",
+      "Signal": "SDA",
+      "Config": {
+        "PWR": "VDDIOH",
+        "PS": "DIS"
+      },
+      "ControlResetValues": {
+        "PWR": "VDDIO",
+        "PS": "DIS"
+      }
+    },
+    {
+      "Pin": "J5",
+      "Peripheral": "UART0",
+      "Signal": "TX",
+      "Config": {
+        "PWR": "VDDIO"
+      },
+      "ControlResetValues": {
+        "PWR": "VDDIO"
+      }
+    },
+    {
+      "Pin": "K5",
+      "Peripheral": "UART0",
+      "Signal": "RX",
+      "Config": {
+        "PWR": "VDDIO",
+        "PS": "WEAK_PU"
+      },
+      "ControlResetValues": {
+        "PWR": "VDDIO",
+        "PS": "WEAK_PU"
+      }
+    }
+  ],
+  "ClockNodes": [
+    {
+      "Type": "Peripheral",
+      "Name": "I2C0/1/2",
+      "Control": "I2C0_ENABLE",
+      "Value": "TRUE",
+      "Enabled": true
+    },
+    {
+      "Type": "Peripheral",
+      "Name": "DMA",
+      "Control": "ENABLE",
+      "Value": "TRUE",
+      "Enabled": true
+    },
+    {
+      "Type": "Peripheral",
+      "Name": "UART0/1/2",
+      "Control": "UART0_ENABLE",
+      "Value": "TRUE",
+      "Enabled": true
+    },
+    {
+      "Type": "Peripheral",
+      "Name": "SPI3/4",
+      "Control": "SPI4_ENABLE",
+      "Value": "TRUE",
+      "Enabled": true
+    }
+  ],
+  "Timestamp": "2024-10-13T23:05:59.475Z",
+  "BoardName": "AD-APARD32690-SL",
+  "FirmwarePlatform": "zephyr-3.7",
+  "ZephyrId": "apard32690/max32690/m4"
+}
