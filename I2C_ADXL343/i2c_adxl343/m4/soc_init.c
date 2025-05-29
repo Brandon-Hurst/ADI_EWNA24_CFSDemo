@@ -4,7 +4,7 @@
  * This file was generated using Analog Devices CodeFusion Studio.
  * https://github.com/analogdevicesinc/codefusion-studio
  *
- * Generated at: 2025-05-29T15:35:25.189Z 
+ * Generated at: 2025-05-29T16:57:48.727Z 
  *
  * SPDX-License-Identifier: Apache-2.0
  * Copyright (c) 2025 Analog Devices, Inc.
@@ -68,9 +68,9 @@ int PinInit(void) {
   const mxc_gpio_cfg_t cfg_p2_25 = {
     MXC_GPIO2,
     MXC_GPIO_PIN_25,
-    MXC_GPIO_FUNC_OUT,
+    MXC_GPIO_FUNC_IN,
     MXC_GPIO_PAD_NONE,
-    MXC_GPIO_VSSEL_VDDIOH,
+    MXC_GPIO_VSSEL_VDDIO,
     MXC_GPIO_DRVSTR_0 
   };
   result = MXC_GPIO_Config(&cfg_p2_25);
@@ -83,9 +83,9 @@ int PinInit(void) {
   const mxc_gpio_cfg_t cfg_p0_14 = {
     MXC_GPIO0,
     MXC_GPIO_PIN_14,
-    MXC_GPIO_FUNC_OUT,
+    MXC_GPIO_FUNC_IN,
     MXC_GPIO_PAD_NONE,
-    MXC_GPIO_VSSEL_VDDIOH,
+    MXC_GPIO_VSSEL_VDDIO,
     MXC_GPIO_DRVSTR_0 
   };
   result = MXC_GPIO_Config(&cfg_p0_14);
@@ -128,9 +128,9 @@ int PinInit(void) {
   const mxc_gpio_cfg_t cfg_p2_24 = {
     MXC_GPIO2,
     MXC_GPIO_PIN_24,
-    MXC_GPIO_FUNC_OUT,
+    MXC_GPIO_FUNC_IN,
     MXC_GPIO_PAD_NONE,
-    MXC_GPIO_VSSEL_VDDIOH,
+    MXC_GPIO_VSSEL_VDDIO,
     MXC_GPIO_DRVSTR_0 
   };
   result = MXC_GPIO_Config(&cfg_p2_24);

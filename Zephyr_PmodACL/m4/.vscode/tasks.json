@@ -3,13 +3,33 @@
 	"tasks": [
 		{
 			"type": "shell",
-			"command": "${config:cfs.zephyr.workspace.path}/zephyr-env.cmd && west build -b ${config:cfs.project.board} --shield pmod_acl",
+			"command": "${config:cfs.zephyr.workspace.path}/zephyr-env.cmd && west build -b ${config:cfs.project.board} --shield pmod-acl",
 			"id": "build",
 			"problemMatcher": [
 				"$gcc"
 			],
 			"group": "build",
 			"label": "CFS: build"
-		}
+		},
+		// {
+		// 	"type": "cppbuild",
+		// 	"label": "C/C++: arm-none-eabi-gcc.exe build active file",
+		// 	"command": "c:\\MaximSDK\\Tools\\GNUTools\\10.3\\bin\\arm-none-eabi-gcc.exe",
+		// 	"args": [
+		// 		"-fdiagnostics-color=always",
+		// 		"-g",
+		// 		"${file}",
+		// 		"-o",
+		// 		"${fileDirname}\\${fileBasenameNoExtension}.exe"
+		// 	],
+		// 	"options": {
+		// 		"cwd": "c:\\MaximSDK\\Tools\\GNUTools\\10.3\\bin"
+		// 	},
+		// 	"problemMatcher": [
+		// 		"$gcc"
+		// 	],
+		// 	"group": "build",
+		// 	"detail": "compiler: c:\\MaximSDK\\Tools\\GNUTools\\10.3\\bin\\arm-none-eabi-gcc.exe"
+		// }
 	]
 }

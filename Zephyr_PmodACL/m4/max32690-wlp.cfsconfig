@@ -128,9 +128,23 @@
       "Control": "SPI4_ENABLE",
       "Value": "TRUE",
       "Enabled": true
+    },
+    {
+      "Type": "Mux",
+      "Name": "SYS_OSC Mux",
+      "Control": "MUX",
+      "Value": "IPO",
+      "Enabled": true
+    },
+    {
+      "Type": "Divider",
+      "Name": "PRESCALER",
+      "Control": "DIV",
+      "Value": "2",
+      "Enabled": true
     }
   ],
-  "Timestamp": "2024-10-13T23:05:59.475Z",
+  "Timestamp": "2024-10-16T18:12:00.581Z",
   "BoardName": "AD-APARD32690-SL",
   "FirmwarePlatform": "zephyr-3.7",
   "ZephyrId": "apard32690/max32690/m4"

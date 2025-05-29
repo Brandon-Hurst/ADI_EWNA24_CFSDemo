@@ -60,7 +60,7 @@
 
 void GPIO2_IRQHandler(void)
 {
-    MXC_GPIO_Handler(MXC_GPIO_GET_IDX(ADXL343_IRQ_PORT));
+    MXC_GPIO_Handler(2);
 }
 
 static mxc_gpio_cfg_t adxl343_irq_cfg = { .port = ADXL343_IRQ_PORT,
@@ -192,14 +192,14 @@ int main(void)
                 blink_halt("Trouble reading ADXL343.");
             }
 
-            printf("\rx:% -2.2f  y:% -2.2f  z:% -2.2f\n", (double)(axis_data[0] * ADXL343_SF_2G),
+            printf("\rx:% -2.2f  y:% -2.2f  z:% -2.2f", (double)(axis_data[0] * ADXL343_SF_2G),
                    (double)(axis_data[1] * ADXL343_SF_2G), (double)(axis_data[2] * ADXL343_SF_2G));
-            MXC_Delay(MXC_DELAY_MSEC(200));
+            MXC_Delay(200000);
 
             /** NOTE: Change this when configuring with the Config Tool! */
-            // LED_Toggle(LED_RED);        // P0.14 (default)
-            LED_Toggle(LED_GREEN);   // P2.24
-            LED_Toggle(LED_BLUE);    // P2.25
+            LED_Toggle(LED_RED);        // P0.14 (default)
+            // LED_Toggle(LED_GREEN);   // P2.24
+            // LED_Toggle(LED_BLUE);    // P2.25
             /*************************************************************/
         }
         // MXC_LP_EnterSleepMode();

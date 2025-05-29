@@ -1,0 +1,158 @@
+/**
+ * Configuration for MAX32690-TQFN
+ *
+ * This file was generated using Analog Devices CodeFusion Studio.
+ * https://github.com/analogdevicesinc/codefusion-studio
+ *
+ * Generated at: 2024-12-16T18:45:29.300Z
+ * Generated with: C:\analog\cfs\1.0.0\Utils\cfsutil\bin\node.exe C:\analog\cfs\1.0.0\Utils\cfsutil\bin\run generate --engine msdk --input c:\workspace\cfs_projects\EWNA_REPO\I2C_ADXL343\max32690-tqfn.cfsconfig --preview --format json
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ * Copyright (c) 2024 Analog Devices, Inc.
+ */
+
+#include <mxc_device.h>
+#include <mxc_sys.h>
+#include <icc.h>
+#include <tmr.h>
+#include <uart.h>
+
+/* Prototypes for functions in this file. */
+int PinInit(void);
+int ClockInit(void);
+
+int PinInit(void) {
+  int result;
+
+  /* Initialize all the used GPIO Ports. */
+  result = MXC_GPIO_Init(MXC_GPIO_PORT_0 | MXC_GPIO_PORT_1 | MXC_GPIO_PORT_2);
+  if (result != E_NO_ERROR) {
+    return result;
+  }
+
+  MXC_GPIO_SetConfigLock(MXC_GPIO_CONFIG_UNLOCKED);
+  /* P2.7 (1): assigned to I2C0_SDA */
+  const mxc_gpio_cfg_t cfg_p2_7 = {
+    MXC_GPIO2,
+    MXC_GPIO_PIN_7,
+    MXC_GPIO_FUNC_ALT1,
+    MXC_GPIO_PAD_NONE,
+    MXC_GPIO_VSSEL_VDDIOH,
+    MXC_GPIO_DRVSTR_0
+  };
+  result = MXC_GPIO_Config(&cfg_p2_7);
+  if (result != E_NO_ERROR) {
+    return result;
+  }
+
+  /* P2.8 (2): assigned to I2C0_SCL */
+  const mxc_gpio_cfg_t cfg_p2_8 = {
+    MXC_GPIO2,
+    MXC_GPIO_PIN_8,
+    MXC_GPIO_FUNC_ALT1,
+    MXC_GPIO_PAD_NONE,
+    MXC_GPIO_VSSEL_VDDIOH,
+    MXC_GPIO_DRVSTR_0
+  };
+  result = MXC_GPIO_Config(&cfg_p2_8);
+  if (result != E_NO_ERROR) {
+    return result;
+  }
+
+  /* P0.14 (14): assigned to GPIO0_P0.14 */
+  const mxc_gpio_cfg_t cfg_p0_14 = {
+    MXC_GPIO0,
+    MXC_GPIO_PIN_14,
+    MXC_GPIO_FUNC_OUT,
+    MXC_GPIO_PAD_NONE,
+    MXC_GPIO_VSSEL_VDDIO,
+    MXC_GPIO_DRVSTR_0
+  };
+  result = MXC_GPIO_Config(&cfg_p0_14);
+  if (result != E_NO_ERROR) {
+    return result;
+  }
+
+  /* P1.7 (17): assigned to GPIO1_P1.7 */
+  const mxc_gpio_cfg_t cfg_p1_7 = {
+    MXC_GPIO1,
+    MXC_GPIO_PIN_7,
+    MXC_GPIO_FUNC_IN,
+    MXC_GPIO_PAD_NONE,
+    MXC_GPIO_VSSEL_VDDIOH,
+    MXC_GPIO_DRVSTR_0
+  };
+  result = MXC_GPIO_Config(&cfg_p1_7);
+  if (result != E_NO_ERROR) {
+    return result;
+  }
+
+  /* P2.11 (66): assigned to UART0_RX */
+  const mxc_gpio_cfg_t cfg_p2_11 = {
+    MXC_GPIO2,
+    MXC_GPIO_PIN_11,
+    MXC_GPIO_FUNC_ALT1,
+    MXC_GPIO_PAD_WEAK_PULL_UP,
+    MXC_GPIO_VSSEL_VDDIO,
+    MXC_GPIO_DRVSTR_0
+  };
+  result = MXC_GPIO_Config(&cfg_p2_11);
+  if (result != E_NO_ERROR) {
+    return result;
+  }
+
+  /* P2.12 (67): assigned to UART0_TX */
+  const mxc_gpio_cfg_t cfg_p2_12 = {
+    MXC_GPIO2,
+    MXC_GPIO_PIN_12,
+    MXC_GPIO_FUNC_ALT1,
+    MXC_GPIO_PAD_NONE,
+    MXC_GPIO_VSSEL_VDDIO,
+    MXC_GPIO_DRVSTR_0
+  };
+  result = MXC_GPIO_Config(&cfg_p2_12);
+  if (result != E_NO_ERROR) {
+    return result;
+  }
+
+  MXC_GPIO_SetConfigLock(MXC_GPIO_CONFIG_LOCKED);
+
+  return E_NO_ERROR;
+}
+
+int ClockInit(void) {
+  /* DMA: Enable the Component Clock. */
+  MXC_SYS_ClockEnable(MXC_SYS_PERIPH_CLOCK_DMA);
+
+  /* I2C0/1/2: Enable the I2C0 Clock. */
+  MXC_SYS_ClockEnable(MXC_SYS_PERIPH_CLOCK_I2C0);
+
+  /* ICC: Enable the Component Clock. */
+  MXC_SYS_ClockEnable(MXC_SYS_PERIPH_CLOCK_SYSCACHE);
+  MXC_ICC_Enable(MXC_ICC0);
+  MXC_ICC_Enable(MXC_ICC1);
+
+  /* TMR0/1/2/3: Enable the TMR0 Clock. */
+  MXC_SYS_ClockEnable(MXC_SYS_PERIPH_CLOCK_TMR0);
+
+  /* TMR0/1/2/3: Enable the TMR1 Clock. */
+  MXC_SYS_ClockEnable(MXC_SYS_PERIPH_CLOCK_TMR1);
+
+  /* TMR0/1/2/3: Enable the TMR2 Clock. */
+  MXC_SYS_ClockEnable(MXC_SYS_PERIPH_CLOCK_TMR2);
+
+  /* TMR0/1/2/3: Enable the TMR3 Clock. */
+  MXC_SYS_ClockEnable(MXC_SYS_PERIPH_CLOCK_TMR3);
+
+  /* UART0/1/2: Enable the UART2 Clock. */
+  MXC_SYS_ClockEnable(MXC_SYS_PERIPH_CLOCK_UART2);
+
+  /* Lock the clock configuration for enabled peripherals. */
+  MXC_TMR_LockClockSource(MXC_TMR0, true);
+  MXC_TMR_LockClockSource(MXC_TMR1, true);
+  MXC_TMR_LockClockSource(MXC_TMR2, true);
+  MXC_TMR_LockClockSource(MXC_TMR3, true);
+  MXC_UART_LockClockSource(MXC_UART2, true);
+
+  return E_NO_ERROR;
+}

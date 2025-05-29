@@ -4,8 +4,8 @@
  * This file was automatically generated using Analog Devices Config
  * https://github.com/adi-ctx/cfs-cfsutil
  *
- * Generated at: 2024-10-13T23:06:03.657Z
- * Generated with: C:\analog\cfs\1.0.0\Utils\cfsutil\bin\node.exe C:\analog\cfs\1.0.0\Utils\cfsutil\bin\run generate --engine zephyr --input c:\workspace\cfs_projects\Zephyr_PmodACL\m4\max32690-wlp.cfsconfig --preview --format json
+ * Generated at: 2024-10-16T18:13:17.276Z
+ * Generated with: C:\analog\cfs\1.0.0\Utils\cfsutil\bin\node.exe C:\analog\cfs\1.0.0\Utils\cfsutil\bin\run generate --engine zephyr --input c:\workspace\cfs_projects\EWNA_REPO\Zephyr_PmodACL\m4\max32690-wlp.cfsconfig --preview --format json
  *
  * SPDX-License-Identifier: Apache-2.0
  * Copyright (c) 2024 Analog Devices, Inc.
@@ -128,10 +128,10 @@
 
 /* System clock configuration */
 &gcr {
-	clocks = <&clk_iso>;
-	sysclk-prescaler = <1>;
+	clocks = <&clk_ipo>;
+	sysclk-prescaler = <2>;
 };
 
-&clk_iso {
+&clk_ipo {
 	status = "okay";
 };

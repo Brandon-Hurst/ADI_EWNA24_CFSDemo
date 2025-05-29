@@ -5,18 +5,8 @@
   "Soc": "MAX32690",
   "Package": "TQFN",
   "BoardName": "FTHR",
-  "Timestamp": "2025-05-29T16:52:13.900Z",
+  "Timestamp": "2025-05-29T15:02:38.617Z",
   "Pins": [
-    {
-      "Pin": "1",
-      "Peripheral": "I2C0",
-      "Signal": "SDA"
-    },
-    {
-      "Pin": "2",
-      "Peripheral": "I2C0",
-      "Signal": "SCL"
-    },
     {
       "Pin": "6",
       "Peripheral": "GPIO2",
@@ -70,25 +60,7 @@
       "Name": "SYS_OSC Mux",
       "Control": "MUX",
       "Value": "IPO",
-      "Enabled": false
-    },
-    {
-      "Name": "I2C0/2",
-      "Control": "I2C0_ENABLE",
-      "Value": "TRUE",
       "Enabled": true
-    },
-    {
-      "Name": "Bluetooth",
-      "Control": "ENABLE",
-      "Value": "TRUE",
-      "Enabled": true
-    },
-    {
-      "Name": "LPTMR0",
-      "Control": "MUX",
-      "Value": "ERTCO",
-      "Enabled": false
     }
   ],
   "Projects": [
@@ -101,14 +73,12 @@
       "ExternallyManaged": false,
       "PlatformConfig": {
         "ProjectName": "m4",
-        "Cflags": [
-          "-fdump-rtl-expand",
-          "-fdump-rtl-dfinish",
-          "-fdump-ipa-cgraph",
-          "-fstack-usage",
-          "-gdwarf-4"
-        ]
+        "Cflags": ["-fdump-rtl-expand","-fdump-rtl-dfinish","-fdump-ipa-cgraph","-fstack-usage","-gdwarf-4"]
       },
+      "Name": "ARM Cortex-M4",
+      "Description": "ARM Cortex-M4",
+      "CoreNum": 0,
+      "IsPrimary": true,
       "Partitions": [
         {
           "Name": "FLASH",
@@ -116,7 +86,8 @@
           "Size": 3407872,
           "IsOwner": true,
           "Access": "R",
-          "Config": {}
+          "Config": {
+          }
         },
         {
           "Name": "SRAM",
@@ -124,7 +95,8 @@
           "Size": 1048576,
           "IsOwner": true,
           "Access": "R/W",
-          "Config": {}
+          "Config": {
+          }
         }
       ],
       "Peripherals": [
@@ -197,17 +169,17 @@
             {
               "Name": "P2.24",
               "Config": {
-                "MODE": "IN",
+                "MODE": "OUT",
                 "PWR": "VDDIO",
-                "PS": "DIS"
+                "DS": "0"
               }
             },
             {
               "Name": "P2.25",
               "Config": {
-                "MODE": "IN",
+                "MODE": "OUT",
                 "PWR": "VDDIO",
-                "PS": "DIS"
+                "DS": "0"
               }
             }
           ],
@@ -219,43 +191,13 @@
             {
               "Name": "P0.14",
               "Config": {
-                "MODE": "IN",
+                "MODE": "OUT",
                 "PWR": "VDDIO",
-                "PS": "DIS"
+                "DS": "0"
               }
             }
           ],
           "Config": {}
-        },
-        {
-          "Name": "I2C0",
-          "Signals": [
-            {
-              "Name": "SCL",
-              "Config": {
-                "PWR": "VDDIOH",
-                "PS": "DIS"
-              }
-            },
-            {
-              "Name": "SDA",
-              "Config": {
-                "PWR": "VDDIOH",
-                "PS": "DIS"
-              }
-            }
-          ],
-          "Config": {
-            "MODE": "TARGET",
-            "GC_ADDR_EN": "IGNORE",
-            "CLKSTR": "TRUE",
-            "PRELOAD_MODE": "NORMAL",
-            "SCL_TIMEOUT": "0",
-            "TRANSMIT_DMA_ENABLE": "FALSE",
-            "RECEIVE_DMA_ENABLE": "FALSE",
-            "TARGET0_ADDR": "0",
-            "FREQ": "100000"
-          }
         }
       ]
     },
@@ -271,24 +213,13 @@
     }
   ],
   "ClockFrequencies": {
-    "SYS_CLK_DIV_2": 60000000,
-    "ERFO_CLK": 32000000,
-    "HFXOUT": 32000000,
-    "DBB": 60000000,
     "Cortex-M4": 120000000,
     "FLC0/1": 120000000,
     "SYS_OSC": 120000000,
-    "ERFO_OSC": 32000000,
-    "ERFO_OUT": 32000000,
     "IBRO": 7372800,
     "SYS_CLK": 120000000,
     "IPO": 120000000,
-    "PCLK": 60000000,
-    "ERFO": 32000000,
-    "BLE": 32000000,
-    "I2C0": 60000000,
-    "I2C2": 60000000,
-    "UART0": 7372800,
-    "UART2": 60000000
+    "UART0": 60000000,
+    "UART2": 7372800
   }
 }
