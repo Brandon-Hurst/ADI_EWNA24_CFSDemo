@@ -1,0 +1,916 @@
+
+;; Function _getpid (_getpid, funcdef_no=141, decl_uid=9182, cgraph_uid=142, symbol_order=144)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 7.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":41:5 -1
+     (nil))
+(insn 6 5 10 2 (set (reg:SI 114 [ <retval> ])
+        (const_int -17 [0xffffffffffffffef])) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":41:12 discrim 1 -1
+     (nil))
+(insn 10 6 11 2 (set (reg/i:SI 0 r0)
+        (reg:SI 114 [ <retval> ])) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":42:1 -1
+     (nil))
+(insn 11 10 0 2 (use (reg/i:SI 0 r0)) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":42:1 -1
+     (nil))
+
+;; Function _kill (_kill, funcdef_no=142, decl_uid=9185, cgraph_uid=143, symbol_order=145)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 7.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":46:5 -1
+     (nil))
+(insn 6 5 10 2 (set (reg:SI 114 [ <retval> ])
+        (const_int -17 [0xffffffffffffffef])) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":46:12 discrim 1 -1
+     (nil))
+(insn 10 6 11 2 (set (reg/i:SI 0 r0)
+        (reg:SI 114 [ <retval> ])) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":47:1 -1
+     (nil))
+(insn 11 10 0 2 (use (reg/i:SI 0 r0)) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":47:1 -1
+     (nil))
+
+;; Function SystemCoreClockUpdate (SystemCoreClockUpdate, funcdef_no=143, decl_uid=8654, cgraph_uid=144, symbol_order=146)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+Edge 2->12 redirected to 15
+Edge 4->12 redirected to 16
+Edge 5->12 redirected to 17
+Edge 6->12 redirected to 18
+Edge 8->12 redirected to 19
+Edge 9->12 redirected to 20
+Edge 10->12 redirected to 21
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 21 into block 20...
+Merged blocks 20 and 21.
+Merged 20 and 21 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 12 NOTE_INSN_DELETED)
+(note 12 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 12 14 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 14 2 15 2 (debug_marker) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":51:5 -1
+     (nil))
+(debug_insn 15 14 16 2 (debug_marker) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":54:5 -1
+     (nil))
+(insn 16 15 17 2 (set (reg/f:SI 121)
+        (const_int 1073741824 [0x40000000])) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":54:23 -1
+     (nil))
+(insn 17 16 18 2 (set (reg:SI 114 [ _1 ])
+        (mem/v:SI (plus:SI (reg/f:SI 121)
+                (const_int 8 [0x8])) [1 MEM[(struct mxc_gcr_regs_t *)1073741824B].clkctrl+0 S4 A64])) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":54:23 -1
+     (nil))
+(insn 18 17 19 2 (set (reg/v:SI 119 [ clk_src ])
+        (and:SI (reg:SI 114 [ _1 ])
+            (const_int 3584 [0xe00]))) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":54:13 -1
+     (nil))
+(debug_insn 19 18 20 2 (var_location:SI clk_src (reg/v:SI 119 [ clk_src ])) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":54:13 -1
+     (nil))
+(debug_insn 20 19 21 2 (debug_marker) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":55:5 -1
+     (nil))
+(insn 21 20 22 2 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 119 [ clk_src ])
+            (const_int 2048 [0x800]))) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":55:5 -1
+     (nil))
+(jump_insn 22 21 23 2 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 69)
+            (pc))) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":55:5 277 {arm_cond_branch}
+     (int_list:REG_BR_PROB 134217734 (nil))
+ -> 69)
+(note 23 22 26 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 26 23 27 4 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 119 [ clk_src ])
+            (const_int 2048 [0x800]))) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":55:5 -1
+     (nil))
+(jump_insn 27 26 28 4 (set (pc)
+        (if_then_else (gtu (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 40)
+            (pc))) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":55:5 -1
+     (int_list:REG_BR_PROB 536870918 (nil))
+ -> 40)
+(note 28 27 29 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 29 28 30 5 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 119 [ clk_src ])
+            (const_int 1024 [0x400]))) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":55:5 -1
+     (nil))
+(jump_insn 30 29 31 5 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 73)
+            (pc))) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":55:5 277 {arm_cond_branch}
+     (int_list:REG_BR_PROB 306783382 (nil))
+ -> 73)
+(note 31 30 32 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 32 31 33 6 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 119 [ clk_src ])
+            (const_int 1536 [0x600]))) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":55:5 -1
+     (nil))
+(jump_insn 33 32 34 6 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 77)
+            (pc))) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":55:5 277 {arm_cond_branch}
+     (int_list:REG_BR_PROB 429496734 (nil))
+ -> 77)
+(note 34 33 35 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 35 34 36 7 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 119 [ clk_src ])
+            (const_int 0 [0]))) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":55:5 -1
+     (nil))
+(jump_insn 36 35 37 7 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 81)
+            (pc))) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":55:5 277 {arm_cond_branch}
+     (int_list:REG_BR_PROB 357913950 (nil))
+ -> 81)
+(note 37 36 7 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 7 37 38 8 (set (reg/v:SI 118 [ base_freq ])
+        (const_int 60000000 [0x3938700])) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":69:19 -1
+     (nil))
+(jump_insn 38 7 39 8 (set (pc)
+        (label_ref 51)) -1
+     (nil)
+ -> 51)
+(barrier 39 38 40)
+(code_label 40 39 41 9 5 (nil) [1 uses])
+(note 41 40 42 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 42 41 43 9 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 119 [ clk_src ])
+            (const_int 3072 [0xc00]))) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":55:5 -1
+     (nil))
+(jump_insn 43 42 44 9 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 85)
+            (pc))) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":55:5 277 {arm_cond_branch}
+     (int_list:REG_BR_PROB 306783382 (nil))
+ -> 85)
+(note 44 43 45 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 45 44 46 10 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 119 [ clk_src ])
+            (const_int 3584 [0xe00]))) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":55:5 -1
+     (nil))
+(jump_insn 46 45 47 10 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 89)
+            (pc))) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":55:5 277 {arm_cond_branch}
+     (int_list:REG_BR_PROB 429496734 (nil))
+ -> 89)
+(note 47 46 48 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 48 47 49 11 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 119 [ clk_src ])
+            (const_int 2560 [0xa00]))) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":55:5 -1
+     (nil))
+(jump_insn 49 48 50 11 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 93)
+            (pc))) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":55:5 277 {arm_cond_branch}
+     (int_list:REG_BR_PROB 357913950 (nil))
+ -> 93)
+(note 50 49 6 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 6 50 66 12 (set (reg/v:SI 118 [ base_freq ])
+        (const_int 7372800 [0x708000])) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":66:19 -1
+     (nil))
+(jump_insn 66 6 67 12 (set (pc)
+        (label_ref 51)) -1
+     (nil)
+ -> 51)
+(barrier 67 66 69)
+(code_label 69 67 68 13 6 (nil) [1 uses])
+(note 68 69 5 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 5 68 70 13 (set (reg/v:SI 118 [ base_freq ])
+        (const_int 120000000 [0x7270e00])) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":63:19 -1
+     (nil))
+(jump_insn 70 5 71 13 (set (pc)
+        (label_ref 51)) -1
+     (nil)
+ -> 51)
+(barrier 71 70 73)
+(code_label 73 71 72 14 7 (nil) [1 uses])
+(note 72 73 9 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 9 72 74 14 (set (reg/v:SI 118 [ base_freq ])
+        (const_int 32000000 [0x1e84800])) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":75:19 -1
+     (nil))
+(jump_insn 74 9 75 14 (set (pc)
+        (label_ref 51)) -1
+     (nil)
+ -> 51)
+(barrier 75 74 77)
+(code_label 77 75 76 15 8 (nil) [1 uses])
+(note 76 77 4 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(insn 4 76 78 15 (set (reg/v:SI 118 [ base_freq ])
+        (const_int 8000 [0x1f40])) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":60:19 -1
+     (nil))
+(jump_insn 78 4 79 15 (set (pc)
+        (label_ref 51)) -1
+     (nil)
+ -> 51)
+(barrier 79 78 81)
+(code_label 81 79 80 16 9 (nil) [1 uses])
+(note 80 81 10 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(insn 10 80 82 16 (set (reg/v:SI 118 [ base_freq ])
+        (const_int 120000000 [0x7270e00])) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":80:19 -1
+     (nil))
+(jump_insn 82 10 83 16 (set (pc)
+        (label_ref 51)) -1
+     (nil)
+ -> 51)
+(barrier 83 82 85)
+(code_label 85 83 84 17 10 (nil) [1 uses])
+(note 84 85 8 17 [bb 17] NOTE_INSN_BASIC_BLOCK)
+(insn 8 84 86 17 (set (reg/v:SI 118 [ base_freq ])
+        (const_int 32768 [0x8000])) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":72:19 -1
+     (nil))
+(jump_insn 86 8 87 17 (set (pc)
+        (label_ref 51)) -1
+     (nil)
+ -> 51)
+(barrier 87 86 89)
+(code_label 89 87 88 18 11 (nil) [1 uses])
+(note 88 89 3 18 [bb 18] NOTE_INSN_BASIC_BLOCK)
+(insn 3 88 90 18 (set (reg/v:SI 118 [ base_freq ])
+        (const_int 12288000 [0xbb8000])) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":55:5 -1
+     (nil))
+(jump_insn 90 3 91 18 (set (pc)
+        (label_ref 51)) -1
+     (nil)
+ -> 51)
+(barrier 91 90 93)
+(code_label 93 91 92 19 12 (nil) [1 uses])
+(note 92 93 11 19 [bb 19] NOTE_INSN_BASIC_BLOCK)
+(insn 11 92 51 19 (set (reg/v:SI 118 [ base_freq ])
+        (const_int 120000000 [0x7270e00])) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":80:19 -1
+     (nil))
+(code_label 51 11 52 20 4 (nil) [8 uses])
+(note 52 51 53 20 [bb 20] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 53 52 54 20 (var_location:SI base_freq (reg/v:SI 118 [ base_freq ])) -1
+     (nil))
+(debug_insn 54 53 55 20 (debug_marker) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":84:5 -1
+     (nil))
+(insn 55 54 56 20 (set (reg/f:SI 122)
+        (const_int 1073741824 [0x40000000])) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":84:19 -1
+     (nil))
+(insn 56 55 57 20 (set (reg:SI 115 [ _2 ])
+        (mem/v:SI (plus:SI (reg/f:SI 122)
+                (const_int 8 [0x8])) [1 MEM[(struct mxc_gcr_regs_t *)1073741824B].clkctrl+0 S4 A64])) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":84:19 -1
+     (nil))
+(insn 57 56 58 20 (set (reg:SI 116 [ _3 ])
+        (lshiftrt:SI (reg:SI 115 [ _2 ])
+            (const_int 6 [0x6]))) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":84:61 -1
+     (nil))
+(insn 58 57 59 20 (set (reg/v:SI 120 [ div ])
+        (and:SI (reg:SI 116 [ _3 ])
+            (const_int 7 [0x7]))) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":84:9 -1
+     (nil))
+(debug_insn 59 58 60 20 (var_location:SI div (reg/v:SI 120 [ div ])) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":84:9 -1
+     (nil))
+(debug_insn 60 59 61 20 (debug_marker) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":86:5 -1
+     (nil))
+(insn 61 60 62 20 (set (reg:SI 117 [ _4 ])
+        (lshiftrt:SI (reg/v:SI 118 [ base_freq ])
+            (reg/v:SI 120 [ div ]))) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":86:33 -1
+     (nil))
+(insn 62 61 63 20 (set (reg/f:SI 123)
+        (symbol_ref:SI ("SystemCoreClock") [flags 0x2]  <var_decl 0000000005251870 SystemCoreClock>)) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":86:21 -1
+     (nil))
+(insn 63 62 0 20 (set (mem/c:SI (reg/f:SI 123) [1 SystemCoreClock+0 S4 A32])
+        (reg:SI 117 [ _4 ])) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":86:21 -1
+     (nil))
+
+;; Function PreInit (PreInit, funcdef_no=144, decl_uid=9203, cgraph_uid=145, symbol_order=147)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 7.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":100:5 -1
+     (nil))
+(insn 6 5 10 2 (set (reg:SI 114 [ <retval> ])
+        (const_int 0 [0])) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":100:12 discrim 1 -1
+     (nil))
+(insn 10 6 11 2 (set (reg/i:SI 0 r0)
+        (reg:SI 114 [ <retval> ])) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":101:1 -1
+     (nil))
+(insn 11 10 0 2 (use (reg/i:SI 0 r0)) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":101:1 -1
+     (nil))
+
+;; Function PinInit (PinInit, funcdef_no=145, decl_uid=9206, cgraph_uid=146, symbol_order=148)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 0 2 (debug_marker) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":112:1 -1
+     (nil))
+
+;; Function PeripheralInit (PeripheralInit, funcdef_no=146, decl_uid=9209, cgraph_uid=147, symbol_order=149)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 7.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":117:5 -1
+     (nil))
+(insn 6 5 10 2 (set (reg:SI 114 [ <retval> ])
+        (const_int 0 [0])) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":117:12 discrim 1 -1
+     (nil))
+(insn 10 6 11 2 (set (reg/i:SI 0 r0)
+        (reg:SI 114 [ <retval> ])) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":118:1 -1
+     (nil))
+(insn 11 10 0 2 (use (reg/i:SI 0 r0)) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":118:1 -1
+     (nil))
+
+;; Function ClockInit (ClockInit, funcdef_no=147, decl_uid=9212, cgraph_uid=148, symbol_order=150)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 7.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":123:5 -1
+     (nil))
+(insn 6 5 10 2 (set (reg:SI 114 [ <retval> ])
+        (const_int 0 [0])) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":123:12 discrim 1 -1
+     (nil))
+(insn 10 6 11 2 (set (reg/i:SI 0 r0)
+        (reg:SI 114 [ <retval> ])) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":124:1 -1
+     (nil))
+(insn 11 10 0 2 (use (reg/i:SI 0 r0)) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":124:1 -1
+     (nil))
+
+;; Function Board_Init (Board_Init, funcdef_no=148, decl_uid=9215, cgraph_uid=149, symbol_order=151)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 7.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":130:5 -1
+     (nil))
+(insn 6 5 10 2 (set (reg:SI 114 [ <retval> ])
+        (const_int 0 [0])) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":130:12 discrim 1 -1
+     (nil))
+(insn 10 6 11 2 (set (reg/i:SI 0 r0)
+        (reg:SI 114 [ <retval> ])) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":131:1 -1
+     (nil))
+(insn 11 10 0 2 (use (reg/i:SI 0 r0)) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":131:1 -1
+     (nil))
+
+;; Function PalSysInit (PalSysInit, funcdef_no=149, decl_uid=9218, cgraph_uid=150, symbol_order=152)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 0 2 (debug_marker) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":133:31 -1
+     (nil))
+
+;; Function SystemInit (SystemInit, funcdef_no=150, decl_uid=8652, cgraph_uid=151, symbol_order=153)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 7 into block 6...
+Merged blocks 6 and 7.
+Merged 6 and 7 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":143:5 -1
+     (nil))
+(insn 6 5 7 2 (parallel [
+            (asm_input/v ("nop") C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c:143)
+            (clobber (mem:BLK (scratch) [0  A8]))
+        ]) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":143:5 -1
+     (nil))
+(debug_insn 7 6 8 2 (debug_marker) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":146:5 -1
+     (nil))
+(debug_insn 8 7 9 2 (debug_marker) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":147:5 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 120)
+        (const_int 0 [0])) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":147:12 -1
+     (nil))
+(insn 10 9 11 2 (set (mem/v/c:SI (plus:SI (reg/f:SI 109 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [3 i+0 S4 A32])
+        (reg:SI 120)) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":147:12 -1
+     (nil))
+(jump_insn 11 10 12 2 (set (pc)
+        (label_ref 19)) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":147:5 -1
+     (nil)
+ -> 19)
+(barrier 12 11 23)
+(code_label 23 12 13 4 23 (nil) [1 uses])
+(note 13 23 14 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 14 13 15 4 (debug_marker) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":147:36 discrim 3 -1
+     (nil))
+(debug_insn 15 14 16 4 (debug_marker) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":147:31 discrim 3 -1
+     (nil))
+(insn 16 15 17 4 (set (reg:SI 114 [ i.0_1 ])
+        (mem/v/c:SI (plus:SI (reg/f:SI 109 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [3 i+0 S4 A32])) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":147:31 discrim 3 -1
+     (nil))
+(insn 17 16 18 4 (set (reg:SI 115 [ _2 ])
+        (plus:SI (reg:SI 114 [ i.0_1 ])
+            (const_int 1 [0x1]))) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":147:31 discrim 3 -1
+     (nil))
+(insn 18 17 19 4 (set (mem/v/c:SI (plus:SI (reg/f:SI 109 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [3 i+0 S4 A32])
+        (reg:SI 115 [ _2 ])) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":147:31 discrim 3 -1
+     (nil))
+(code_label 19 18 20 5 22 (nil) [1 uses])
+(note 20 19 21 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 21 20 22 5 (debug_marker) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":147:19 discrim 1 -1
+     (nil))
+(insn 22 21 26 5 (set (reg:SI 116 [ i.1_3 ])
+        (mem/v/c:SI (plus:SI (reg/f:SI 109 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [3 i+0 S4 A32])) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":147:19 discrim 1 -1
+     (nil))
+(insn 26 22 27 5 (set (reg:SI 121)
+        (const_int 262142 [0x3fffe])) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":147:19 discrim 1 -1
+     (nil))
+(insn 27 26 28 5 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 116 [ i.1_3 ])
+            (reg:SI 121))) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":147:19 discrim 1 -1
+     (nil))
+(jump_insn 28 27 29 5 (set (pc)
+        (if_then_else (le (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 23)
+            (pc))) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":147:19 discrim 1 -1
+     (int_list:REG_BR_PROB 955630228 (nil))
+ -> 23)
+(note 29 28 30 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 30 29 31 6 (debug_marker) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":154:5 -1
+     (nil))
+(insn 31 30 32 6 (set (reg:SI 117 [ __isr_vector.2_4 ])
+        (symbol_ref:SI ("__isr_vector") [flags 0x40]  <var_decl 000000000534fab0 __isr_vector>)) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":154:17 -1
+     (nil))
+(insn 32 31 33 6 (set (reg/f:SI 122)
+        (const_int -536810240 [0xffffffffe000ed00])) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":154:15 -1
+     (nil))
+(insn 33 32 34 6 (set (mem/v:SI (plus:SI (reg/f:SI 122)
+                (const_int 8 [0x8])) [1 MEM[(struct SCB_Type *)3758157056B].VTOR+0 S4 A64])
+        (reg:SI 117 [ __isr_vector.2_4 ])) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":154:15 -1
+     (nil))
+(debug_insn 34 33 35 6 (debug_marker) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":157:5 -1
+     (nil))
+(insn 35 34 36 6 (set (reg/f:SI 123)
+        (const_int 1073741824 [0x40000000])) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":157:38 -1
+     (nil))
+(insn 36 35 37 6 (set (reg:SI 124)
+        (const_int 1 [0x1])) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":157:38 -1
+     (nil))
+(insn 37 36 38 6 (set (mem/v:SI (plus:SI (reg/f:SI 123)
+                (const_int 3072 [0xc00])) [1 MEM[(volatile uint32_t *)1073744896B]+0 S4 A64])
+        (reg:SI 124)) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":157:38 -1
+     (nil))
+(debug_insn 38 37 39 6 (debug_marker) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":158:5 -1
+     (nil))
+(insn 39 38 40 6 (set (reg/f:SI 125)
+        (const_int 1073741824 [0x40000000])) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":158:38 -1
+     (nil))
+(insn 40 39 41 6 (set (reg:SI 126)
+        (const_int 64 [0x40])) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":158:38 -1
+     (nil))
+(insn 41 40 42 6 (set (mem/v:SI (plus:SI (reg/f:SI 125)
+                (const_int 1036 [0x40c])) [1 MEM[(volatile uint32_t *)1073742860B]+0 S4 A32])
+        (reg:SI 126)) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":158:38 -1
+     (nil))
+(debug_insn 42 41 43 6 (debug_marker) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":159:5 -1
+     (nil))
+(insn 43 42 44 6 (set (reg/f:SI 127)
+        (const_int 1073741824 [0x40000000])) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":159:38 -1
+     (nil))
+(insn 44 43 45 6 (set (reg:SI 128)
+        (const_int 0 [0])) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":159:38 -1
+     (nil))
+(insn 45 44 46 6 (set (mem/v:SI (plus:SI (reg/f:SI 127)
+                (const_int 3072 [0xc00])) [1 MEM[(volatile uint32_t *)1073744896B]+0 S4 A64])
+        (reg:SI 128)) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":159:38 -1
+     (nil))
+(debug_insn 46 45 47 6 (debug_marker) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":161:5 -1
+     (nil))
+(insn 47 46 48 6 (set (reg:SI 129)
+        (const_int 1073913856 [0x4002a000])) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":161:5 -1
+     (nil))
+(insn 48 47 49 6 (set (reg:SI 0 r0)
+        (reg:SI 129)) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":161:5 -1
+     (nil))
+(call_insn 49 48 50 6 (parallel [
+            (call (mem:SI (symbol_ref:SI ("MXC_ICC_Enable") [flags 0x41]  <function_decl 0000000005378300 MXC_ICC_Enable>) [0 MXC_ICC_Enable S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":161:5 -1
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(debug_insn 50 49 51 6 (debug_marker) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":162:5 -1
+     (nil))
+(insn 51 50 52 6 (set (reg:SI 130)
+        (const_int 1073913856 [0x4002a000])) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":162:5 -1
+     (nil))
+(insn 52 51 53 6 (set (reg:SI 0 r0)
+        (reg:SI 130)) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":162:5 -1
+     (nil))
+(call_insn 53 52 54 6 (parallel [
+            (call (mem:SI (symbol_ref:SI ("MXC_ICC_Disable") [flags 0x41]  <function_decl 0000000005378400 MXC_ICC_Disable>) [0 MXC_ICC_Disable S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":162:5 -1
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(debug_insn 54 53 55 6 (debug_marker) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":163:5 -1
+     (nil))
+(insn 55 54 56 6 (set (reg:SI 131)
+        (const_int 1073913856 [0x4002a000])) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":163:5 -1
+     (nil))
+(insn 56 55 57 6 (set (reg:SI 0 r0)
+        (reg:SI 131)) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":163:5 -1
+     (nil))
+(call_insn 57 56 58 6 (parallel [
+            (call (mem:SI (symbol_ref:SI ("MXC_ICC_Enable") [flags 0x41]  <function_decl 0000000005378300 MXC_ICC_Enable>) [0 MXC_ICC_Enable S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":163:5 -1
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(debug_insn 58 57 59 6 (debug_marker) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":168:5 -1
+     (nil))
+(insn 59 58 60 6 (set (reg/f:SI 132)
+        (const_int -536810240 [0xffffffffe000ed00])) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":168:8 -1
+     (nil))
+(insn 60 59 61 6 (set (reg:SI 118 [ _5 ])
+        (mem/v:SI (plus:SI (reg/f:SI 132)
+                (const_int 136 [0x88])) [1 MEM[(struct SCB_Type *)3758157056B].CPACR+0 S4 A64])) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":168:8 -1
+     (nil))
+(insn 61 60 62 6 (set (reg:SI 119 [ _6 ])
+        (ior:SI (reg:SI 118 [ _5 ])
+            (const_int 15728640 [0xf00000]))) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":168:16 -1
+     (nil))
+(insn 62 61 63 6 (set (reg/f:SI 133)
+        (const_int -536810240 [0xffffffffe000ed00])) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":168:16 -1
+     (nil))
+(insn 63 62 64 6 (set (mem/v:SI (plus:SI (reg/f:SI 133)
+                (const_int 136 [0x88])) [1 MEM[(struct SCB_Type *)3758157056B].CPACR+0 S4 A64])
+        (reg:SI 119 [ _6 ])) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":168:16 -1
+     (nil))
+(debug_insn 64 63 65 6 (debug_marker) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":169:5 -1
+     (nil))
+(debug_insn 65 64 66 6 (debug_marker:BLK) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/5.9.0/Core/Include/cmsis_gcc.h":269:27 -1
+     (nil))
+(debug_insn 66 65 67 6 (debug_marker) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/5.9.0/Core/Include/cmsis_gcc.h":271:3 -1
+     (nil))
+(insn 67 66 68 6 (parallel [
+            (asm_operands/v ("dsb 0xF") ("") 0 []
+                 []
+                 [] C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/5.9.0/Core/Include/cmsis_gcc.h:271)
+            (clobber (mem:BLK (scratch) [0  A8]))
+        ]) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/5.9.0/Core/Include/cmsis_gcc.h":271:3 -1
+     (nil))
+(debug_insn 68 67 69 6 (debug_marker) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":170:5 -1
+     (nil))
+(debug_insn 69 68 70 6 (debug_marker:BLK) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/5.9.0/Core/Include/cmsis_gcc.h":258:27 -1
+     (nil))
+(debug_insn 70 69 71 6 (debug_marker) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/5.9.0/Core/Include/cmsis_gcc.h":260:3 -1
+     (nil))
+(insn 71 70 72 6 (parallel [
+            (asm_operands/v ("isb 0xF") ("") 0 []
+                 []
+                 [] C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/5.9.0/Core/Include/cmsis_gcc.h:260)
+            (clobber (mem:BLK (scratch) [0  A8]))
+        ]) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/5.9.0/Core/Include/cmsis_gcc.h":260:3 -1
+     (nil))
+(debug_insn 72 71 73 6 (debug_marker) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":172:5 -1
+     (nil))
+(insn 73 72 74 6 (set (reg:SI 0 r0)
+        (const_int 4 [0x4])) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":172:5 -1
+     (nil))
+(call_insn 74 73 75 6 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("MXC_SYS_Clock_Select") [flags 0x41]  <function_decl 0000000005373300 MXC_SYS_Clock_Select>) [0 MXC_SYS_Clock_Select S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":172:5 -1
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:QI (use (reg:SI 0 r0))
+            (nil))))
+(debug_insn 75 74 76 6 (debug_marker) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":173:5 -1
+     (nil))
+(call_insn 76 75 77 6 (parallel [
+            (call (mem:SI (symbol_ref/i:SI ("SystemCoreClockUpdate") [flags 0x3]  <function_decl 0000000005273400 SystemCoreClockUpdate>) [0 SystemCoreClockUpdate S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":173:5 -1
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(debug_insn 77 76 78 6 (debug_marker) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":175:5 -1
+     (nil))
+(call_insn 78 77 79 6 (parallel [
+            (call (mem:SI (symbol_ref/i:SI ("PalSysInit") [flags 0x3]  <function_decl 0000000005381500 PalSysInit>) [0 PalSysInit S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":175:5 -1
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(debug_insn 79 78 80 6 (debug_marker) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":177:5 -1
+     (nil))
+(call_insn 80 79 81 6 (parallel [
+            (call (mem:SI (symbol_ref/i:SI ("PinInit") [flags 0x3]  <function_decl 0000000005378e00 PinInit>) [0 PinInit S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":177:5 -1
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(debug_insn 81 80 82 6 (debug_marker) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":178:5 -1
+     (nil))
+(call_insn 82 81 83 6 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref/i:SI ("ClockInit") [flags 0x3]  <function_decl 0000000005381100 ClockInit>) [0 ClockInit S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":178:5 -1
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(debug_insn 83 82 84 6 (debug_marker) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":179:5 -1
+     (nil))
+(call_insn 84 83 85 6 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref/i:SI ("Board_Init") [flags 0x3]  <function_decl 0000000005381300 Board_Init>) [0 Board_Init S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":179:5 -1
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(debug_insn 85 84 86 6 (debug_marker) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":184:5 -1
+     (nil))
+(call_insn 86 85 87 6 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref/i:SI ("PeripheralInit") [flags 0x3]  <function_decl 0000000005378a00 PeripheralInit>) [0 PeripheralInit S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":184:5 -1
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(debug_insn 87 86 88 6 (debug_marker) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX32690/Source/system_max32690.c":186:5 -1
+     (nil))
+(debug_insn 88 87 89 6 (debug_marker:BLK) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/5.9.0/Core/Include/cmsis_gcc.h":949:27 -1
+     (nil))
+(debug_insn 89 88 90 6 (debug_marker) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/5.9.0/Core/Include/cmsis_gcc.h":951:3 -1
+     (nil))
+(insn 90 89 0 6 (parallel [
+            (asm_operands/v ("cpsie i") ("") 0 []
+                 []
+                 [] C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/5.9.0/Core/Include/cmsis_gcc.h:951)
+            (clobber (mem:BLK (scratch) [0  A8]))
+        ]) "C:/analog/cfs/1.1.0/SDK/MAX/Libraries/CMSIS/5.9.0/Core/Include/cmsis_gcc.h":951:3 -1
+     (nil))

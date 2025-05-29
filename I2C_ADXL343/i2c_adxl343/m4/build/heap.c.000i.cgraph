@@ -1,0 +1,314 @@
+Trivially needed symbols: mallinfo/2 _sbrk/1
+
+
+Initial Symbol table:
+
+__errno/5 (__errno)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: _sbrk/1 
+  Calls: 
+__HeapLimit/4 (__HeapLimit)
+  Type: variable
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: _sbrk/1 (addr) mallinfo/2 (addr) mallinfo/2 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__HeapBase/3 (__HeapBase)
+  Type: variable
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: _sbrk/1 (addr) mallinfo/2 (addr) mallinfo/2 (addr) mallinfo/2 (addr) 
+  Availability: not-ready
+  Varpool flags:
+mallinfo/2 (mallinfo)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @00000000021fee40
+  References: heap_end/0 (read) heap_end/0 (write) __HeapBase/3 (addr) __HeapLimit/4 (addr) __HeapBase/3 (addr) heap_end/0 (read) __HeapBase/3 (addr) __HeapLimit/4 (addr) heap_end/0 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+_sbrk/1 (_sbrk)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @0000000004e49578
+  References: heap_end/0 (read) heap_end/0 (write) __HeapBase/3 (addr) heap_end/0 (read) heap_end/0 (read) __HeapLimit/4 (addr) heap_end/0 (read) heap_end/0 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: __errno/5 
+heap_end/0 (heap_end)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition
+  Aux: @0000000004e49578
+  References: 
+  Referring: _sbrk/1 (read) _sbrk/1 (write) _sbrk/1 (read) _sbrk/1 (read) _sbrk/1 (read) _sbrk/1 (write) mallinfo/2 (read) mallinfo/2 (write) mallinfo/2 (read) mallinfo/2 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+__errno/5 (__errno)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: _sbrk/1 
+  Calls: 
+__HeapLimit/4 (__HeapLimit)
+  Type: variable
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: _sbrk/1 (addr) mallinfo/2 (addr) mallinfo/2 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__HeapBase/3 (__HeapBase)
+  Type: variable
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: _sbrk/1 (addr) mallinfo/2 (addr) mallinfo/2 (addr) mallinfo/2 (addr) 
+  Availability: not-ready
+  Varpool flags:
+mallinfo/2 (mallinfo)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: heap_end/0 (read) heap_end/0 (write) __HeapBase/3 (addr) __HeapLimit/4 (addr) __HeapBase/3 (addr) heap_end/0 (read) __HeapBase/3 (addr) __HeapLimit/4 (addr) heap_end/0 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+_sbrk/1 (_sbrk)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: heap_end/0 (read) heap_end/0 (write) __HeapBase/3 (addr) heap_end/0 (read) heap_end/0 (read) __HeapLimit/4 (addr) heap_end/0 (read) heap_end/0 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: __errno/5 
+heap_end/0 (heap_end)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition
+  References: 
+  Referring: _sbrk/1 (read) _sbrk/1 (write) _sbrk/1 (read) _sbrk/1 (read) _sbrk/1 (read) _sbrk/1 (write) mallinfo/2 (read) mallinfo/2 (write) mallinfo/2 (read) mallinfo/2 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+
+
+Initial Symbol table:
+
+__errno/5 (__errno)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: _sbrk/1 
+  Calls: 
+__HeapLimit/4 (__HeapLimit)
+  Type: variable
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: _sbrk/1 (addr) mallinfo/2 (addr) mallinfo/2 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__HeapBase/3 (__HeapBase)
+  Type: variable
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: _sbrk/1 (addr) mallinfo/2 (addr) mallinfo/2 (addr) mallinfo/2 (addr) 
+  Availability: not-ready
+  Varpool flags:
+mallinfo/2 (mallinfo)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: heap_end/0 (read) heap_end/0 (write) __HeapBase/3 (addr) __HeapLimit/4 (addr) __HeapBase/3 (addr) heap_end/0 (read) __HeapBase/3 (addr) __HeapLimit/4 (addr) heap_end/0 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+_sbrk/1 (_sbrk)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: heap_end/0 (read) heap_end/0 (write) __HeapBase/3 (addr) heap_end/0 (read) heap_end/0 (read) __HeapLimit/4 (addr) heap_end/0 (read) heap_end/0 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: __errno/5 
+heap_end/0 (heap_end)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition
+  References: 
+  Referring: _sbrk/1 (read) _sbrk/1 (write) _sbrk/1 (read) _sbrk/1 (read) _sbrk/1 (read) _sbrk/1 (write) mallinfo/2 (read) mallinfo/2 (write) mallinfo/2 (read) mallinfo/2 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+__errno/5 (__errno)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: _sbrk/1 
+  Calls: 
+__HeapLimit/4 (__HeapLimit)
+  Type: variable
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: _sbrk/1 (addr) mallinfo/2 (addr) mallinfo/2 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__HeapBase/3 (__HeapBase)
+  Type: variable
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: _sbrk/1 (addr) mallinfo/2 (addr) mallinfo/2 (addr) mallinfo/2 (addr) 
+  Availability: not-ready
+  Varpool flags:
+mallinfo/2 (mallinfo)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: heap_end/0 (read) heap_end/0 (write) __HeapBase/3 (addr) __HeapLimit/4 (addr) __HeapBase/3 (addr) heap_end/0 (read) __HeapBase/3 (addr) __HeapLimit/4 (addr) heap_end/0 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+_sbrk/1 (_sbrk)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: heap_end/0 (read) heap_end/0 (write) __HeapBase/3 (addr) heap_end/0 (read) heap_end/0 (read) __HeapLimit/4 (addr) heap_end/0 (read) heap_end/0 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: __errno/5 
+heap_end/0 (heap_end)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition
+  References: 
+  Referring: _sbrk/1 (read) _sbrk/1 (write) _sbrk/1 (read) _sbrk/1 (read) _sbrk/1 (read) _sbrk/1 (write) mallinfo/2 (read) mallinfo/2 (write) mallinfo/2 (read) mallinfo/2 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+__errno/5 (__errno)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: _sbrk/1 (217325344 (estimated locally),0.20 per call) 
+  Calls: 
+__HeapLimit/4 (__HeapLimit)
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: _sbrk/1 (addr) mallinfo/2 (addr) 
+  Availability: not_available
+  Varpool flags:
+__HeapBase/3 (__HeapBase)
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: _sbrk/1 (addr) mallinfo/2 (addr) mallinfo/2 (addr) 
+  Availability: not_available
+  Varpool flags:
+mallinfo/2 (mallinfo)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: heap_end/0 (read) heap_end/0 (write) __HeapBase/3 (addr) __HeapLimit/4 (addr) __HeapBase/3 (addr) heap_end/0 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn
+  Called by: 
+  Calls: 
+_sbrk/1 (_sbrk)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: heap_end/0 (read) heap_end/0 (write) __HeapBase/3 (addr) heap_end/0 (read) __HeapLimit/4 (addr) heap_end/0 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: __errno/5 (217325344 (estimated locally),0.20 per call) 
+heap_end/0 (heap_end)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly
+  References: 
+  Referring: _sbrk/1 (read) _sbrk/1 (write) _sbrk/1 (read) _sbrk/1 (write) mallinfo/2 (read) mallinfo/2 (write) mallinfo/2 (read) 
+  Availability: available
+  Varpool flags: initialized
+Trivially needed variables: heap_end/0
+Removing variables:
+
+Final Symbol table:
+
+__errno/5 (__errno)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+__HeapLimit/4 (__HeapLimit)
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+__HeapBase/3 (__HeapBase)
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+mallinfo/2 (mallinfo)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.mallinfo (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) nonfreeing_fn
+  Called by: 
+  Calls: 
+_sbrk/1 (_sbrk)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text._sbrk (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+heap_end/0 (heap_end)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly asm_written section:.bss.heap_end (implicit_section)
+  Aux: @0000000000000001
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized

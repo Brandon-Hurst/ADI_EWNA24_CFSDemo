@@ -1,0 +1,3036 @@
+Trivially needed symbols: main/149 wait_for_keypress/148 adxl343_config/147 adxl343_handler/146 blink_halt/145 axis_data_ready/144 GPIO2_IRQHandler/142
+
+
+Initial Symbol table:
+
+adxl343_init/178 (adxl343_init)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/149 
+  Calls: 
+MXC_I2C_SetFrequency/177 (MXC_I2C_SetFrequency)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/149 
+  Calls: 
+MXC_I2C_Init/176 (MXC_I2C_Init)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/149 
+  Calls: 
+puts/175 (__builtin_puts)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/149 
+  Calls: 
+setbuf/174 (setbuf)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/149 
+  Calls: 
+_impure_ptr/173 (_impure_ptr)
+  Type: variable
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: main/149 (read) 
+  Availability: not-ready
+  Varpool flags:
+SystemCoreClockUpdate/172 (SystemCoreClockUpdate)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/149 
+  Calls: 
+MXC_SYS_Clock_Select/171 (MXC_SYS_Clock_Select)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/149 
+  Calls: 
+MXC_ICC_Enable/170 (MXC_ICC_Enable)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/149 
+  Calls: 
+*.LC0/169 (*.LC0)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition artificial
+  Aux: @00000000021fee40
+  References: 
+  Referring: main/149 (read) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+getchar/168 (getchar)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: wait_for_keypress/148 
+  Calls: 
+printf/167 (printf)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/149 wait_for_keypress/148 wait_for_keypress/148 
+  Calls: 
+MXC_GPIO_EnableInt/166 (MXC_GPIO_EnableInt)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: adxl343_config/147 
+  Calls: 
+MXC_GPIO_IntConfig/165 (MXC_GPIO_IntConfig)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: adxl343_config/147 
+  Calls: 
+MXC_GPIO_RegisterCallback/164 (MXC_GPIO_RegisterCallback)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: adxl343_config/147 
+  Calls: 
+MXC_GPIO_Config/163 (MXC_GPIO_Config)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/149 adxl343_config/147 
+  Calls: 
+adxl343_set_int_map/162 (adxl343_set_int_map)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: adxl343_config/147 
+  Calls: 
+adxl343_set_fifo_mode/161 (adxl343_set_fifo_mode)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: adxl343_config/147 
+  Calls: 
+adxl343_set_offsets/160 (adxl343_set_offsets)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: adxl343_config/147 
+  Calls: 
+adxl343_set_power_mode/159 (adxl343_set_power_mode)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: adxl343_config/147 
+  Calls: 
+adxl343_set_range/158 (adxl343_set_range)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: adxl343_config/147 
+  Calls: 
+adxl343_set_data_rate/157 (adxl343_set_data_rate)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: adxl343_config/147 
+  Calls: 
+adxl343_get_axis_data/156 (adxl343_get_axis_data)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/149 adxl343_config/147 
+  Calls: 
+adxl343_set_int_enable/155 (adxl343_set_int_enable)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: adxl343_config/147 adxl343_config/147 
+  Calls: 
+adxl343_set_power_control/154 (adxl343_set_power_control)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: adxl343_config/147 adxl343_config/147 
+  Calls: 
+LED_Toggle/153 (LED_Toggle)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/149 blink_halt/145 
+  Calls: 
+MXC_Delay/152 (MXC_Delay)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/149 main/149 blink_halt/145 
+  Calls: 
+puts/151 (puts)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: blink_halt/145 blink_halt/145 
+  Calls: 
+MXC_GPIO_Handler/150 (MXC_GPIO_Handler)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: GPIO2_IRQHandler/142 
+  Calls: 
+main/149 (main)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @00000000021fee40
+  References: _impure_ptr/173 (read) *.LC0/169 (read) axis_data_ready/144 (read) axis_data_ready/144 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: LED_Toggle/153 MXC_Delay/152 printf/167 blink_halt/145 adxl343_get_axis_data/156 MXC_Delay/152 blink_halt/145 adxl343_config/147 blink_halt/145 adxl343_init/178 MXC_I2C_SetFrequency/177 MXC_GPIO_Config/163 blink_halt/145 MXC_I2C_Init/176 puts/175 setbuf/174 SystemCoreClockUpdate/172 MXC_SYS_Clock_Select/171 MXC_ICC_Enable/170 
+wait_for_keypress/148 (wait_for_keypress)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @00000000053b2118
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: printf/167 getchar/168 printf/167 
+adxl343_config/147 (adxl343_config)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @00000000053b2000
+  References: adxl343_irq_cfg/143 (addr) adxl343_irq_cfg/143 (addr) adxl343_handler/146 (addr) adxl343_irq_cfg/143 (addr) adxl343_irq_cfg/143 (read) adxl343_irq_cfg/143 (read) 
+  Referring: 
+  Function flags: body
+  Called by: main/149 
+  Calls: __NVIC_EnableIRQ/111 MXC_GPIO_EnableInt/166 MXC_GPIO_IntConfig/165 MXC_GPIO_RegisterCallback/164 MXC_GPIO_Config/163 adxl343_set_power_control/154 adxl343_set_int_enable/155 adxl343_set_int_map/162 adxl343_set_fifo_mode/161 adxl343_set_offsets/160 adxl343_set_power_mode/159 adxl343_set_range/158 adxl343_set_data_rate/157 adxl343_get_axis_data/156 adxl343_set_int_enable/155 adxl343_set_power_control/154 
+adxl343_handler/146 (adxl343_handler)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Address is taken.
+  Aux: @000000000518ee38
+  References: axis_data_ready/144 (write) 
+  Referring: adxl343_config/147 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: 
+blink_halt/145 (blink_halt)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @000000000518ed20
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: main/149 main/149 main/149 main/149 
+  Calls: LED_Toggle/153 MXC_Delay/152 puts/151 puts/151 
+axis_data_ready/144 (axis_data_ready)
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition
+  Aux: @000000000518ec08
+  References: 
+  Referring: adxl343_handler/146 (write) main/149 (read) main/149 (write) 
+  Availability: not-ready
+  Varpool flags: initialized
+adxl343_irq_cfg/143 (adxl343_irq_cfg)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition
+  Aux: @00000000050bd7a8
+  References: 
+  Referring: adxl343_config/147 (addr) adxl343_config/147 (addr) adxl343_config/147 (addr) adxl343_config/147 (read) adxl343_config/147 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+GPIO2_IRQHandler/142 (GPIO2_IRQHandler)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @0000000004a5dc00
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_GPIO_Handler/150 
+MXC_SYS_In_Crit_Section/141 (MXC_SYS_In_Crit_Section)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_SYS_Crit_Exit/140 (MXC_SYS_Crit_Exit)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_SYS_Crit_Enter/139 (MXC_SYS_Crit_Enter)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+_mxc_crit_get_state/138 (_mxc_crit_get_state)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+_state/137 (_state)
+  Type: variable definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized
+ITM_CheckChar/136 (ITM_CheckChar)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ITM_ReceiveChar/135 (ITM_ReceiveChar)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ITM_SendChar/134 (ITM_SendChar)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+SysTick_Config/133 (SysTick_Config)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+SCB_GetFPUType/132 (SCB_GetFPUType)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_Load/131 (ARM_MPU_Load)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_OrderedMemcpy/130 (ARM_MPU_OrderedMemcpy)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_SetRegionEx/129 (ARM_MPU_SetRegionEx)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_SetRegion/128 (ARM_MPU_SetRegion)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_ClrRegion/127 (ARM_MPU_ClrRegion)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_Disable/126 (ARM_MPU_Disable)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_Enable/125 (ARM_MPU_Enable)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SystemReset/124 (__NVIC_SystemReset)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetVector/123 (__NVIC_GetVector)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SetVector/122 (__NVIC_SetVector)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+NVIC_DecodePriority/121 (NVIC_DecodePriority)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+NVIC_EncodePriority/120 (NVIC_EncodePriority)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetPriority/119 (__NVIC_GetPriority)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SetPriority/118 (__NVIC_SetPriority)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetActive/117 (__NVIC_GetActive)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_ClearPendingIRQ/116 (__NVIC_ClearPendingIRQ)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SetPendingIRQ/115 (__NVIC_SetPendingIRQ)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetPendingIRQ/114 (__NVIC_GetPendingIRQ)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_DisableIRQ/113 (__NVIC_DisableIRQ)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetEnableIRQ/112 (__NVIC_GetEnableIRQ)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_EnableIRQ/111 (__NVIC_EnableIRQ)
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  Aux: @00000000053b2000
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: adxl343_config/147 
+  Calls: 
+__NVIC_GetPriorityGrouping/110 (__NVIC_GetPriorityGrouping)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SetPriorityGrouping/109 (__NVIC_SetPriorityGrouping)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMMLA/108 (__SMMLA)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QSUB/107 (__QSUB)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QADD/106 (__QADD)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SEL/105 (__SEL)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLSLDX/104 (__SMLSLDX)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLSLD/103 (__SMLSLD)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLSDX/102 (__SMLSDX)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLSD/101 (__SMLSD)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMUSDX/100 (__SMUSDX)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMUSD/99 (__SMUSD)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLALDX/98 (__SMLALDX)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLALD/97 (__SMLALD)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLADX/96 (__SMLADX)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLAD/95 (__SMLAD)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMUADX/94 (__SMUADX)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMUAD/93 (__SMUAD)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SXTAB16_RORn/92 (__SXTAB16_RORn)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SXTAB16/91 (__SXTAB16)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SXTB16_RORn/90 (__SXTB16_RORn)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SXTB16/89 (__SXTB16)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UXTAB16/88 (__UXTAB16)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UXTB16/87 (__UXTB16)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__USADA8/86 (__USADA8)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__USAD8/85 (__USAD8)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHSAX/84 (__UHSAX)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQSAX/83 (__UQSAX)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__USAX/82 (__USAX)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHSAX/81 (__SHSAX)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QSAX/80 (__QSAX)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SSAX/79 (__SSAX)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHASX/78 (__UHASX)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQASX/77 (__UQASX)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UASX/76 (__UASX)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHASX/75 (__SHASX)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QASX/74 (__QASX)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SASX/73 (__SASX)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHSUB16/72 (__UHSUB16)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQSUB16/71 (__UQSUB16)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__USUB16/70 (__USUB16)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHSUB16/69 (__SHSUB16)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QSUB16/68 (__QSUB16)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SSUB16/67 (__SSUB16)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHADD16/66 (__UHADD16)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQADD16/65 (__UQADD16)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UADD16/64 (__UADD16)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHADD16/63 (__SHADD16)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QADD16/62 (__QADD16)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SADD16/61 (__SADD16)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHSUB8/60 (__UHSUB8)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQSUB8/59 (__UQSUB8)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__USUB8/58 (__USUB8)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHSUB8/57 (__SHSUB8)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QSUB8/56 (__QSUB8)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SSUB8/55 (__SSUB8)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHADD8/54 (__UHADD8)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQADD8/53 (__UQADD8)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UADD8/52 (__UADD8)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHADD8/51 (__SHADD8)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QADD8/50 (__QADD8)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SADD8/49 (__SADD8)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_FPSCR/48 (__set_FPSCR)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_FPSCR/47 (__get_FPSCR)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_FAULTMASK/46 (__set_FAULTMASK)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_FAULTMASK/45 (__get_FAULTMASK)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_BASEPRI_MAX/44 (__set_BASEPRI_MAX)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_BASEPRI/43 (__set_BASEPRI)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_BASEPRI/42 (__get_BASEPRI)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__disable_fault_irq/41 (__disable_fault_irq)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__enable_fault_irq/40 (__enable_fault_irq)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_PRIMASK/39 (__set_PRIMASK)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_PRIMASK/38 (__get_PRIMASK)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_MSP/37 (__set_MSP)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_MSP/36 (__get_MSP)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_PSP/35 (__set_PSP)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_PSP/34 (__get_PSP)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_xPSR/33 (__get_xPSR)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_APSR/32 (__get_APSR)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_IPSR/31 (__get_IPSR)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_CONTROL/30 (__set_CONTROL)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_CONTROL/29 (__get_CONTROL)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__disable_irq/28 (__disable_irq)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__enable_irq/27 (__enable_irq)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STRT/26 (__STRT)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STRHT/25 (__STRHT)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STRBT/24 (__STRBT)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDRT/23 (__LDRT)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDRHT/22 (__LDRHT)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDRBT/21 (__LDRBT)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__RRX/20 (__RRX)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__CLREX/19 (__CLREX)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STREXW/18 (__STREXW)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STREXH/17 (__STREXH)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STREXB/16 (__STREXB)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDREXW/15 (__LDREXW)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDREXH/14 (__LDREXH)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDREXB/13 (__LDREXB)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__CLZ/12 (__CLZ)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__RBIT/11 (__RBIT)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__ROR/10 (__ROR)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__REVSH/9 (__REVSH)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__REV16/8 (__REV16)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__REV/7 (__REV)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__DMB/6 (__DMB)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__DSB/5 (__DSB)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__ISB/4 (__ISB)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__cmsis_start/3 (__cmsis_start)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+_putchar_unlocked/2 (_putchar_unlocked)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+_getchar_unlocked/1 (_getchar_unlocked)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__sputc_r/0 (__sputc_r)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+
+Removing unused symbols: MXC_SYS_In_Crit_Section/141 MXC_SYS_Crit_Exit/140 MXC_SYS_Crit_Enter/139 _mxc_crit_get_state/138 _state/137 ITM_CheckChar/136 ITM_ReceiveChar/135 ITM_SendChar/134 SysTick_Config/133 SCB_GetFPUType/132 ARM_MPU_Load/131 ARM_MPU_OrderedMemcpy/130 ARM_MPU_SetRegionEx/129 ARM_MPU_SetRegion/128 ARM_MPU_ClrRegion/127 ARM_MPU_Disable/126 ARM_MPU_Enable/125 __NVIC_SystemReset/124 __NVIC_GetVector/123 __NVIC_SetVector/122 NVIC_DecodePriority/121 NVIC_EncodePriority/120 __NVIC_GetPriority/119 __NVIC_SetPriority/118 __NVIC_GetActive/117 __NVIC_ClearPendingIRQ/116 __NVIC_SetPendingIRQ/115 __NVIC_GetPendingIRQ/114 __NVIC_DisableIRQ/113 __NVIC_GetEnableIRQ/112 __NVIC_GetPriorityGrouping/110 __NVIC_SetPriorityGrouping/109 __SMMLA/108 __QSUB/107 __QADD/106 __SEL/105 __SMLSLDX/104 __SMLSLD/103 __SMLSDX/102 __SMLSD/101 __SMUSDX/100 __SMUSD/99 __SMLALDX/98 __SMLALD/97 __SMLADX/96 __SMLAD/95 __SMUADX/94 __SMUAD/93 __SXTAB16_RORn/92 __SXTAB16/91 __SXTB16_RORn/90 __SXTB16/89 __UXTAB16/88 __UXTB16/87 __USADA8/86 __USAD8/85 __UHSAX/84 __UQSAX/83 __USAX/82 __SHSAX/81 __QSAX/80 __SSAX/79 __UHASX/78 __UQASX/77 __UASX/76 __SHASX/75 __QASX/74 __SASX/73 __UHSUB16/72 __UQSUB16/71 __USUB16/70 __SHSUB16/69 __QSUB16/68 __SSUB16/67 __UHADD16/66 __UQADD16/65 __UADD16/64 __SHADD16/63 __QADD16/62 __SADD16/61 __UHSUB8/60 __UQSUB8/59 __USUB8/58 __SHSUB8/57 __QSUB8/56 __SSUB8/55 __UHADD8/54 __UQADD8/53 __UADD8/52 __SHADD8/51 __QADD8/50 __SADD8/49 __set_FPSCR/48 __get_FPSCR/47 __set_FAULTMASK/46 __get_FAULTMASK/45 __set_BASEPRI_MAX/44 __set_BASEPRI/43 __get_BASEPRI/42 __disable_fault_irq/41 __enable_fault_irq/40 __set_PRIMASK/39 __get_PRIMASK/38 __set_MSP/37 __get_MSP/36 __set_PSP/35 __get_PSP/34 __get_xPSR/33 __get_APSR/32 __get_IPSR/31 __set_CONTROL/30 __get_CONTROL/29 __disable_irq/28 __enable_irq/27 __STRT/26 __STRHT/25 __STRBT/24 __LDRT/23 __LDRHT/22 __LDRBT/21 __RRX/20 __CLREX/19 __STREXW/18 __STREXH/17 __STREXB/16 __LDREXW/15 __LDREXH/14 __LDREXB/13 __CLZ/12 __RBIT/11 __ROR/10 __REVSH/9 __REV16/8 __REV/7 __DMB/6 __DSB/5 __ISB/4 __cmsis_start/3 _putchar_unlocked/2 _getchar_unlocked/1 __sputc_r/0
+
+Reclaimed Symbol table:
+
+adxl343_init/178 (adxl343_init)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/149 
+  Calls: 
+MXC_I2C_SetFrequency/177 (MXC_I2C_SetFrequency)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/149 
+  Calls: 
+MXC_I2C_Init/176 (MXC_I2C_Init)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/149 
+  Calls: 
+puts/175 (__builtin_puts)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/149 
+  Calls: 
+setbuf/174 (setbuf)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/149 
+  Calls: 
+_impure_ptr/173 (_impure_ptr)
+  Type: variable
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: main/149 (read) 
+  Availability: not-ready
+  Varpool flags:
+SystemCoreClockUpdate/172 (SystemCoreClockUpdate)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/149 
+  Calls: 
+MXC_SYS_Clock_Select/171 (MXC_SYS_Clock_Select)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/149 
+  Calls: 
+MXC_ICC_Enable/170 (MXC_ICC_Enable)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/149 
+  Calls: 
+*.LC0/169 (*.LC0)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition artificial
+  References: 
+  Referring: main/149 (read) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+getchar/168 (getchar)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: wait_for_keypress/148 
+  Calls: 
+printf/167 (printf)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/149 wait_for_keypress/148 wait_for_keypress/148 
+  Calls: 
+MXC_GPIO_EnableInt/166 (MXC_GPIO_EnableInt)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: adxl343_config/147 
+  Calls: 
+MXC_GPIO_IntConfig/165 (MXC_GPIO_IntConfig)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: adxl343_config/147 
+  Calls: 
+MXC_GPIO_RegisterCallback/164 (MXC_GPIO_RegisterCallback)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: adxl343_config/147 
+  Calls: 
+MXC_GPIO_Config/163 (MXC_GPIO_Config)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/149 adxl343_config/147 
+  Calls: 
+adxl343_set_int_map/162 (adxl343_set_int_map)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: adxl343_config/147 
+  Calls: 
+adxl343_set_fifo_mode/161 (adxl343_set_fifo_mode)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: adxl343_config/147 
+  Calls: 
+adxl343_set_offsets/160 (adxl343_set_offsets)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: adxl343_config/147 
+  Calls: 
+adxl343_set_power_mode/159 (adxl343_set_power_mode)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: adxl343_config/147 
+  Calls: 
+adxl343_set_range/158 (adxl343_set_range)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: adxl343_config/147 
+  Calls: 
+adxl343_set_data_rate/157 (adxl343_set_data_rate)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: adxl343_config/147 
+  Calls: 
+adxl343_get_axis_data/156 (adxl343_get_axis_data)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/149 adxl343_config/147 
+  Calls: 
+adxl343_set_int_enable/155 (adxl343_set_int_enable)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: adxl343_config/147 adxl343_config/147 
+  Calls: 
+adxl343_set_power_control/154 (adxl343_set_power_control)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: adxl343_config/147 adxl343_config/147 
+  Calls: 
+LED_Toggle/153 (LED_Toggle)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/149 blink_halt/145 
+  Calls: 
+MXC_Delay/152 (MXC_Delay)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/149 main/149 blink_halt/145 
+  Calls: 
+puts/151 (puts)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: blink_halt/145 blink_halt/145 
+  Calls: 
+MXC_GPIO_Handler/150 (MXC_GPIO_Handler)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: GPIO2_IRQHandler/142 
+  Calls: 
+main/149 (main)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: _impure_ptr/173 (read) *.LC0/169 (read) axis_data_ready/144 (read) axis_data_ready/144 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: LED_Toggle/153 MXC_Delay/152 printf/167 blink_halt/145 adxl343_get_axis_data/156 MXC_Delay/152 blink_halt/145 adxl343_config/147 blink_halt/145 adxl343_init/178 MXC_I2C_SetFrequency/177 MXC_GPIO_Config/163 blink_halt/145 MXC_I2C_Init/176 puts/175 setbuf/174 SystemCoreClockUpdate/172 MXC_SYS_Clock_Select/171 MXC_ICC_Enable/170 
+wait_for_keypress/148 (wait_for_keypress)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: printf/167 getchar/168 printf/167 
+adxl343_config/147 (adxl343_config)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: adxl343_irq_cfg/143 (addr) adxl343_irq_cfg/143 (addr) adxl343_handler/146 (addr) adxl343_irq_cfg/143 (addr) adxl343_irq_cfg/143 (read) adxl343_irq_cfg/143 (read) 
+  Referring: 
+  Function flags: body
+  Called by: main/149 
+  Calls: __NVIC_EnableIRQ/111 MXC_GPIO_EnableInt/166 MXC_GPIO_IntConfig/165 MXC_GPIO_RegisterCallback/164 MXC_GPIO_Config/163 adxl343_set_power_control/154 adxl343_set_int_enable/155 adxl343_set_int_map/162 adxl343_set_fifo_mode/161 adxl343_set_offsets/160 adxl343_set_power_mode/159 adxl343_set_range/158 adxl343_set_data_rate/157 adxl343_get_axis_data/156 adxl343_set_int_enable/155 adxl343_set_power_control/154 
+adxl343_handler/146 (adxl343_handler)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Address is taken.
+  References: axis_data_ready/144 (write) 
+  Referring: adxl343_config/147 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: 
+blink_halt/145 (blink_halt)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: main/149 main/149 main/149 main/149 
+  Calls: LED_Toggle/153 MXC_Delay/152 puts/151 puts/151 
+axis_data_ready/144 (axis_data_ready)
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition
+  References: 
+  Referring: adxl343_handler/146 (write) main/149 (read) main/149 (write) 
+  Availability: not-ready
+  Varpool flags: initialized
+adxl343_irq_cfg/143 (adxl343_irq_cfg)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition
+  References: 
+  Referring: adxl343_config/147 (addr) adxl343_config/147 (addr) adxl343_config/147 (addr) adxl343_config/147 (read) adxl343_config/147 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+GPIO2_IRQHandler/142 (GPIO2_IRQHandler)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_GPIO_Handler/150 
+__NVIC_EnableIRQ/111 (__NVIC_EnableIRQ)
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: adxl343_config/147 
+  Calls: 
+
+
+Initial Symbol table:
+
+adxl343_init/178 (adxl343_init)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/149 
+  Calls: 
+MXC_I2C_SetFrequency/177 (MXC_I2C_SetFrequency)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/149 
+  Calls: 
+MXC_I2C_Init/176 (MXC_I2C_Init)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/149 
+  Calls: 
+puts/175 (__builtin_puts)
+  Type: function
+  Visibility: semantic_interposition external public
+  previous sharing asm name: 151
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/149 
+  Calls: 
+setbuf/174 (setbuf)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/149 
+  Calls: 
+_impure_ptr/173 (_impure_ptr)
+  Type: variable
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: main/149 (read) 
+  Availability: not-ready
+  Varpool flags:
+SystemCoreClockUpdate/172 (SystemCoreClockUpdate)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/149 
+  Calls: 
+MXC_SYS_Clock_Select/171 (MXC_SYS_Clock_Select)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/149 
+  Calls: 
+MXC_ICC_Enable/170 (MXC_ICC_Enable)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/149 
+  Calls: 
+*.LC0/169 (*.LC0)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition artificial
+  References: 
+  Referring: main/149 (read) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+getchar/168 (getchar)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: wait_for_keypress/148 
+  Calls: 
+printf/167 (printf)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/149 wait_for_keypress/148 wait_for_keypress/148 
+  Calls: 
+MXC_GPIO_EnableInt/166 (MXC_GPIO_EnableInt)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: adxl343_config/147 
+  Calls: 
+MXC_GPIO_IntConfig/165 (MXC_GPIO_IntConfig)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: adxl343_config/147 
+  Calls: 
+MXC_GPIO_RegisterCallback/164 (MXC_GPIO_RegisterCallback)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: adxl343_config/147 
+  Calls: 
+MXC_GPIO_Config/163 (MXC_GPIO_Config)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/149 adxl343_config/147 
+  Calls: 
+adxl343_set_int_map/162 (adxl343_set_int_map)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: adxl343_config/147 
+  Calls: 
+adxl343_set_fifo_mode/161 (adxl343_set_fifo_mode)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: adxl343_config/147 
+  Calls: 
+adxl343_set_offsets/160 (adxl343_set_offsets)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: adxl343_config/147 
+  Calls: 
+adxl343_set_power_mode/159 (adxl343_set_power_mode)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: adxl343_config/147 
+  Calls: 
+adxl343_set_range/158 (adxl343_set_range)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: adxl343_config/147 
+  Calls: 
+adxl343_set_data_rate/157 (adxl343_set_data_rate)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: adxl343_config/147 
+  Calls: 
+adxl343_get_axis_data/156 (adxl343_get_axis_data)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/149 adxl343_config/147 
+  Calls: 
+adxl343_set_int_enable/155 (adxl343_set_int_enable)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: adxl343_config/147 adxl343_config/147 
+  Calls: 
+adxl343_set_power_control/154 (adxl343_set_power_control)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: adxl343_config/147 adxl343_config/147 
+  Calls: 
+LED_Toggle/153 (LED_Toggle)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/149 blink_halt/145 
+  Calls: 
+MXC_Delay/152 (MXC_Delay)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/149 main/149 blink_halt/145 
+  Calls: 
+puts/151 (puts)
+  Type: function
+  Visibility: semantic_interposition external public
+  next sharing asm name: 175
+  References: 
+  Referring: 
+  Function flags:
+  Called by: blink_halt/145 blink_halt/145 
+  Calls: 
+MXC_GPIO_Handler/150 (MXC_GPIO_Handler)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: GPIO2_IRQHandler/142 
+  Calls: 
+main/149 (main)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: _impure_ptr/173 (read) *.LC0/169 (read) axis_data_ready/144 (read) axis_data_ready/144 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: LED_Toggle/153 MXC_Delay/152 printf/167 blink_halt/145 adxl343_get_axis_data/156 MXC_Delay/152 blink_halt/145 adxl343_config/147 blink_halt/145 adxl343_init/178 MXC_I2C_SetFrequency/177 MXC_GPIO_Config/163 blink_halt/145 MXC_I2C_Init/176 puts/175 setbuf/174 SystemCoreClockUpdate/172 MXC_SYS_Clock_Select/171 MXC_ICC_Enable/170 
+wait_for_keypress/148 (wait_for_keypress)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: printf/167 getchar/168 printf/167 
+adxl343_config/147 (adxl343_config)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: adxl343_irq_cfg/143 (addr) adxl343_irq_cfg/143 (addr) adxl343_handler/146 (addr) adxl343_irq_cfg/143 (addr) adxl343_irq_cfg/143 (read) adxl343_irq_cfg/143 (read) 
+  Referring: 
+  Function flags: body
+  Called by: main/149 
+  Calls: __NVIC_EnableIRQ/111 MXC_GPIO_EnableInt/166 MXC_GPIO_IntConfig/165 MXC_GPIO_RegisterCallback/164 MXC_GPIO_Config/163 adxl343_set_power_control/154 adxl343_set_int_enable/155 adxl343_set_int_map/162 adxl343_set_fifo_mode/161 adxl343_set_offsets/160 adxl343_set_power_mode/159 adxl343_set_range/158 adxl343_set_data_rate/157 adxl343_get_axis_data/156 adxl343_set_int_enable/155 adxl343_set_power_control/154 
+adxl343_handler/146 (adxl343_handler)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Address is taken.
+  References: axis_data_ready/144 (write) 
+  Referring: adxl343_config/147 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: 
+blink_halt/145 (blink_halt)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: main/149 main/149 main/149 main/149 
+  Calls: LED_Toggle/153 MXC_Delay/152 puts/151 puts/151 
+axis_data_ready/144 (axis_data_ready)
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition
+  References: 
+  Referring: adxl343_handler/146 (write) main/149 (read) main/149 (write) 
+  Availability: not-ready
+  Varpool flags: initialized
+adxl343_irq_cfg/143 (adxl343_irq_cfg)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition
+  References: 
+  Referring: adxl343_config/147 (addr) adxl343_config/147 (addr) adxl343_config/147 (addr) adxl343_config/147 (read) adxl343_config/147 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+GPIO2_IRQHandler/142 (GPIO2_IRQHandler)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_GPIO_Handler/150 
+__NVIC_EnableIRQ/111 (__NVIC_EnableIRQ)
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: adxl343_config/147 
+  Calls: 
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+adxl343_init/178 (adxl343_init)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/149 
+  Calls: 
+MXC_I2C_SetFrequency/177 (MXC_I2C_SetFrequency)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/149 
+  Calls: 
+MXC_I2C_Init/176 (MXC_I2C_Init)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/149 
+  Calls: 
+puts/175 (__builtin_puts)
+  Type: function
+  Visibility: semantic_interposition external public
+  previous sharing asm name: 151
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/149 
+  Calls: 
+setbuf/174 (setbuf)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/149 
+  Calls: 
+_impure_ptr/173 (_impure_ptr)
+  Type: variable
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: main/149 (read) 
+  Availability: not-ready
+  Varpool flags:
+SystemCoreClockUpdate/172 (SystemCoreClockUpdate)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/149 
+  Calls: 
+MXC_SYS_Clock_Select/171 (MXC_SYS_Clock_Select)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/149 
+  Calls: 
+MXC_ICC_Enable/170 (MXC_ICC_Enable)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/149 
+  Calls: 
+*.LC0/169 (*.LC0)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition artificial
+  References: 
+  Referring: main/149 (read) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+getchar/168 (getchar)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: wait_for_keypress/148 
+  Calls: 
+printf/167 (printf)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/149 wait_for_keypress/148 wait_for_keypress/148 
+  Calls: 
+MXC_GPIO_EnableInt/166 (MXC_GPIO_EnableInt)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: adxl343_config/147 
+  Calls: 
+MXC_GPIO_IntConfig/165 (MXC_GPIO_IntConfig)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: adxl343_config/147 
+  Calls: 
+MXC_GPIO_RegisterCallback/164 (MXC_GPIO_RegisterCallback)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: adxl343_config/147 
+  Calls: 
+MXC_GPIO_Config/163 (MXC_GPIO_Config)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/149 adxl343_config/147 
+  Calls: 
+adxl343_set_int_map/162 (adxl343_set_int_map)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: adxl343_config/147 
+  Calls: 
+adxl343_set_fifo_mode/161 (adxl343_set_fifo_mode)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: adxl343_config/147 
+  Calls: 
+adxl343_set_offsets/160 (adxl343_set_offsets)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: adxl343_config/147 
+  Calls: 
+adxl343_set_power_mode/159 (adxl343_set_power_mode)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: adxl343_config/147 
+  Calls: 
+adxl343_set_range/158 (adxl343_set_range)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: adxl343_config/147 
+  Calls: 
+adxl343_set_data_rate/157 (adxl343_set_data_rate)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: adxl343_config/147 
+  Calls: 
+adxl343_get_axis_data/156 (adxl343_get_axis_data)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/149 adxl343_config/147 
+  Calls: 
+adxl343_set_int_enable/155 (adxl343_set_int_enable)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: adxl343_config/147 adxl343_config/147 
+  Calls: 
+adxl343_set_power_control/154 (adxl343_set_power_control)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: adxl343_config/147 adxl343_config/147 
+  Calls: 
+LED_Toggle/153 (LED_Toggle)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/149 blink_halt/145 
+  Calls: 
+MXC_Delay/152 (MXC_Delay)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/149 main/149 blink_halt/145 
+  Calls: 
+puts/151 (puts)
+  Type: function
+  Visibility: semantic_interposition external public
+  next sharing asm name: 175
+  References: 
+  Referring: 
+  Function flags:
+  Called by: blink_halt/145 blink_halt/145 
+  Calls: 
+MXC_GPIO_Handler/150 (MXC_GPIO_Handler)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: GPIO2_IRQHandler/142 
+  Calls: 
+main/149 (main)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: _impure_ptr/173 (read) *.LC0/169 (read) axis_data_ready/144 (read) axis_data_ready/144 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: LED_Toggle/153 MXC_Delay/152 printf/167 blink_halt/145 adxl343_get_axis_data/156 MXC_Delay/152 blink_halt/145 adxl343_config/147 blink_halt/145 adxl343_init/178 MXC_I2C_SetFrequency/177 MXC_GPIO_Config/163 blink_halt/145 MXC_I2C_Init/176 puts/175 setbuf/174 SystemCoreClockUpdate/172 MXC_SYS_Clock_Select/171 MXC_ICC_Enable/170 
+wait_for_keypress/148 (wait_for_keypress)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: printf/167 getchar/168 printf/167 
+adxl343_config/147 (adxl343_config)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: adxl343_irq_cfg/143 (addr) adxl343_irq_cfg/143 (addr) adxl343_handler/146 (addr) adxl343_irq_cfg/143 (addr) adxl343_irq_cfg/143 (read) adxl343_irq_cfg/143 (read) 
+  Referring: 
+  Function flags: body
+  Called by: main/149 
+  Calls: __NVIC_EnableIRQ/111 MXC_GPIO_EnableInt/166 MXC_GPIO_IntConfig/165 MXC_GPIO_RegisterCallback/164 MXC_GPIO_Config/163 adxl343_set_power_control/154 adxl343_set_int_enable/155 adxl343_set_int_map/162 adxl343_set_fifo_mode/161 adxl343_set_offsets/160 adxl343_set_power_mode/159 adxl343_set_range/158 adxl343_set_data_rate/157 adxl343_get_axis_data/156 adxl343_set_int_enable/155 adxl343_set_power_control/154 
+adxl343_handler/146 (adxl343_handler)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Address is taken.
+  References: axis_data_ready/144 (write) 
+  Referring: adxl343_config/147 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: 
+blink_halt/145 (blink_halt)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: main/149 main/149 main/149 main/149 
+  Calls: LED_Toggle/153 MXC_Delay/152 puts/151 puts/151 
+axis_data_ready/144 (axis_data_ready)
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition
+  References: 
+  Referring: adxl343_handler/146 (write) main/149 (read) main/149 (write) 
+  Availability: not-ready
+  Varpool flags: initialized
+adxl343_irq_cfg/143 (adxl343_irq_cfg)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition
+  References: 
+  Referring: adxl343_config/147 (addr) adxl343_config/147 (addr) adxl343_config/147 (addr) adxl343_config/147 (read) adxl343_config/147 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+GPIO2_IRQHandler/142 (GPIO2_IRQHandler)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_GPIO_Handler/150 
+__NVIC_EnableIRQ/111 (__NVIC_EnableIRQ)
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: adxl343_config/147 
+  Calls: 
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+adxl343_init/178 (adxl343_init)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: main/149 (51969104 (estimated locally),0.50 per call) 
+  Calls: 
+MXC_I2C_SetFrequency/177 (MXC_I2C_SetFrequency)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: main/149 (51969104 (estimated locally),0.50 per call) 
+  Calls: 
+MXC_I2C_Init/176 (MXC_I2C_Init)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: main/149 (103938207 (estimated locally),1.00 per call) 
+  Calls: 
+puts/175 (__builtin_puts)
+  Type: function
+  Visibility: semantic_interposition external public
+  previous sharing asm name: 151
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: main/149 (103938207 (estimated locally),1.00 per call) 
+  Calls: 
+setbuf/174 (setbuf)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: main/149 (103938207 (estimated locally),1.00 per call) 
+  Calls: 
+_impure_ptr/173 (_impure_ptr)
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: main/149 (read) 
+  Availability: not_available
+  Varpool flags:
+SystemCoreClockUpdate/172 (SystemCoreClockUpdate)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: main/149 (103938207 (estimated locally),1.00 per call) 
+  Calls: 
+MXC_SYS_Clock_Select/171 (MXC_SYS_Clock_Select)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: main/149 (103938207 (estimated locally),1.00 per call) 
+  Calls: 
+MXC_ICC_Enable/170 (MXC_ICC_Enable)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: main/149 (103938207 (estimated locally),1.00 per call) 
+  Calls: 
+*.LC0/169 (*.LC0)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly artificial
+  References: 
+  Referring: main/149 (read) 
+  Availability: available
+  Varpool flags: initialized used-by-single-function read-only const-value-known
+getchar/168 (getchar)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: wait_for_keypress/148 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+printf/167 (printf)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: main/149 (105119324 (estimated locally),1.01 per call) wait_for_keypress/148 (1073741824 (estimated locally),1.00 per call) wait_for_keypress/148 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+MXC_GPIO_EnableInt/166 (MXC_GPIO_EnableInt)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: adxl343_config/147 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+MXC_GPIO_IntConfig/165 (MXC_GPIO_IntConfig)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: adxl343_config/147 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+MXC_GPIO_RegisterCallback/164 (MXC_GPIO_RegisterCallback)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: adxl343_config/147 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+MXC_GPIO_Config/163 (MXC_GPIO_Config)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: main/149 (51969104 (estimated locally),0.50 per call) adxl343_config/147 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+adxl343_set_int_map/162 (adxl343_set_int_map)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: adxl343_config/147 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+adxl343_set_fifo_mode/161 (adxl343_set_fifo_mode)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: adxl343_config/147 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+adxl343_set_offsets/160 (adxl343_set_offsets)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: adxl343_config/147 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+adxl343_set_power_mode/159 (adxl343_set_power_mode)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: adxl343_config/147 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+adxl343_set_range/158 (adxl343_set_range)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: adxl343_config/147 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+adxl343_set_data_rate/157 (adxl343_set_data_rate)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: adxl343_config/147 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+adxl343_get_axis_data/156 (adxl343_get_axis_data)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: main/149 (118111600 (estimated locally),1.14 per call) adxl343_config/147 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+adxl343_set_int_enable/155 (adxl343_set_int_enable)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: adxl343_config/147 (1073741824 (estimated locally),1.00 per call) adxl343_config/147 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+adxl343_set_power_control/154 (adxl343_set_power_control)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: adxl343_config/147 (1073741824 (estimated locally),1.00 per call) adxl343_config/147 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+LED_Toggle/153 (LED_Toggle)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: main/149 (105119324 (estimated locally),1.01 per call) blink_halt/145 (1073741824 (estimated locally),101.00 per call) 
+  Calls: 
+MXC_Delay/152 (MXC_Delay)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: main/149 (105119324 (estimated locally),1.01 per call) main/149 (12992276 (estimated locally),0.13 per call) blink_halt/145 (1073741824 (estimated locally),101.00 per call) 
+  Calls: 
+puts/151 (puts)
+  Type: function
+  Visibility: semantic_interposition external public
+  next sharing asm name: 175
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: blink_halt/145 (10631108 (estimated locally),1.00 per call) blink_halt/145 (10631108 (estimated locally),1.00 per call) 
+  Calls: 
+MXC_GPIO_Handler/150 (MXC_GPIO_Handler)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: GPIO2_IRQHandler/142 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+main/149 (main)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: _impure_ptr/173 (read) *.LC0/169 (read) axis_data_ready/144 (read) axis_data_ready/144 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:103938207 (estimated locally) body only_called_at_startup executed_once
+  Called by: 
+  Calls: LED_Toggle/153 (105119324 (estimated locally),1.01 per call) MXC_Delay/152 (105119324 (estimated locally),1.01 per call) printf/167 (105119324 (estimated locally),1.01 per call) blink_halt/145 (12992276 (estimated locally),0.13 per call) adxl343_get_axis_data/156 (118111600 (estimated locally),1.14 per call) MXC_Delay/152 (12992276 (estimated locally),0.13 per call) blink_halt/145 (12992276 (estimated locally),0.13 per call) adxl343_config/147 (25984552 (estimated locally),0.25 per call) blink_halt/145 (25984552 (estimated locally),0.25 per call) adxl343_init/178 (51969104 (estimated locally),0.50 per call) MXC_I2C_SetFrequency/177 (51969104 (estimated locally),0.50 per call) MXC_GPIO_Config/163 (51969104 (estimated locally),0.50 per call) blink_halt/145 (51969104 (estimated locally),0.50 per call) MXC_I2C_Init/176 (103938207 (estimated locally),1.00 per call) puts/175 (103938207 (estimated locally),1.00 per call) setbuf/174 (103938207 (estimated locally),1.00 per call) SystemCoreClockUpdate/172 (103938207 (estimated locally),1.00 per call) MXC_SYS_Clock_Select/171 (103938207 (estimated locally),1.00 per call) MXC_ICC_Enable/170 (103938207 (estimated locally),1.00 per call) 
+wait_for_keypress/148 (wait_for_keypress)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: printf/167 (1073741824 (estimated locally),1.00 per call) getchar/168 (1073741824 (estimated locally),1.00 per call) printf/167 (1073741824 (estimated locally),1.00 per call) 
+adxl343_config/147 (adxl343_config)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: adxl343_irq_cfg/143 (addr) adxl343_irq_cfg/143 (addr) adxl343_handler/146 (addr) adxl343_irq_cfg/143 (addr) adxl343_irq_cfg/143 (read) adxl343_irq_cfg/143 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: main/149 (25984552 (estimated locally),0.25 per call) 
+  Calls: MXC_GPIO_EnableInt/166 (1073741824 (estimated locally),1.00 per call) MXC_GPIO_IntConfig/165 (1073741824 (estimated locally),1.00 per call) MXC_GPIO_RegisterCallback/164 (1073741824 (estimated locally),1.00 per call) MXC_GPIO_Config/163 (1073741824 (estimated locally),1.00 per call) adxl343_set_power_control/154 (1073741824 (estimated locally),1.00 per call) adxl343_set_int_enable/155 (1073741824 (estimated locally),1.00 per call) adxl343_set_int_map/162 (1073741824 (estimated locally),1.00 per call) adxl343_set_fifo_mode/161 (1073741824 (estimated locally),1.00 per call) adxl343_set_offsets/160 (1073741824 (estimated locally),1.00 per call) adxl343_set_power_mode/159 (1073741824 (estimated locally),1.00 per call) adxl343_set_range/158 (1073741824 (estimated locally),1.00 per call) adxl343_set_data_rate/157 (1073741824 (estimated locally),1.00 per call) adxl343_get_axis_data/156 (1073741824 (estimated locally),1.00 per call) adxl343_set_int_enable/155 (1073741824 (estimated locally),1.00 per call) adxl343_set_power_control/154 (1073741824 (estimated locally),1.00 per call) 
+adxl343_handler/146 (adxl343_handler)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  Address is taken.
+  References: axis_data_ready/144 (write) 
+  Referring: adxl343_config/147 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn
+  Called by: 
+  Calls: 
+blink_halt/145 (blink_halt)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:10631108 (estimated locally) body executed_once
+  Called by: main/149 (12992276 (estimated locally),0.13 per call) main/149 (12992276 (estimated locally),0.13 per call) main/149 (25984552 (estimated locally),0.25 per call) main/149 (51969104 (estimated locally),0.50 per call) 
+  Calls: LED_Toggle/153 (1073741824 (estimated locally),101.00 per call) MXC_Delay/152 (1073741824 (estimated locally),101.00 per call) puts/151 (10631108 (estimated locally),1.00 per call) puts/151 (10631108 (estimated locally),1.00 per call) 
+axis_data_ready/144 (axis_data_ready)
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition prevailing_def_ironly
+  References: 
+  Referring: adxl343_handler/146 (write) main/149 (read) main/149 (write) 
+  Availability: available
+  Varpool flags: initialized
+adxl343_irq_cfg/143 (adxl343_irq_cfg)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly
+  References: 
+  Referring: adxl343_config/147 (addr) adxl343_config/147 (addr) adxl343_config/147 (addr) adxl343_config/147 (read) adxl343_config/147 (read) 
+  Availability: available
+  Varpool flags: initialized used-by-single-function
+GPIO2_IRQHandler/142 (GPIO2_IRQHandler)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: MXC_GPIO_Handler/150 (1073741824 (estimated locally),1.00 per call) 
+Trivially needed variables: *.LC0/169 axis_data_ready/144 adxl343_irq_cfg/143
+Removing variables:
+
+Final Symbol table:
+
+adxl343_init/178 (adxl343_init)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_I2C_SetFrequency/177 (MXC_I2C_SetFrequency)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_I2C_Init/176 (MXC_I2C_Init)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+puts/175 (__builtin_puts)
+  Type: function
+  Visibility: semantic_interposition external public
+  previous sharing asm name: 151
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+setbuf/174 (setbuf)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+_impure_ptr/173 (_impure_ptr)
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+SystemCoreClockUpdate/172 (SystemCoreClockUpdate)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_SYS_Clock_Select/171 (MXC_SYS_Clock_Select)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_ICC_Enable/170 (MXC_ICC_Enable)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+*.LC0/169 (*.LC0)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly asm_written artificial
+  Aux: @0000000000000001
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized used-by-single-function read-only const-value-known
+getchar/168 (getchar)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+printf/167 (printf)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_GPIO_EnableInt/166 (MXC_GPIO_EnableInt)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_GPIO_IntConfig/165 (MXC_GPIO_IntConfig)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_GPIO_RegisterCallback/164 (MXC_GPIO_RegisterCallback)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_GPIO_Config/163 (MXC_GPIO_Config)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+adxl343_set_int_map/162 (adxl343_set_int_map)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+adxl343_set_fifo_mode/161 (adxl343_set_fifo_mode)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+adxl343_set_offsets/160 (adxl343_set_offsets)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+adxl343_set_power_mode/159 (adxl343_set_power_mode)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+adxl343_set_range/158 (adxl343_set_range)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+adxl343_set_data_rate/157 (adxl343_set_data_rate)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+adxl343_get_axis_data/156 (adxl343_get_axis_data)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+adxl343_set_int_enable/155 (adxl343_set_int_enable)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+adxl343_set_power_control/154 (adxl343_set_power_control)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+LED_Toggle/153 (LED_Toggle)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_Delay/152 (MXC_Delay)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+puts/151 (puts)
+  Type: function
+  Visibility: semantic_interposition external public
+  next sharing asm name: 175
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_GPIO_Handler/150 (MXC_GPIO_Handler)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+main/149 (main)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.main (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:103938207 (estimated locally) only_called_at_startup executed_once
+  Called by: 
+  Calls: 
+wait_for_keypress/148 (wait_for_keypress)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.wait_for_keypress (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+adxl343_config/147 (adxl343_config)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.adxl343_config (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+adxl343_handler/146 (adxl343_handler)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.adxl343_handler (implicit_section)
+  Address is taken.
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) nonfreeing_fn
+  Called by: 
+  Calls: 
+blink_halt/145 (blink_halt)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.blink_halt (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:10631108 (estimated locally) executed_once
+  Called by: 
+  Calls: 
+axis_data_ready/144 (axis_data_ready)
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition prevailing_def_ironly asm_written section:.bss.axis_data_ready (implicit_section)
+  Aux: @00000000053b3980
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized
+adxl343_irq_cfg/143 (adxl343_irq_cfg)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly asm_written section:.data.adxl343_irq_cfg (implicit_section)
+  Aux: @0000000004a5dc00
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized used-by-single-function
+GPIO2_IRQHandler/142 (GPIO2_IRQHandler)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.GPIO2_IRQHandler (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 

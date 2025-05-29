@@ -1,0 +1,1620 @@
+
+;; Function reg_read (reg_read, funcdef_no=139, decl_uid=8833, cgraph_uid=140, symbol_order=141)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 30.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg/v:SI 115 [ reg ])
+        (reg:SI 0 r0 [ reg ])) "src/adxl343.c":91:1 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v/f:SI 116 [ dat ])
+        (reg:SI 1 r1 [ dat ])) "src/adxl343.c":91:1 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 7 4 8 2 (debug_marker) "src/adxl343.c":92:5 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:QI 117)
+        (subreg/s/v:QI (reg/v:SI 115 [ reg ]) 0)) "src/adxl343.c":92:13 -1
+     (nil))
+(insn 9 8 10 2 (set (mem/c:QI (plus:SI (reg/f:SI 109 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 buf[0]+0 S1 A32])
+        (reg:QI 117)) "src/adxl343.c":92:13 -1
+     (nil))
+(debug_insn 10 9 11 2 (debug_marker) "src/adxl343.c":94:5 -1
+     (nil))
+(insn 11 10 12 2 (set (reg/f:SI 118)
+        (symbol_ref:SI ("i2c_req") [flags 0x2]  <var_decl 000000000516aa20 i2c_req>)) "src/adxl343.c":94:20 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:SI 119)
+        (plus:SI (reg/f:SI 109 virtual-stack-vars)
+            (const_int -4 [0xfffffffffffffffc]))) "src/adxl343.c":94:20 -1
+     (nil))
+(insn 13 12 14 2 (set (mem/f/c:SI (plus:SI (reg/f:SI 118)
+                (const_int 8 [0x8])) [1 i2c_req.tx_buf+0 S4 A32])
+        (reg:SI 119)) "src/adxl343.c":94:20 -1
+     (nil))
+(debug_insn 14 13 15 2 (debug_marker) "src/adxl343.c":95:5 -1
+     (nil))
+(insn 15 14 16 2 (set (reg/f:SI 120)
+        (symbol_ref:SI ("i2c_req") [flags 0x2]  <var_decl 000000000516aa20 i2c_req>)) "src/adxl343.c":95:20 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:SI 121)
+        (const_int 1 [0x1])) "src/adxl343.c":95:20 -1
+     (nil))
+(insn 17 16 18 2 (set (mem/c:SI (plus:SI (reg/f:SI 120)
+                (const_int 12 [0xc])) [4 i2c_req.tx_len+0 S4 A32])
+        (reg:SI 121)) "src/adxl343.c":95:20 -1
+     (nil))
+(debug_insn 18 17 19 2 (debug_marker) "src/adxl343.c":96:5 -1
+     (nil))
+(insn 19 18 20 2 (set (reg/f:SI 122)
+        (symbol_ref:SI ("i2c_req") [flags 0x2]  <var_decl 000000000516aa20 i2c_req>)) "src/adxl343.c":96:20 -1
+     (nil))
+(insn 20 19 21 2 (set (mem/f/c:SI (plus:SI (reg/f:SI 122)
+                (const_int 16 [0x10])) [1 i2c_req.rx_buf+0 S4 A32])
+        (reg/v/f:SI 116 [ dat ])) "src/adxl343.c":96:20 -1
+     (nil))
+(debug_insn 21 20 22 2 (debug_marker) "src/adxl343.c":97:5 -1
+     (nil))
+(insn 22 21 23 2 (set (reg/f:SI 123)
+        (symbol_ref:SI ("i2c_req") [flags 0x2]  <var_decl 000000000516aa20 i2c_req>)) "src/adxl343.c":97:20 -1
+     (nil))
+(insn 23 22 24 2 (set (reg:SI 124)
+        (const_int 1 [0x1])) "src/adxl343.c":97:20 -1
+     (nil))
+(insn 24 23 25 2 (set (mem/c:SI (plus:SI (reg/f:SI 123)
+                (const_int 20 [0x14])) [4 i2c_req.rx_len+0 S4 A32])
+        (reg:SI 124)) "src/adxl343.c":97:20 -1
+     (nil))
+(debug_insn 25 24 26 2 (debug_marker) "src/adxl343.c":99:5 -1
+     (nil))
+(insn 26 25 27 2 (set (reg:SI 125)
+        (symbol_ref:SI ("i2c_req") [flags 0x2]  <var_decl 000000000516aa20 i2c_req>)) "src/adxl343.c":99:12 -1
+     (nil))
+(insn 27 26 28 2 (set (reg:SI 0 r0)
+        (reg:SI 125)) "src/adxl343.c":99:12 -1
+     (nil))
+(call_insn 28 27 29 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("MXC_I2C_MasterTransaction") [flags 0x41]  <function_decl 0000000005179600 MXC_I2C_MasterTransaction>) [0 MXC_I2C_MasterTransaction S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "src/adxl343.c":99:12 -1
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(insn 29 28 33 2 (set (reg:SI 114 [ <retval> ])
+        (reg:SI 0 r0)) "src/adxl343.c":99:12 -1
+     (nil))
+(insn 33 29 34 2 (set (reg/i:SI 0 r0)
+        (reg:SI 114 [ <retval> ])) "src/adxl343.c":100:1 -1
+     (nil))
+(insn 34 33 0 2 (use (reg/i:SI 0 r0)) "src/adxl343.c":100:1 -1
+     (nil))
+
+;; Function reg_write (reg_write, funcdef_no=138, decl_uid=8828, cgraph_uid=139, symbol_order=140)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 29.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg/v:SI 115 [ reg ])
+        (reg:SI 0 r0 [ reg ])) "src/adxl343.c":80:1 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v:SI 116 [ val ])
+        (reg:SI 1 r1 [ val ])) "src/adxl343.c":80:1 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 7 4 8 2 (debug_marker) "src/adxl343.c":81:5 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:QI 117)
+        (subreg/s/v:QI (reg/v:SI 115 [ reg ]) 0)) "src/adxl343.c":81:13 -1
+     (nil))
+(insn 9 8 10 2 (set (mem/c:QI (plus:SI (reg/f:SI 109 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 buf[0]+0 S1 A32])
+        (reg:QI 117)) "src/adxl343.c":81:13 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:QI 118)
+        (subreg/s/v:QI (reg/v:SI 116 [ val ]) 0)) "src/adxl343.c":81:13 -1
+     (nil))
+(insn 11 10 12 2 (set (mem/c:QI (plus:SI (reg/f:SI 109 virtual-stack-vars)
+                (const_int -3 [0xfffffffffffffffd])) [0 buf[1]+0 S1 A8])
+        (reg:QI 118)) "src/adxl343.c":81:13 -1
+     (nil))
+(debug_insn 12 11 13 2 (debug_marker) "src/adxl343.c":83:5 -1
+     (nil))
+(insn 13 12 14 2 (set (reg/f:SI 119)
+        (symbol_ref:SI ("i2c_req") [flags 0x2]  <var_decl 000000000516aa20 i2c_req>)) "src/adxl343.c":83:20 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:SI 120)
+        (plus:SI (reg/f:SI 109 virtual-stack-vars)
+            (const_int -4 [0xfffffffffffffffc]))) "src/adxl343.c":83:20 -1
+     (nil))
+(insn 15 14 16 2 (set (mem/f/c:SI (plus:SI (reg/f:SI 119)
+                (const_int 8 [0x8])) [1 i2c_req.tx_buf+0 S4 A32])
+        (reg:SI 120)) "src/adxl343.c":83:20 -1
+     (nil))
+(debug_insn 16 15 17 2 (debug_marker) "src/adxl343.c":84:5 -1
+     (nil))
+(insn 17 16 18 2 (set (reg/f:SI 121)
+        (symbol_ref:SI ("i2c_req") [flags 0x2]  <var_decl 000000000516aa20 i2c_req>)) "src/adxl343.c":84:20 -1
+     (nil))
+(insn 18 17 19 2 (set (reg:SI 122)
+        (const_int 2 [0x2])) "src/adxl343.c":84:20 -1
+     (nil))
+(insn 19 18 20 2 (set (mem/c:SI (plus:SI (reg/f:SI 121)
+                (const_int 12 [0xc])) [4 i2c_req.tx_len+0 S4 A32])
+        (reg:SI 122)) "src/adxl343.c":84:20 -1
+     (nil))
+(debug_insn 20 19 21 2 (debug_marker) "src/adxl343.c":85:5 -1
+     (nil))
+(insn 21 20 22 2 (set (reg/f:SI 123)
+        (symbol_ref:SI ("i2c_req") [flags 0x2]  <var_decl 000000000516aa20 i2c_req>)) "src/adxl343.c":85:20 -1
+     (nil))
+(insn 22 21 23 2 (set (reg:SI 124)
+        (const_int 0 [0])) "src/adxl343.c":85:20 -1
+     (nil))
+(insn 23 22 24 2 (set (mem/c:SI (plus:SI (reg/f:SI 123)
+                (const_int 20 [0x14])) [4 i2c_req.rx_len+0 S4 A32])
+        (reg:SI 124)) "src/adxl343.c":85:20 -1
+     (nil))
+(debug_insn 24 23 25 2 (debug_marker) "src/adxl343.c":87:5 -1
+     (nil))
+(insn 25 24 26 2 (set (reg:SI 125)
+        (symbol_ref:SI ("i2c_req") [flags 0x2]  <var_decl 000000000516aa20 i2c_req>)) "src/adxl343.c":87:12 -1
+     (nil))
+(insn 26 25 27 2 (set (reg:SI 0 r0)
+        (reg:SI 125)) "src/adxl343.c":87:12 -1
+     (nil))
+(call_insn 27 26 28 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("MXC_I2C_MasterTransaction") [flags 0x41]  <function_decl 0000000005179600 MXC_I2C_MasterTransaction>) [0 MXC_I2C_MasterTransaction S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "src/adxl343.c":87:12 -1
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(insn 28 27 32 2 (set (reg:SI 114 [ <retval> ])
+        (reg:SI 0 r0)) "src/adxl343.c":87:12 -1
+     (nil))
+(insn 32 28 33 2 (set (reg/i:SI 0 r0)
+        (reg:SI 114 [ <retval> ])) "src/adxl343.c":88:1 -1
+     (nil))
+(insn 33 32 0 2 (use (reg/i:SI 0 r0)) "src/adxl343.c":88:1 -1
+     (nil))
+
+;; Function adxl343_get_axis_data (adxl343_get_axis_data, funcdef_no=140, decl_uid=8804, cgraph_uid=141, symbol_order=142)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 30.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v/f:SI 115 [ ptr ])
+        (reg:SI 0 r0 [ ptr ])) "src/adxl343.c":103:1 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "src/adxl343.c":104:5 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 116)
+        (const_int 50 [0x32])) "src/adxl343.c":104:13 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:QI 117)
+        (subreg:QI (reg:SI 116) 0)) "src/adxl343.c":104:13 -1
+     (nil))
+(insn 9 8 10 2 (set (mem/c:QI (plus:SI (reg/f:SI 109 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 buf+0 S1 A32])
+        (reg:QI 117)) "src/adxl343.c":104:13 -1
+     (nil))
+(debug_insn 10 9 11 2 (debug_marker) "src/adxl343.c":106:5 -1
+     (nil))
+(insn 11 10 12 2 (set (reg/f:SI 118)
+        (symbol_ref:SI ("i2c_req") [flags 0x2]  <var_decl 000000000516aa20 i2c_req>)) "src/adxl343.c":106:20 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:SI 119)
+        (plus:SI (reg/f:SI 109 virtual-stack-vars)
+            (const_int -4 [0xfffffffffffffffc]))) "src/adxl343.c":106:20 -1
+     (nil))
+(insn 13 12 14 2 (set (mem/f/c:SI (plus:SI (reg/f:SI 118)
+                (const_int 8 [0x8])) [1 i2c_req.tx_buf+0 S4 A32])
+        (reg:SI 119)) "src/adxl343.c":106:20 -1
+     (nil))
+(debug_insn 14 13 15 2 (debug_marker) "src/adxl343.c":107:5 -1
+     (nil))
+(insn 15 14 16 2 (set (reg/f:SI 120)
+        (symbol_ref:SI ("i2c_req") [flags 0x2]  <var_decl 000000000516aa20 i2c_req>)) "src/adxl343.c":107:20 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:SI 121)
+        (const_int 1 [0x1])) "src/adxl343.c":107:20 -1
+     (nil))
+(insn 17 16 18 2 (set (mem/c:SI (plus:SI (reg/f:SI 120)
+                (const_int 12 [0xc])) [4 i2c_req.tx_len+0 S4 A32])
+        (reg:SI 121)) "src/adxl343.c":107:20 -1
+     (nil))
+(debug_insn 18 17 19 2 (debug_marker) "src/adxl343.c":108:5 -1
+     (nil))
+(insn 19 18 20 2 (set (reg/f:SI 122)
+        (symbol_ref:SI ("i2c_req") [flags 0x2]  <var_decl 000000000516aa20 i2c_req>)) "src/adxl343.c":108:20 -1
+     (nil))
+(insn 20 19 21 2 (set (mem/f/c:SI (plus:SI (reg/f:SI 122)
+                (const_int 16 [0x10])) [1 i2c_req.rx_buf+0 S4 A32])
+        (reg/v/f:SI 115 [ ptr ])) "src/adxl343.c":108:20 -1
+     (nil))
+(debug_insn 21 20 22 2 (debug_marker) "src/adxl343.c":109:5 -1
+     (nil))
+(insn 22 21 23 2 (set (reg/f:SI 123)
+        (symbol_ref:SI ("i2c_req") [flags 0x2]  <var_decl 000000000516aa20 i2c_req>)) "src/adxl343.c":109:20 -1
+     (nil))
+(insn 23 22 24 2 (set (reg:SI 124)
+        (const_int 6 [0x6])) "src/adxl343.c":109:20 -1
+     (nil))
+(insn 24 23 25 2 (set (mem/c:SI (plus:SI (reg/f:SI 123)
+                (const_int 20 [0x14])) [4 i2c_req.rx_len+0 S4 A32])
+        (reg:SI 124)) "src/adxl343.c":109:20 -1
+     (nil))
+(debug_insn 25 24 26 2 (debug_marker) "src/adxl343.c":111:5 -1
+     (nil))
+(insn 26 25 27 2 (set (reg:SI 125)
+        (symbol_ref:SI ("i2c_req") [flags 0x2]  <var_decl 000000000516aa20 i2c_req>)) "src/adxl343.c":111:12 -1
+     (nil))
+(insn 27 26 28 2 (set (reg:SI 0 r0)
+        (reg:SI 125)) "src/adxl343.c":111:12 -1
+     (nil))
+(call_insn 28 27 29 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("MXC_I2C_MasterTransaction") [flags 0x41]  <function_decl 0000000005179600 MXC_I2C_MasterTransaction>) [0 MXC_I2C_MasterTransaction S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "src/adxl343.c":111:12 -1
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(insn 29 28 33 2 (set (reg:SI 114 [ <retval> ])
+        (reg:SI 0 r0)) "src/adxl343.c":111:12 -1
+     (nil))
+(insn 33 29 34 2 (set (reg/i:SI 0 r0)
+        (reg:SI 114 [ <retval> ])) "src/adxl343.c":112:1 -1
+     (nil))
+(insn 34 33 0 2 (use (reg/i:SI 0 r0)) "src/adxl343.c":112:1 -1
+     (nil))
+
+;; Function adxl343_set_power_mode (adxl343_set_power_mode, funcdef_no=141, decl_uid=8812, cgraph_uid=142, symbol_order=143)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Edge 2->5 redirected to 6
+Merging block 5 into block 4...
+Merged blocks 4 and 5.
+Merged 4 and 5 without moving.
+Removing jump 37.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v:SI 118 [ mode ])
+        (reg:SI 0 r0 [ mode ])) "src/adxl343.c":115:1 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "src/adxl343.c":116:5 -1
+     (nil))
+(debug_insn 7 6 8 2 (debug_marker) "src/adxl343.c":117:5 -1
+     (nil))
+(debug_insn 8 7 9 2 (debug_marker) "src/adxl343.c":119:5 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 119)
+        (plus:SI (reg/f:SI 109 virtual-stack-vars)
+            (const_int -1 [0xffffffffffffffff]))) "src/adxl343.c":119:19 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 1 r1)
+        (reg:SI 119)) "src/adxl343.c":119:19 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:SI 0 r0)
+        (const_int 44 [0x2c])) "src/adxl343.c":119:19 -1
+     (nil))
+(call_insn 12 11 13 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("reg_read") [flags 0x3]  <function_decl 0000000003dd8b00 reg_read>) [0 reg_read S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "src/adxl343.c":119:19 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:QI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(insn 13 12 14 2 (set (reg/v:SI 117 [ <retval> ])
+        (reg:SI 0 r0)) "src/adxl343.c":119:19 -1
+     (nil))
+(debug_insn 14 13 15 2 (var_location:SI result (reg/v:SI 117 [ <retval> ])) "src/adxl343.c":119:19 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 117 [ <retval> ])
+            (const_int 0 [0]))) "src/adxl343.c":119:8 discrim 1 -1
+     (nil))
+(jump_insn 16 15 17 2 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 39)
+            (pc))) "src/adxl343.c":119:8 discrim 1 277 {arm_cond_branch}
+     (int_list:REG_BR_PROB 548896828 (nil))
+ -> 39)
+(note 17 16 18 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 18 17 19 4 (debug_marker) "src/adxl343.c":121:5 -1
+     (nil))
+(insn 19 18 20 4 (set (reg:SI 121)
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 109 virtual-stack-vars)
+                    (const_int -1 [0xffffffffffffffff])) [0 reg+0 S1 A8]))) "src/adxl343.c":121:9 -1
+     (nil))
+(insn 20 19 21 4 (set (reg:QI 120)
+        (subreg:QI (reg:SI 121) 0)) "src/adxl343.c":121:9 -1
+     (nil))
+(insn 21 20 22 4 (set (reg:SI 122)
+        (and:SI (subreg:SI (reg:QI 120) 0)
+            (const_int -17 [0xffffffffffffffef]))) "src/adxl343.c":121:9 -1
+     (nil))
+(insn 22 21 23 4 (set (reg:SI 115 [ _2 ])
+        (zero_extend:SI (subreg:QI (reg:SI 122) 0))) "src/adxl343.c":121:9 -1
+     (nil))
+(insn 23 22 24 4 (set (reg:QI 123)
+        (subreg/s/v:QI (reg:SI 115 [ _2 ]) 0)) "src/adxl343.c":121:9 -1
+     (nil))
+(insn 24 23 25 4 (set (mem/c:QI (plus:SI (reg/f:SI 109 virtual-stack-vars)
+                (const_int -1 [0xffffffffffffffff])) [0 reg+0 S1 A8])
+        (reg:QI 123)) "src/adxl343.c":121:9 -1
+     (nil))
+(debug_insn 25 24 26 4 (debug_marker) "src/adxl343.c":122:5 -1
+     (nil))
+(insn 26 25 27 4 (set (reg:SI 124)
+        (ior:SI (reg:SI 115 [ _2 ])
+            (reg/v:SI 118 [ mode ]))) "src/adxl343.c":122:9 -1
+     (nil))
+(insn 27 26 28 4 (set (reg:SI 116 [ _3 ])
+        (zero_extend:SI (subreg:QI (reg:SI 124) 0))) "src/adxl343.c":122:9 -1
+     (nil))
+(insn 28 27 29 4 (set (reg:QI 125)
+        (subreg/s/v:QI (reg:SI 116 [ _3 ]) 0)) "src/adxl343.c":122:9 -1
+     (nil))
+(insn 29 28 30 4 (set (mem/c:QI (plus:SI (reg/f:SI 109 virtual-stack-vars)
+                (const_int -1 [0xffffffffffffffff])) [0 reg+0 S1 A8])
+        (reg:QI 125)) "src/adxl343.c":122:9 -1
+     (nil))
+(debug_insn 30 29 31 4 (debug_marker) "src/adxl343.c":123:5 -1
+     (nil))
+(insn 31 30 32 4 (set (reg:SI 1 r1)
+        (reg:SI 116 [ _3 ])) "src/adxl343.c":123:12 -1
+     (nil))
+(insn 32 31 33 4 (set (reg:SI 0 r0)
+        (const_int 44 [0x2c])) "src/adxl343.c":123:12 -1
+     (nil))
+(call_insn 33 32 34 4 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("reg_write") [flags 0x3]  <function_decl 0000000003dd8900 reg_write>) [0 reg_write S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "src/adxl343.c":123:12 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:QI (use (reg:SI 0 r0))
+            (expr_list:QI (use (reg:SI 1 r1))
+                (nil)))))
+(insn 34 33 39 4 (set (reg/v:SI 117 [ <retval> ])
+        (reg:SI 0 r0)) "src/adxl343.c":123:12 -1
+     (nil))
+(code_label 39 34 42 6 13 (nil) [1 uses])
+(note 42 39 40 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 40 42 41 6 (set (reg/i:SI 0 r0)
+        (reg/v:SI 117 [ <retval> ])) "src/adxl343.c":124:1 -1
+     (nil))
+(insn 41 40 0 6 (use (reg/i:SI 0 r0)) "src/adxl343.c":124:1 -1
+     (nil))
+
+;; Function adxl343_set_data_rate (adxl343_set_data_rate, funcdef_no=142, decl_uid=8806, cgraph_uid=143, symbol_order=144)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Edge 2->5 redirected to 6
+Merging block 5 into block 4...
+Merged blocks 4 and 5.
+Merged 4 and 5 without moving.
+Removing jump 37.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v:SI 118 [ rate ])
+        (reg:SI 0 r0 [ rate ])) "src/adxl343.c":127:1 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "src/adxl343.c":128:5 -1
+     (nil))
+(debug_insn 7 6 8 2 (debug_marker) "src/adxl343.c":129:5 -1
+     (nil))
+(debug_insn 8 7 9 2 (debug_marker) "src/adxl343.c":131:5 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 119)
+        (plus:SI (reg/f:SI 109 virtual-stack-vars)
+            (const_int -1 [0xffffffffffffffff]))) "src/adxl343.c":131:19 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 1 r1)
+        (reg:SI 119)) "src/adxl343.c":131:19 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:SI 0 r0)
+        (const_int 44 [0x2c])) "src/adxl343.c":131:19 -1
+     (nil))
+(call_insn 12 11 13 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("reg_read") [flags 0x3]  <function_decl 0000000003dd8b00 reg_read>) [0 reg_read S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "src/adxl343.c":131:19 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:QI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(insn 13 12 14 2 (set (reg/v:SI 117 [ <retval> ])
+        (reg:SI 0 r0)) "src/adxl343.c":131:19 -1
+     (nil))
+(debug_insn 14 13 15 2 (var_location:SI result (reg/v:SI 117 [ <retval> ])) "src/adxl343.c":131:19 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 117 [ <retval> ])
+            (const_int 0 [0]))) "src/adxl343.c":131:8 discrim 1 -1
+     (nil))
+(jump_insn 16 15 17 2 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 39)
+            (pc))) "src/adxl343.c":131:8 discrim 1 277 {arm_cond_branch}
+     (int_list:REG_BR_PROB 548896828 (nil))
+ -> 39)
+(note 17 16 18 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 18 17 19 4 (debug_marker) "src/adxl343.c":133:5 -1
+     (nil))
+(insn 19 18 20 4 (set (reg:SI 121)
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 109 virtual-stack-vars)
+                    (const_int -1 [0xffffffffffffffff])) [0 reg+0 S1 A8]))) "src/adxl343.c":133:9 -1
+     (nil))
+(insn 20 19 21 4 (set (reg:QI 120)
+        (subreg:QI (reg:SI 121) 0)) "src/adxl343.c":133:9 -1
+     (nil))
+(insn 21 20 22 4 (set (reg:SI 122)
+        (and:SI (subreg:SI (reg:QI 120) 0)
+            (const_int -16 [0xfffffffffffffff0]))) "src/adxl343.c":133:9 -1
+     (nil))
+(insn 22 21 23 4 (set (reg:SI 115 [ _2 ])
+        (zero_extend:SI (subreg:QI (reg:SI 122) 0))) "src/adxl343.c":133:9 -1
+     (nil))
+(insn 23 22 24 4 (set (reg:QI 123)
+        (subreg/s/v:QI (reg:SI 115 [ _2 ]) 0)) "src/adxl343.c":133:9 -1
+     (nil))
+(insn 24 23 25 4 (set (mem/c:QI (plus:SI (reg/f:SI 109 virtual-stack-vars)
+                (const_int -1 [0xffffffffffffffff])) [0 reg+0 S1 A8])
+        (reg:QI 123)) "src/adxl343.c":133:9 -1
+     (nil))
+(debug_insn 25 24 26 4 (debug_marker) "src/adxl343.c":134:5 -1
+     (nil))
+(insn 26 25 27 4 (set (reg:SI 124)
+        (ior:SI (reg:SI 115 [ _2 ])
+            (reg/v:SI 118 [ rate ]))) "src/adxl343.c":134:9 -1
+     (nil))
+(insn 27 26 28 4 (set (reg:SI 116 [ _3 ])
+        (zero_extend:SI (subreg:QI (reg:SI 124) 0))) "src/adxl343.c":134:9 -1
+     (nil))
+(insn 28 27 29 4 (set (reg:QI 125)
+        (subreg/s/v:QI (reg:SI 116 [ _3 ]) 0)) "src/adxl343.c":134:9 -1
+     (nil))
+(insn 29 28 30 4 (set (mem/c:QI (plus:SI (reg/f:SI 109 virtual-stack-vars)
+                (const_int -1 [0xffffffffffffffff])) [0 reg+0 S1 A8])
+        (reg:QI 125)) "src/adxl343.c":134:9 -1
+     (nil))
+(debug_insn 30 29 31 4 (debug_marker) "src/adxl343.c":135:5 -1
+     (nil))
+(insn 31 30 32 4 (set (reg:SI 1 r1)
+        (reg:SI 116 [ _3 ])) "src/adxl343.c":135:12 -1
+     (nil))
+(insn 32 31 33 4 (set (reg:SI 0 r0)
+        (const_int 44 [0x2c])) "src/adxl343.c":135:12 -1
+     (nil))
+(call_insn 33 32 34 4 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("reg_write") [flags 0x3]  <function_decl 0000000003dd8900 reg_write>) [0 reg_write S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "src/adxl343.c":135:12 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:QI (use (reg:SI 0 r0))
+            (expr_list:QI (use (reg:SI 1 r1))
+                (nil)))))
+(insn 34 33 39 4 (set (reg/v:SI 117 [ <retval> ])
+        (reg:SI 0 r0)) "src/adxl343.c":135:12 -1
+     (nil))
+(code_label 39 34 42 6 17 (nil) [1 uses])
+(note 42 39 40 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 40 42 41 6 (set (reg/i:SI 0 r0)
+        (reg/v:SI 117 [ <retval> ])) "src/adxl343.c":136:1 -1
+     (nil))
+(insn 41 40 0 6 (use (reg/i:SI 0 r0)) "src/adxl343.c":136:1 -1
+     (nil))
+
+;; Function adxl343_set_fifo_mode (adxl343_set_fifo_mode, funcdef_no=143, decl_uid=8814, cgraph_uid=144, symbol_order=145)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Edge 2->5 redirected to 6
+Merging block 5 into block 4...
+Merged blocks 4 and 5.
+Merged 4 and 5 without moving.
+Removing jump 37.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v:SI 118 [ mode ])
+        (reg:SI 0 r0 [ mode ])) "src/adxl343.c":139:1 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "src/adxl343.c":140:5 -1
+     (nil))
+(debug_insn 7 6 8 2 (debug_marker) "src/adxl343.c":141:5 -1
+     (nil))
+(debug_insn 8 7 9 2 (debug_marker) "src/adxl343.c":143:5 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 119)
+        (plus:SI (reg/f:SI 109 virtual-stack-vars)
+            (const_int -1 [0xffffffffffffffff]))) "src/adxl343.c":143:19 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 1 r1)
+        (reg:SI 119)) "src/adxl343.c":143:19 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:SI 0 r0)
+        (const_int 56 [0x38])) "src/adxl343.c":143:19 -1
+     (nil))
+(call_insn 12 11 13 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("reg_read") [flags 0x3]  <function_decl 0000000003dd8b00 reg_read>) [0 reg_read S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "src/adxl343.c":143:19 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:QI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(insn 13 12 14 2 (set (reg/v:SI 117 [ <retval> ])
+        (reg:SI 0 r0)) "src/adxl343.c":143:19 -1
+     (nil))
+(debug_insn 14 13 15 2 (var_location:SI result (reg/v:SI 117 [ <retval> ])) "src/adxl343.c":143:19 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 117 [ <retval> ])
+            (const_int 0 [0]))) "src/adxl343.c":143:8 discrim 1 -1
+     (nil))
+(jump_insn 16 15 17 2 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 39)
+            (pc))) "src/adxl343.c":143:8 discrim 1 277 {arm_cond_branch}
+     (int_list:REG_BR_PROB 548896828 (nil))
+ -> 39)
+(note 17 16 18 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 18 17 19 4 (debug_marker) "src/adxl343.c":145:5 -1
+     (nil))
+(insn 19 18 20 4 (set (reg:SI 121)
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 109 virtual-stack-vars)
+                    (const_int -1 [0xffffffffffffffff])) [0 reg+0 S1 A8]))) "src/adxl343.c":145:9 -1
+     (nil))
+(insn 20 19 21 4 (set (reg:QI 120)
+        (subreg:QI (reg:SI 121) 0)) "src/adxl343.c":145:9 -1
+     (nil))
+(insn 21 20 22 4 (set (reg:SI 122)
+        (and:SI (subreg:SI (reg:QI 120) 0)
+            (const_int 63 [0x3f]))) "src/adxl343.c":145:9 -1
+     (nil))
+(insn 22 21 23 4 (set (reg:SI 115 [ _2 ])
+        (zero_extend:SI (subreg:QI (reg:SI 122) 0))) "src/adxl343.c":145:9 -1
+     (nil))
+(insn 23 22 24 4 (set (reg:QI 123)
+        (subreg/s/v:QI (reg:SI 115 [ _2 ]) 0)) "src/adxl343.c":145:9 -1
+     (nil))
+(insn 24 23 25 4 (set (mem/c:QI (plus:SI (reg/f:SI 109 virtual-stack-vars)
+                (const_int -1 [0xffffffffffffffff])) [0 reg+0 S1 A8])
+        (reg:QI 123)) "src/adxl343.c":145:9 -1
+     (nil))
+(debug_insn 25 24 26 4 (debug_marker) "src/adxl343.c":146:5 -1
+     (nil))
+(insn 26 25 27 4 (set (reg:SI 124)
+        (ior:SI (reg:SI 115 [ _2 ])
+            (reg/v:SI 118 [ mode ]))) "src/adxl343.c":146:9 -1
+     (nil))
+(insn 27 26 28 4 (set (reg:SI 116 [ _3 ])
+        (zero_extend:SI (subreg:QI (reg:SI 124) 0))) "src/adxl343.c":146:9 -1
+     (nil))
+(insn 28 27 29 4 (set (reg:QI 125)
+        (subreg/s/v:QI (reg:SI 116 [ _3 ]) 0)) "src/adxl343.c":146:9 -1
+     (nil))
+(insn 29 28 30 4 (set (mem/c:QI (plus:SI (reg/f:SI 109 virtual-stack-vars)
+                (const_int -1 [0xffffffffffffffff])) [0 reg+0 S1 A8])
+        (reg:QI 125)) "src/adxl343.c":146:9 -1
+     (nil))
+(debug_insn 30 29 31 4 (debug_marker) "src/adxl343.c":147:5 -1
+     (nil))
+(insn 31 30 32 4 (set (reg:SI 1 r1)
+        (reg:SI 116 [ _3 ])) "src/adxl343.c":147:12 -1
+     (nil))
+(insn 32 31 33 4 (set (reg:SI 0 r0)
+        (const_int 56 [0x38])) "src/adxl343.c":147:12 -1
+     (nil))
+(call_insn 33 32 34 4 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("reg_write") [flags 0x3]  <function_decl 0000000003dd8900 reg_write>) [0 reg_write S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "src/adxl343.c":147:12 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:QI (use (reg:SI 0 r0))
+            (expr_list:QI (use (reg:SI 1 r1))
+                (nil)))))
+(insn 34 33 39 4 (set (reg/v:SI 117 [ <retval> ])
+        (reg:SI 0 r0)) "src/adxl343.c":147:12 -1
+     (nil))
+(code_label 39 34 42 6 21 (nil) [1 uses])
+(note 42 39 40 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 40 42 41 6 (set (reg/i:SI 0 r0)
+        (reg/v:SI 117 [ <retval> ])) "src/adxl343.c":148:1 -1
+     (nil))
+(insn 41 40 0 6 (use (reg/i:SI 0 r0)) "src/adxl343.c":148:1 -1
+     (nil))
+
+;; Function adxl343_set_range (adxl343_set_range, funcdef_no=144, decl_uid=8808, cgraph_uid=145, symbol_order=146)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Edge 2->5 redirected to 6
+Merging block 5 into block 4...
+Merged blocks 4 and 5.
+Merged 4 and 5 without moving.
+Removing jump 37.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v:SI 118 [ range ])
+        (reg:SI 0 r0 [ range ])) "src/adxl343.c":151:1 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "src/adxl343.c":152:5 -1
+     (nil))
+(debug_insn 7 6 8 2 (debug_marker) "src/adxl343.c":153:5 -1
+     (nil))
+(debug_insn 8 7 9 2 (debug_marker) "src/adxl343.c":155:5 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 119)
+        (plus:SI (reg/f:SI 109 virtual-stack-vars)
+            (const_int -1 [0xffffffffffffffff]))) "src/adxl343.c":155:19 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 1 r1)
+        (reg:SI 119)) "src/adxl343.c":155:19 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:SI 0 r0)
+        (const_int 49 [0x31])) "src/adxl343.c":155:19 -1
+     (nil))
+(call_insn 12 11 13 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("reg_read") [flags 0x3]  <function_decl 0000000003dd8b00 reg_read>) [0 reg_read S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "src/adxl343.c":155:19 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:QI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(insn 13 12 14 2 (set (reg/v:SI 117 [ <retval> ])
+        (reg:SI 0 r0)) "src/adxl343.c":155:19 -1
+     (nil))
+(debug_insn 14 13 15 2 (var_location:SI result (reg/v:SI 117 [ <retval> ])) "src/adxl343.c":155:19 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 117 [ <retval> ])
+            (const_int 0 [0]))) "src/adxl343.c":155:8 discrim 1 -1
+     (nil))
+(jump_insn 16 15 17 2 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 39)
+            (pc))) "src/adxl343.c":155:8 discrim 1 277 {arm_cond_branch}
+     (int_list:REG_BR_PROB 548896828 (nil))
+ -> 39)
+(note 17 16 18 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 18 17 19 4 (debug_marker) "src/adxl343.c":157:5 -1
+     (nil))
+(insn 19 18 20 4 (set (reg:SI 121)
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 109 virtual-stack-vars)
+                    (const_int -1 [0xffffffffffffffff])) [0 reg+0 S1 A8]))) "src/adxl343.c":157:9 -1
+     (nil))
+(insn 20 19 21 4 (set (reg:QI 120)
+        (subreg:QI (reg:SI 121) 0)) "src/adxl343.c":157:9 -1
+     (nil))
+(insn 21 20 22 4 (set (reg:SI 122)
+        (and:SI (subreg:SI (reg:QI 120) 0)
+            (const_int -4 [0xfffffffffffffffc]))) "src/adxl343.c":157:9 -1
+     (nil))
+(insn 22 21 23 4 (set (reg:SI 115 [ _2 ])
+        (zero_extend:SI (subreg:QI (reg:SI 122) 0))) "src/adxl343.c":157:9 -1
+     (nil))
+(insn 23 22 24 4 (set (reg:QI 123)
+        (subreg/s/v:QI (reg:SI 115 [ _2 ]) 0)) "src/adxl343.c":157:9 -1
+     (nil))
+(insn 24 23 25 4 (set (mem/c:QI (plus:SI (reg/f:SI 109 virtual-stack-vars)
+                (const_int -1 [0xffffffffffffffff])) [0 reg+0 S1 A8])
+        (reg:QI 123)) "src/adxl343.c":157:9 -1
+     (nil))
+(debug_insn 25 24 26 4 (debug_marker) "src/adxl343.c":158:5 -1
+     (nil))
+(insn 26 25 27 4 (set (reg:SI 124)
+        (ior:SI (reg:SI 115 [ _2 ])
+            (reg/v:SI 118 [ range ]))) "src/adxl343.c":158:9 -1
+     (nil))
+(insn 27 26 28 4 (set (reg:SI 116 [ _3 ])
+        (zero_extend:SI (subreg:QI (reg:SI 124) 0))) "src/adxl343.c":158:9 -1
+     (nil))
+(insn 28 27 29 4 (set (reg:QI 125)
+        (subreg/s/v:QI (reg:SI 116 [ _3 ]) 0)) "src/adxl343.c":158:9 -1
+     (nil))
+(insn 29 28 30 4 (set (mem/c:QI (plus:SI (reg/f:SI 109 virtual-stack-vars)
+                (const_int -1 [0xffffffffffffffff])) [0 reg+0 S1 A8])
+        (reg:QI 125)) "src/adxl343.c":158:9 -1
+     (nil))
+(debug_insn 30 29 31 4 (debug_marker) "src/adxl343.c":159:5 -1
+     (nil))
+(insn 31 30 32 4 (set (reg:SI 1 r1)
+        (reg:SI 116 [ _3 ])) "src/adxl343.c":159:12 -1
+     (nil))
+(insn 32 31 33 4 (set (reg:SI 0 r0)
+        (const_int 49 [0x31])) "src/adxl343.c":159:12 -1
+     (nil))
+(call_insn 33 32 34 4 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("reg_write") [flags 0x3]  <function_decl 0000000003dd8900 reg_write>) [0 reg_write S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "src/adxl343.c":159:12 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:QI (use (reg:SI 0 r0))
+            (expr_list:QI (use (reg:SI 1 r1))
+                (nil)))))
+(insn 34 33 39 4 (set (reg/v:SI 117 [ <retval> ])
+        (reg:SI 0 r0)) "src/adxl343.c":159:12 -1
+     (nil))
+(code_label 39 34 42 6 25 (nil) [1 uses])
+(note 42 39 40 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 40 42 41 6 (set (reg/i:SI 0 r0)
+        (reg/v:SI 117 [ <retval> ])) "src/adxl343.c":160:1 -1
+     (nil))
+(insn 41 40 0 6 (use (reg/i:SI 0 r0)) "src/adxl343.c":160:1 -1
+     (nil))
+
+;; Function adxl343_set_power_control (adxl343_set_power_control, funcdef_no=145, decl_uid=8810, cgraph_uid=146, symbol_order=147)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Edge 2->5 redirected to 6
+Merging block 5 into block 4...
+Merged blocks 4 and 5.
+Merged 4 and 5 without moving.
+Removing jump 37.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v:SI 118 [ pwr ])
+        (reg:SI 0 r0 [ pwr ])) "src/adxl343.c":163:1 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "src/adxl343.c":164:5 -1
+     (nil))
+(debug_insn 7 6 8 2 (debug_marker) "src/adxl343.c":165:5 -1
+     (nil))
+(debug_insn 8 7 9 2 (debug_marker) "src/adxl343.c":167:5 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 119)
+        (plus:SI (reg/f:SI 109 virtual-stack-vars)
+            (const_int -1 [0xffffffffffffffff]))) "src/adxl343.c":167:19 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 1 r1)
+        (reg:SI 119)) "src/adxl343.c":167:19 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:SI 0 r0)
+        (const_int 45 [0x2d])) "src/adxl343.c":167:19 -1
+     (nil))
+(call_insn 12 11 13 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("reg_read") [flags 0x3]  <function_decl 0000000003dd8b00 reg_read>) [0 reg_read S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "src/adxl343.c":167:19 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:QI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(insn 13 12 14 2 (set (reg/v:SI 117 [ <retval> ])
+        (reg:SI 0 r0)) "src/adxl343.c":167:19 -1
+     (nil))
+(debug_insn 14 13 15 2 (var_location:SI result (reg/v:SI 117 [ <retval> ])) "src/adxl343.c":167:19 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 117 [ <retval> ])
+            (const_int 0 [0]))) "src/adxl343.c":167:8 discrim 1 -1
+     (nil))
+(jump_insn 16 15 17 2 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 39)
+            (pc))) "src/adxl343.c":167:8 discrim 1 277 {arm_cond_branch}
+     (int_list:REG_BR_PROB 548896828 (nil))
+ -> 39)
+(note 17 16 18 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 18 17 19 4 (debug_marker) "src/adxl343.c":169:5 -1
+     (nil))
+(insn 19 18 20 4 (set (reg:SI 121)
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 109 virtual-stack-vars)
+                    (const_int -1 [0xffffffffffffffff])) [0 reg+0 S1 A8]))) "src/adxl343.c":169:9 -1
+     (nil))
+(insn 20 19 21 4 (set (reg:QI 120)
+        (subreg:QI (reg:SI 121) 0)) "src/adxl343.c":169:9 -1
+     (nil))
+(insn 21 20 22 4 (set (reg:SI 122)
+        (and:SI (subreg:SI (reg:QI 120) 0)
+            (const_int -9 [0xfffffffffffffff7]))) "src/adxl343.c":169:9 -1
+     (nil))
+(insn 22 21 23 4 (set (reg:SI 115 [ _2 ])
+        (zero_extend:SI (subreg:QI (reg:SI 122) 0))) "src/adxl343.c":169:9 -1
+     (nil))
+(insn 23 22 24 4 (set (reg:QI 123)
+        (subreg/s/v:QI (reg:SI 115 [ _2 ]) 0)) "src/adxl343.c":169:9 -1
+     (nil))
+(insn 24 23 25 4 (set (mem/c:QI (plus:SI (reg/f:SI 109 virtual-stack-vars)
+                (const_int -1 [0xffffffffffffffff])) [0 reg+0 S1 A8])
+        (reg:QI 123)) "src/adxl343.c":169:9 -1
+     (nil))
+(debug_insn 25 24 26 4 (debug_marker) "src/adxl343.c":170:5 -1
+     (nil))
+(insn 26 25 27 4 (set (reg:SI 124)
+        (ior:SI (reg:SI 115 [ _2 ])
+            (reg/v:SI 118 [ pwr ]))) "src/adxl343.c":170:9 -1
+     (nil))
+(insn 27 26 28 4 (set (reg:SI 116 [ _3 ])
+        (zero_extend:SI (subreg:QI (reg:SI 124) 0))) "src/adxl343.c":170:9 -1
+     (nil))
+(insn 28 27 29 4 (set (reg:QI 125)
+        (subreg/s/v:QI (reg:SI 116 [ _3 ]) 0)) "src/adxl343.c":170:9 -1
+     (nil))
+(insn 29 28 30 4 (set (mem/c:QI (plus:SI (reg/f:SI 109 virtual-stack-vars)
+                (const_int -1 [0xffffffffffffffff])) [0 reg+0 S1 A8])
+        (reg:QI 125)) "src/adxl343.c":170:9 -1
+     (nil))
+(debug_insn 30 29 31 4 (debug_marker) "src/adxl343.c":171:5 -1
+     (nil))
+(insn 31 30 32 4 (set (reg:SI 1 r1)
+        (reg:SI 116 [ _3 ])) "src/adxl343.c":171:12 -1
+     (nil))
+(insn 32 31 33 4 (set (reg:SI 0 r0)
+        (const_int 45 [0x2d])) "src/adxl343.c":171:12 -1
+     (nil))
+(call_insn 33 32 34 4 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("reg_write") [flags 0x3]  <function_decl 0000000003dd8900 reg_write>) [0 reg_write S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "src/adxl343.c":171:12 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:QI (use (reg:SI 0 r0))
+            (expr_list:QI (use (reg:SI 1 r1))
+                (nil)))))
+(insn 34 33 39 4 (set (reg/v:SI 117 [ <retval> ])
+        (reg:SI 0 r0)) "src/adxl343.c":171:12 -1
+     (nil))
+(code_label 39 34 42 6 29 (nil) [1 uses])
+(note 42 39 40 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 40 42 41 6 (set (reg/i:SI 0 r0)
+        (reg/v:SI 117 [ <retval> ])) "src/adxl343.c":172:1 -1
+     (nil))
+(insn 41 40 0 6 (use (reg/i:SI 0 r0)) "src/adxl343.c":172:1 -1
+     (nil))
+
+;; Function adxl343_set_int_enable (adxl343_set_int_enable, funcdef_no=146, decl_uid=8816, cgraph_uid=147, symbol_order=148)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 11.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v:SI 115 [ srcs ])
+        (reg:SI 0 r0 [ srcs ])) "src/adxl343.c":175:1 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "src/adxl343.c":176:5 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 1 r1)
+        (reg/v:SI 115 [ srcs ])) "src/adxl343.c":176:12 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:SI 0 r0)
+        (const_int 46 [0x2e])) "src/adxl343.c":176:12 -1
+     (nil))
+(call_insn 9 8 10 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("reg_write") [flags 0x3]  <function_decl 0000000003dd8900 reg_write>) [0 reg_write S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "src/adxl343.c":176:12 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:QI (use (reg:SI 0 r0))
+            (expr_list:QI (use (reg:SI 1 r1))
+                (nil)))))
+(insn 10 9 14 2 (set (reg:SI 114 [ <retval> ])
+        (reg:SI 0 r0)) "src/adxl343.c":176:12 -1
+     (nil))
+(insn 14 10 15 2 (set (reg/i:SI 0 r0)
+        (reg:SI 114 [ <retval> ])) "src/adxl343.c":177:1 -1
+     (nil))
+(insn 15 14 0 2 (use (reg/i:SI 0 r0)) "src/adxl343.c":177:1 -1
+     (nil))
+
+;; Function adxl343_set_int_map (adxl343_set_int_map, funcdef_no=147, decl_uid=8818, cgraph_uid=148, symbol_order=149)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 11.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v:SI 115 [ map ])
+        (reg:SI 0 r0 [ map ])) "src/adxl343.c":180:1 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "src/adxl343.c":181:5 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 1 r1)
+        (reg/v:SI 115 [ map ])) "src/adxl343.c":181:12 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:SI 0 r0)
+        (const_int 47 [0x2f])) "src/adxl343.c":181:12 -1
+     (nil))
+(call_insn 9 8 10 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("reg_write") [flags 0x3]  <function_decl 0000000003dd8900 reg_write>) [0 reg_write S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "src/adxl343.c":181:12 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:QI (use (reg:SI 0 r0))
+            (expr_list:QI (use (reg:SI 1 r1))
+                (nil)))))
+(insn 10 9 14 2 (set (reg:SI 114 [ <retval> ])
+        (reg:SI 0 r0)) "src/adxl343.c":181:12 -1
+     (nil))
+(insn 14 10 15 2 (set (reg/i:SI 0 r0)
+        (reg:SI 114 [ <retval> ])) "src/adxl343.c":182:1 -1
+     (nil))
+(insn 15 14 0 2 (use (reg/i:SI 0 r0)) "src/adxl343.c":182:1 -1
+     (nil))
+
+;; Function adxl343_get_int_source (adxl343_get_int_source, funcdef_no=148, decl_uid=8820, cgraph_uid=149, symbol_order=150)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 11.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v/f:SI 115 [ srcs ])
+        (reg:SI 0 r0 [ srcs ])) "src/adxl343.c":185:1 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "src/adxl343.c":186:5 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 1 r1)
+        (reg/v/f:SI 115 [ srcs ])) "src/adxl343.c":186:12 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:SI 0 r0)
+        (const_int 48 [0x30])) "src/adxl343.c":186:12 -1
+     (nil))
+(call_insn 9 8 10 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("reg_read") [flags 0x3]  <function_decl 0000000003dd8b00 reg_read>) [0 reg_read S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "src/adxl343.c":186:12 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:QI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(insn 10 9 14 2 (set (reg:SI 114 [ <retval> ])
+        (reg:SI 0 r0)) "src/adxl343.c":186:12 -1
+     (nil))
+(insn 14 10 15 2 (set (reg/i:SI 0 r0)
+        (reg:SI 114 [ <retval> ])) "src/adxl343.c":187:1 -1
+     (nil))
+(insn 15 14 0 2 (use (reg/i:SI 0 r0)) "src/adxl343.c":187:1 -1
+     (nil))
+
+;; Function adxl343_set_offsets (adxl343_set_offsets, funcdef_no=149, decl_uid=8822, cgraph_uid=150, symbol_order=151)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 36.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v/f:SI 121 [ offs ])
+        (reg:SI 0 r0 [ offs ])) "src/adxl343.c":190:1 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "src/adxl343.c":191:5 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 122)
+        (const_int 30 [0x1e])) "src/adxl343.c":191:13 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:QI 123)
+        (subreg:QI (reg:SI 122) 0)) "src/adxl343.c":191:13 -1
+     (nil))
+(insn 9 8 10 2 (set (mem/c:QI (plus:SI (reg/f:SI 109 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 buf[0]+0 S1 A32])
+        (reg:QI 123)) "src/adxl343.c":191:13 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 115 [ _2 ])
+        (zero_extend:SI (mem:QI (reg/v/f:SI 121 [ offs ]) [0 *offs_9(D)+0 S1 A8]))) "src/adxl343.c":191:38 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:QI 124)
+        (subreg/s/v:QI (reg:SI 115 [ _2 ]) 0)) "src/adxl343.c":191:13 -1
+     (nil))
+(insn 12 11 13 2 (set (mem/c:QI (plus:SI (reg/f:SI 109 virtual-stack-vars)
+                (const_int -3 [0xfffffffffffffffd])) [0 buf[1]+0 S1 A8])
+        (reg:QI 124)) "src/adxl343.c":191:13 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:SI 117 [ _4 ])
+        (zero_extend:SI (mem:QI (plus:SI (reg/v/f:SI 121 [ offs ])
+                    (const_int 1 [0x1])) [0 MEM[(const int8_t *)offs_9(D) + 1B]+0 S1 A8]))) "src/adxl343.c":191:47 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:QI 125)
+        (subreg/s/v:QI (reg:SI 117 [ _4 ]) 0)) "src/adxl343.c":191:13 -1
+     (nil))
+(insn 15 14 16 2 (set (mem/c:QI (plus:SI (reg/f:SI 109 virtual-stack-vars)
+                (const_int -2 [0xfffffffffffffffe])) [0 buf[2]+0 S1 A16])
+        (reg:QI 125)) "src/adxl343.c":191:13 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:SI 119 [ _6 ])
+        (zero_extend:SI (mem:QI (plus:SI (reg/v/f:SI 121 [ offs ])
+                    (const_int 2 [0x2])) [0 MEM[(const int8_t *)offs_9(D) + 2B]+0 S1 A8]))) "src/adxl343.c":191:56 -1
+     (nil))
+(insn 17 16 18 2 (set (reg:QI 126)
+        (subreg/s/v:QI (reg:SI 119 [ _6 ]) 0)) "src/adxl343.c":191:13 -1
+     (nil))
+(insn 18 17 19 2 (set (mem/c:QI (plus:SI (reg/f:SI 109 virtual-stack-vars)
+                (const_int -1 [0xffffffffffffffff])) [0 buf[3]+0 S1 A8])
+        (reg:QI 126)) "src/adxl343.c":191:13 -1
+     (nil))
+(debug_insn 19 18 20 2 (debug_marker) "src/adxl343.c":193:5 -1
+     (nil))
+(insn 20 19 21 2 (set (reg/f:SI 127)
+        (symbol_ref:SI ("i2c_req") [flags 0x2]  <var_decl 000000000516aa20 i2c_req>)) "src/adxl343.c":193:20 -1
+     (nil))
+(insn 21 20 22 2 (set (reg:SI 128)
+        (plus:SI (reg/f:SI 109 virtual-stack-vars)
+            (const_int -4 [0xfffffffffffffffc]))) "src/adxl343.c":193:20 -1
+     (nil))
+(insn 22 21 23 2 (set (mem/f/c:SI (plus:SI (reg/f:SI 127)
+                (const_int 8 [0x8])) [1 i2c_req.tx_buf+0 S4 A32])
+        (reg:SI 128)) "src/adxl343.c":193:20 -1
+     (nil))
+(debug_insn 23 22 24 2 (debug_marker) "src/adxl343.c":194:5 -1
+     (nil))
+(insn 24 23 25 2 (set (reg/f:SI 129)
+        (symbol_ref:SI ("i2c_req") [flags 0x2]  <var_decl 000000000516aa20 i2c_req>)) "src/adxl343.c":194:20 -1
+     (nil))
+(insn 25 24 26 2 (set (reg:SI 130)
+        (const_int 4 [0x4])) "src/adxl343.c":194:20 -1
+     (nil))
+(insn 26 25 27 2 (set (mem/c:SI (plus:SI (reg/f:SI 129)
+                (const_int 12 [0xc])) [4 i2c_req.tx_len+0 S4 A32])
+        (reg:SI 130)) "src/adxl343.c":194:20 -1
+     (nil))
+(debug_insn 27 26 28 2 (debug_marker) "src/adxl343.c":195:5 -1
+     (nil))
+(insn 28 27 29 2 (set (reg/f:SI 131)
+        (symbol_ref:SI ("i2c_req") [flags 0x2]  <var_decl 000000000516aa20 i2c_req>)) "src/adxl343.c":195:20 -1
+     (nil))
+(insn 29 28 30 2 (set (reg:SI 132)
+        (const_int 0 [0])) "src/adxl343.c":195:20 -1
+     (nil))
+(insn 30 29 31 2 (set (mem/c:SI (plus:SI (reg/f:SI 131)
+                (const_int 20 [0x14])) [4 i2c_req.rx_len+0 S4 A32])
+        (reg:SI 132)) "src/adxl343.c":195:20 -1
+     (nil))
+(debug_insn 31 30 32 2 (debug_marker) "src/adxl343.c":197:5 -1
+     (nil))
+(insn 32 31 33 2 (set (reg:SI 133)
+        (symbol_ref:SI ("i2c_req") [flags 0x2]  <var_decl 000000000516aa20 i2c_req>)) "src/adxl343.c":197:12 -1
+     (nil))
+(insn 33 32 34 2 (set (reg:SI 0 r0)
+        (reg:SI 133)) "src/adxl343.c":197:12 -1
+     (nil))
+(call_insn 34 33 35 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("MXC_I2C_MasterTransaction") [flags 0x41]  <function_decl 0000000005179600 MXC_I2C_MasterTransaction>) [0 MXC_I2C_MasterTransaction S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "src/adxl343.c":197:12 -1
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(insn 35 34 39 2 (set (reg:SI 120 [ <retval> ])
+        (reg:SI 0 r0)) "src/adxl343.c":197:12 -1
+     (nil))
+(insn 39 35 40 2 (set (reg/i:SI 0 r0)
+        (reg:SI 120 [ <retval> ])) "src/adxl343.c":198:1 -1
+     (nil))
+(insn 40 39 0 2 (use (reg/i:SI 0 r0)) "src/adxl343.c":198:1 -1
+     (nil))
+
+;; Function adxl343_init (adxl343_init, funcdef_no=150, decl_uid=8824, cgraph_uid=151, symbol_order=152)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+Edge 2->6 redirected to 9
+Edge 4->6 redirected to 10
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Edge 4->9 redirected to 10
+Forwarding edge 5->6 to 10 failed.
+Redirecting jump 52 from 9 to 10.
+Redirecting jump 56 from 9 to 10.
+Merging block 9 into block 8...
+Merged blocks 8 and 9.
+Merged 8 and 9 without moving.
+Removing jump 46.
+
+
+try_optimize_cfg iteration 2
+
+Forwarding edge 5->6 to 10 failed.
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (reg/v/f:SI 116 [ i2c_inst ])
+        (reg:SI 0 r0 [ i2c_inst ])) "src/adxl343.c":201:1 -1
+     (nil))
+(note 3 2 8 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 8 3 9 2 (debug_marker) "src/adxl343.c":202:5 -1
+     (nil))
+(debug_insn 9 8 10 2 (debug_marker) "src/adxl343.c":203:5 -1
+     (nil))
+(debug_insn 10 9 11 2 (debug_marker) "src/adxl343.c":205:5 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:CC 100 cc)
+        (compare:CC (reg/v/f:SI 116 [ i2c_inst ])
+            (const_int 0 [0]))) "src/adxl343.c":205:8 -1
+     (nil))
+(jump_insn 12 11 13 2 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 55)
+            (pc))) "src/adxl343.c":205:8 277 {arm_cond_branch}
+     (int_list:REG_BR_PROB 9771052 (nil))
+ -> 55)
+(note 13 12 14 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 14 13 15 4 (debug_marker) "src/adxl343.c":208:5 -1
+     (nil))
+(insn 15 14 16 4 (set (reg/f:SI 117)
+        (symbol_ref:SI ("i2c_req") [flags 0x2]  <var_decl 000000000516aa20 i2c_req>)) "src/adxl343.c":208:17 -1
+     (nil))
+(insn 16 15 17 4 (set (mem/f/c:SI (reg/f:SI 117) [3 i2c_req.i2c+0 S4 A32])
+        (reg/v/f:SI 116 [ i2c_inst ])) "src/adxl343.c":208:17 -1
+     (nil))
+(debug_insn 17 16 18 4 (debug_marker) "src/adxl343.c":209:5 -1
+     (nil))
+(insn 18 17 19 4 (set (reg/f:SI 118)
+        (symbol_ref:SI ("i2c_req") [flags 0x2]  <var_decl 000000000516aa20 i2c_req>)) "src/adxl343.c":209:18 -1
+     (nil))
+(insn 19 18 20 4 (set (reg:SI 119)
+        (const_int 29 [0x1d])) "src/adxl343.c":209:18 -1
+     (nil))
+(insn 20 19 21 4 (set (mem/c:SI (plus:SI (reg/f:SI 118)
+                (const_int 4 [0x4])) [4 i2c_req.addr+0 S4 A32])
+        (reg:SI 119)) "src/adxl343.c":209:18 -1
+     (nil))
+(debug_insn 21 20 22 4 (debug_marker) "src/adxl343.c":210:5 -1
+     (nil))
+(insn 22 21 23 4 (set (reg/f:SI 120)
+        (symbol_ref:SI ("i2c_req") [flags 0x2]  <var_decl 000000000516aa20 i2c_req>)) "src/adxl343.c":210:21 -1
+     (nil))
+(insn 23 22 24 4 (set (reg:SI 121)
+        (const_int 0 [0])) "src/adxl343.c":210:21 -1
+     (nil))
+(insn 24 23 25 4 (set (mem/c:SI (plus:SI (reg/f:SI 120)
+                (const_int 24 [0x18])) [4 i2c_req.restart+0 S4 A32])
+        (reg:SI 121)) "src/adxl343.c":210:21 -1
+     (nil))
+(debug_insn 25 24 26 4 (debug_marker) "src/adxl343.c":211:5 -1
+     (nil))
+(insn 26 25 27 4 (set (reg/f:SI 122)
+        (symbol_ref:SI ("i2c_req") [flags 0x2]  <var_decl 000000000516aa20 i2c_req>)) "src/adxl343.c":211:22 -1
+     (nil))
+(insn 27 26 28 4 (set (reg:SI 123)
+        (const_int 0 [0])) "src/adxl343.c":211:22 -1
+     (nil))
+(insn 28 27 29 4 (set (mem/f/c:SI (plus:SI (reg/f:SI 122)
+                (const_int 28 [0x1c])) [5 i2c_req.callback+0 S4 A32])
+        (reg:SI 123)) "src/adxl343.c":211:22 -1
+     (nil))
+(debug_insn 29 28 30 4 (debug_marker) "src/adxl343.c":213:5 -1
+     (nil))
+(insn 30 29 31 4 (set (reg:SI 124)
+        (plus:SI (reg/f:SI 109 virtual-stack-vars)
+            (const_int -1 [0xffffffffffffffff]))) "src/adxl343.c":213:19 -1
+     (nil))
+(insn 31 30 32 4 (set (reg:SI 1 r1)
+        (reg:SI 124)) "src/adxl343.c":213:19 -1
+     (nil))
+(insn 32 31 33 4 (set (reg:SI 0 r0)
+        (const_int 0 [0])) "src/adxl343.c":213:19 -1
+     (nil))
+(call_insn 33 32 34 4 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("reg_read") [flags 0x3]  <function_decl 0000000003dd8b00 reg_read>) [0 reg_read S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "src/adxl343.c":213:19 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:QI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(insn 34 33 35 4 (set (reg/v:SI 115 [ <retval> ])
+        (reg:SI 0 r0)) "src/adxl343.c":213:19 -1
+     (nil))
+(debug_insn 35 34 36 4 (var_location:SI result (reg/v:SI 115 [ <retval> ])) "src/adxl343.c":213:19 -1
+     (nil))
+(insn 36 35 37 4 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 115 [ <retval> ])
+            (const_int 0 [0]))) "src/adxl343.c":213:8 discrim 1 -1
+     (nil))
+(jump_insn 37 36 38 4 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 48)
+            (pc))) "src/adxl343.c":213:8 discrim 1 277 {arm_cond_branch}
+     (int_list:REG_BR_PROB 365072228 (nil))
+ -> 48)
+(note 38 37 39 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 39 38 40 5 (debug_marker) "src/adxl343.c":216:5 -1
+     (nil))
+(insn 40 39 41 5 (set (reg:SI 114 [ id.15_1 ])
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 109 virtual-stack-vars)
+                    (const_int -1 [0xffffffffffffffff])) [0 id+0 S1 A8]))) "src/adxl343.c":216:12 -1
+     (nil))
+(insn 41 40 42 5 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 114 [ id.15_1 ])
+            (const_int 229 [0xe5]))) "src/adxl343.c":216:8 -1
+     (nil))
+(jump_insn 42 41 43 5 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 59)
+            (pc))) "src/adxl343.c":216:8 277 {arm_cond_branch}
+     (int_list:REG_BR_PROB 21474844 (nil))
+ -> 59)
+(note 43 42 52 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 52 43 53 6 (set (pc)
+        (label_ref:SI 48)) 288 {*arm_jump}
+     (nil)
+ -> 48)
+(barrier 53 52 55)
+(code_label 55 53 54 7 45 (nil) [1 uses])
+(note 54 55 4 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 4 54 56 7 (set (reg/v:SI 115 [ <retval> ])
+        (const_int -1 [0xffffffffffffffff])) "src/adxl343.c":206:16 -1
+     (nil))
+(jump_insn 56 4 57 7 (set (pc)
+        (label_ref:SI 48)) 288 {*arm_jump}
+     (nil)
+ -> 48)
+(barrier 57 56 59)
+(code_label 59 57 58 8 46 (nil) [1 uses])
+(note 58 59 5 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 5 58 48 8 (set (reg/v:SI 115 [ <retval> ])
+        (const_int -17 [0xffffffffffffffef])) "src/adxl343.c":217:16 -1
+     (nil))
+(code_label 48 5 51 10 43 (nil) [3 uses])
+(note 51 48 49 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 49 51 50 10 (set (reg/i:SI 0 r0)
+        (reg/v:SI 115 [ <retval> ])) "src/adxl343.c":220:1 -1
+     (nil))
+(insn 50 49 0 10 (use (reg/i:SI 0 r0)) "src/adxl343.c":220:1 -1
+     (nil))

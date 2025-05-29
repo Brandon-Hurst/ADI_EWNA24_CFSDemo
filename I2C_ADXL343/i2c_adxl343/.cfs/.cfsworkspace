@@ -1,0 +1,12 @@
+{
+  "Soc": "MAX32690",
+  "Package": "TQFN",
+  "WorkspacePluginId": "com.analog.singlecore.msdk.helloworld",
+  "WorkspacePluginVersion": "1.0.0",
+  "WorkspaceName": "i2c_adxl343",
+  "Location": "c:\\workspace\\cfs_projects\\EWNA_REPO\\I2C_ADXL343",
+  "Board": "FTHR",
+  "Projects": [],
+  "DataModelVersion": "1.1.44",
+  "DataModelSchemaVersion": "1.1.0"
+}
